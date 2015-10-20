@@ -1,0 +1,71 @@
+﻿final itdecsa
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+# Changes to be committed:
+#	modified:   conexion.php
+#	modified:   css/style.css
+#	modified:   images/2.jpg
+#	new file:   images/background/1.jpg
+#	new file:   images/background/1.png
+#	new file:   images/background/2.jpg
+#	new file:   images/background/3 - copia.png
+#	new file:   images/background/3.jpg
+#	new file:   images/background/3.png
+#	new file:   images/background/4.png
+#	new file:   images/background/VIUSID.png
+#	new file:   images/background/bg1.jpg
+#	new file:   images/background/bg2.jpg
+#	new file:   images/background/bg3.jpg
+#	new file:   images/background/bgm.PNG
+#	new file:   images/background/cons.png
+#	new file:   images/background/construccion.png
+#	new file:   images/background/construccion1.png
+#	new file:   images/background/header1.jpg
+#	new file:   images/background/header2.jpg
+#	new file:   images/background/header3.jpg
+#	new file:   images/background/pagina-en-construccion.png
+#	modified:   images/banner9.jpg
+#	modified:   images/clientes/1.png
+#	new file:   images/clientes/ITCEM.png
+#	new file:   images/clientes/banco.png
+#	modified:   images/clientes/copesco.png
+#	new file:   images/clientes/cusco-checacupe-9.jpg
+#	new file:   images/clientes/cusco-checacupe-9.png
+#	modified:   images/clientes/dircetur.png
+#	new file:   images/clientes/dircetur1.png
+#	new file:   images/clientes/inc.png
+#	new file:   images/clientes/instituto_nacional_de_cultura_thumb.png
+#	modified:   images/clientes/ipcna.png
+#	new file:   images/clientes/kiwi.png
+#	modified:   images/clientes/logo.png
+#	modified:   images/clientes/logo_3.gif
+#	new file:   images/clientes/logo_sanpedro.png
+#	modified:   images/clientes/logogrc.png
+#	modified:   images/clientes/logotipo.png
+#	new file:   images/clientes/promart.jpg
+#	new file:   images/clientes/promart.png
+#	new file:   images/fotoindex.jpg
+#	new file:   images/list-arrow - copia.png
+#	modified:   images/list-arrow.png
+#	modified:   index.php
+#	deleted:    otro/css/animate.css
+#	deleted:    otro/css/bootstrap.css
+#	deleted:    otro/css/style.css
+#	deleted:    otro/css/swipebox.css
+#	deleted:    otro/index.php
+#	modified:   pages/contactos.php
+#	modified:   pages/desarrollo.php
+#	modified:   pages/productos.php
+#	modified:   pages/quienessomos.php
+#	modified:   pages/servicios.php
+#	modified:   pages/ventaequipo.php
+#	deleted:    prueba/index.php
+#	deleted:    prueba/jquery-1.11.1.min.js
+#	deleted:    prueba/script.js
+#	deleted:    prueba/style.css
+#
+

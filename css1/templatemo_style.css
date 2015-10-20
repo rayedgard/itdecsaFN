@@ -1,0 +1,123 @@
+/* 
+Flex Template 
+http://www.templatemo.com/preview/templatemo_406_flex 
+*/
+
+html, body, div, h3, a,img, ul, li, header{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: .83em;
+  line-height: 1.75;
+  color: #666666;
+  background-color: white;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+
+
+
+header,
+img {
+  display: block;
+}
+ h3 {
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #444444;
+}
+
+
+
+@media screen and (min-width: 1200px) {
+
+.content-section {
+  margin-top: 80px;
+  padding-top: 60px;
+}
+
+
+
+.content-section#services {
+  margin-top: 0px;
+}
+
+
+.team-member {
+  margin-bottom: 30px;
+}
+.team-member .member-thumb {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+.team-member .member-thumb img {
+  width: 50%;
+}
+.team-member .member-thumb .team-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background-color: #ec523f;
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.team-member .member-thumb .team-overlay h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: white;
+  display: inline-block;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+  margin-top: 64px;
+}
+.team-member .member-thumb .team-overlay span {
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top: 10px;
+  display: block;
+}
+.team-member .member-thumb .team-overlay ul.social {
+  display: block;
+  margin-top: 20px;
+}
+.team-member .member-thumb .team-overlay ul.social li {
+  display: inline-block;
+}
+.team-member .member-thumb .team-overlay ul.social li a {
+  width: 36px;
+  height: 36px;
+  background-color: white;
+  line-height: 40px;
+  color: #ec523f;
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+}
+.team-member .member-thumb:hover .team-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+

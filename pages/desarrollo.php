@@ -1,0 +1,593 @@
+<!--
+Au<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML> 
+<html>
+<head>
+<title>ITDECSA - Informatic Technology Development Corporation S.A. </title>
+<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Cultivation Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+<script src="../js/jquery-1.11.1.min.js"></script>
+ <link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" />
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="../js/move-top.js"></script>
+<script type="text/javascript" src="../js/easing.js"></script>
+
+		 <!--para los videos-->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>	
+		<!--fin videos-->
+
+ <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+<!---End-smoth-scrolling---->
+<link rel="stylesheet" href="../css/swipebox.css">
+			<script src="../js/jquery.swipebox.min.js"></script> 
+			    <script type="text/javascript">
+					jQuery(function($) {
+						$(".swipebox").swipebox();
+					});
+				</script>
+				<!--Animation-->
+<script src="../js/wow.min.js"></script>
+<link href="../css/animate.css" rel='stylesheet' type='text/css' />
+<script>
+	new WOW().init();
+</script>
+<!---/End-Animation---->
+
+<!--Start of Zopim Live Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="//v2.zopim.com/?3OU3AV4FqT8DIgIfcN0DBfkbqk96DpTr";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>
+<!--End of Zopim Live Chat Script-->
+</head>
+<body>
+ 	<div class="header1 head-top " id="home">
+		<div class="container">
+			<div class="header-top">
+				<div class="top-menu">
+					<span class="menu">
+						<img src="../images/nav.png" alt=""/>
+					</span>
+					<ul>
+					   	<li><a href="../index.php">Inicio</a></li><label>/</label>
+					    <li><a href="quienessomos.php">Quienes Somos</a></li><label>/</label>
+					  	<li><a href="servicios.php">Servicios</a></li><label>/</label>
+						<li><a href="productos.php">Productos</a></li><label>/</label>
+					   
+					   	<li><a href="contactos.php">Contactos</a></li>
+				    </ul>
+    				 <!-- script for menu -->				
+					 <script>
+					 $("span.menu").click(function(){
+					 $(".top-menu ul").slideToggle("slow", function(){
+					 });
+					 });
+					 </script>
+					<!-- //script for menu -->
+     			</div>
+     			<style type="text/css">
+							span.menu {
+							  display: none;
+							}
+
+							@media only screen and (max-width:648px) {
+								span.menu {
+								display: block;
+								 cursor: pointer;
+								 margin: 14px 10px;
+								}
+							}				
+			            	</style>
+
+				
+
+				<div class="clearfix"></div>
+
+			</div><!-- find e header-top-->
+
+			
+		</div>
+	</div>
+
+	<div class="content">
+	<!-- 404 -->
+
+	<div class="services-section">
+		<div class="container">
+			<h3> Desarrollo de Software</h3>
+			<div class="services-grids">
+				<div class="services">
+
+					
+
+
+					<!-- contenido recursivo para seecciones de desarrollo de software -->
+					<div class="services-grid wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+						
+						<img src="../images/desarrollogif/huella.gif" class="img-responsive" alt="" style="border-radius:15px;float:left;margin:20px;width:15%;height:150px;" />
+
+						<h5>Sistema de Control de Asistencia</h5>
+						<p style="text-align:justify;">Como solución a esta necesidad existen distintos tipos de Sistemas Computarizados del Control de Asistencia, con uso de fotochecks con códigos de barras, banda magnéticas o tarjetas de proximidad. Todos los cuales se basan en algo que el empleado posee (el fotocheck) pero que puede ser prestado, olvidado, robado o perdido y sin tener la certeza que la persona que lo presenta es el usuario auténtico (suplantación).</br>
+						Sin embargo, si le preocupa la posible suplantación al momento de marcación y le interesa VERIFICAR PERSONAS y no tarjetas de plástico (fotochecks), que como dijimos son sujetos de préstamo, pérdida o extravío; puede utilizar nuestros lectores de huella digital, los cuales ya se encuentran instalados y operativos satisfactoriamente en una serie de Instituciones públicas y privadas del medio.
+						</p>
+						
+						<div class="tabs">							
+							<!--
+							<div class="contenedor">						
+								<ul>
+									<a href="#manual"><li class="button demo" >Manuales</li></a>									
+		  	  						<a href="#video"><li class="button demo">Videos</li></a>
+		  							<a href="#software"><li class="button demo">Software Desarrollados</li></a>
+									<a href="#especifica"><li class="button demo">Especificaciones</li> 	</a>		
+				   				</ul>  
+
+							</div>
+							-->
+
+							<div class="contenedor" style="border-top-left-radius: 2em ;border-top-right-radius: 2em;">						
+								<ul>
+									<li class="button demo manu" >Manuales</li>									
+		  	  						<li class="button demo vi">Videos</li>
+		  							<li class="button demo soft">Requisitos</li>
+									<li class="button demo espe">Especificaciones</li> 		
+				   				</ul>  
+
+							</div>
+
+							<div class="contenedor1 manuales " style="display:none;border-bottom-right-radius: 2em;
+border-bottom-left-radius:2em;">
+								<h3 style="font-size:2.5em;padding-top:25px;">ATENCION AL CLIENTE</h3>	
+
+								<a href="#" style="font-size:1.8em;color:#fff;" target="_blank">Manual de Usuario <img src="../images/iconos/downloads.png" style="width:20px;height:20px;"></a>
+								<p style="">13.25 MB, PDF, ESPAÑOL</br>
+								2014.08.26<p>
+								
+
+							</div>
+
+							<div class="contenedor1 videos"  style="display:none;border-bottom-right-radius: 2em;
+border-bottom-left-radius:2em;">
+								<div id="videos"><!--VIDEOS-->
+									<div class="video">   <!--reprosuctor de video grande-->			    
+										<?php 
+										include_once("../conexion.php");
+										$link = Conectarse();
+
+										//CONESTA CONSULTA CAPTURAMOS EL MAXIMO Y ULTIMO DE LOS VIDEOS AGREGADOS 
+										$consulta5 = mysql_query("SELECT max(id)  FROM video",$link);
+										$id= mysql_fetch_array($consulta5);
+
+
+										$consulta4 = mysql_query("SELECT linkvideo  FROM video WHERE id='$id[0]' ",$link);
+										$row4= mysql_fetch_array($consulta4);
+										?>
+							    
+							 			<div id="contenedorYT">
+							 				Cargando ...
+							 			</div>
+										<script type="text/javascript">
+										  swfobject.embedSWF(
+										    'http://www.youtube.com/v/<?php echo $row4[0];?>&enablejsapi=1&rel=0&fs=1',
+								   			'contenedorYT',
+								   			'100%','100%', '8',null,null,
+								   		 {allowScriptAccess: 'always',allowFullScreen: 'true'},
+								   		 {id: 'reproductorYT'});
+
+										  function cargarVideo(id) {
+										    var o = document.getElementById( 'reproductorYT' );
+										    if( o ) {o.loadVideoById( id );}
+										  }
+										</script>
+					 				</div> <!--fin video reproductor grande-->
+
+									<div class="contMin">
+									    <?php
+											$consulta3="SELECT nombre, linkvideo FROM video WHERE eliminar=0 ORDER BY id DESC"; 
+											$resultado3 = mysql_query($consulta3,$link);
+											//nombre del titulo
+												$titulo3=array();
+												$link3=array();
+												
+											while($row3=  mysql_fetch_array($resultado3))
+													{
+													array_push($titulo3,$row3[0]);
+													array_push($link3,$row3[1]);
+													}
+											for($k=0;$k<count($titulo3);$k++)
+										{
+										?>    
+						 				<div class="Min" style="border-bottom: 2px solid #000;">
+						 					<div class="ContenedorImgMin">
+												<a href="javascript:cargarVideo('<?php echo $link3[$k];?>');" title="<?php echo $titulo3[$k];?>"><img src="http://img.youtube.com/vi/<?php echo $link3[$k];?>/1.jpg"/>
+												</a>
+											</div>
+											<div class="nonMin">
+												<a style="font-size:1.2em;color:#C2C0C0" href="javascript:cargarVideo('<?php echo $link3[$k];?>');" title="<?php echo $titulo3[$k];?>">
+													<?php echo $titulo3[$k];?>
+												</a>
+											</div>
+
+										</div>
+										 <?php
+											}
+											?> 
+				     				</div>
+								</div><!--FIN VIDEOS-->  
+							</div>
+
+							<div class="contenedor1 software" style="display:none;border-bottom-right-radius: 2em;
+border-bottom-left-radius:2em;">
+								
+								
+
+							</div>
+
+							<div class="contenedor1 especificaciones"  style="display:none;border-bottom-right-radius: 2em;
+border-bottom-left-radius:2em;">
+								
+								
+
+							</div>
+							
+						</div>
+
+						<script type="text/javascript">
+
+					          
+					        $('.manu').click(function(){
+					        	$('.videos').fadeOut(1);
+					        	$('.software').fadeOut(1);
+					        	$('.especificaciones').fadeOut(1);
+					            $('.manuales').slideToggle(1);
+					        });
+
+					         $('.vi').click(function(){
+					         	$('.manuales').fadeOut(1);
+					        	$('.software').fadeOut(1);
+					        	$('.especificaciones').fadeOut(1);
+					            $('.videos').slideToggle(1);
+					        });
+
+					          $('.soft').click(function(){
+					          	$('.videos').fadeOut(1);
+					        	$('.manuales').fadeOut(1);
+					        	$('.especificaciones').fadeOut(1);
+					            $('.software').slideToggle(1);
+					        });
+
+					         $('.espe').click(function(){
+					         	$('.videos').fadeOut(1);
+					        	$('.software').fadeOut(1);
+					        	$('.manuales').fadeOut(1);
+					            $('.especificaciones').slideToggle(1);
+					        });
+					   
+
+
+
+    				    </script>
+
+						<style type="text/css">
+
+
+						/*videos*/
+						#videos
+						{
+
+						overflow:inherit;
+						width:100%;
+						float:left;
+						height:335px;
+
+						background:url(../images/fon.png);
+						padding-left:20px;
+						padding-top:20px;
+
+
+						-moz-border-radius: 10px; /* Firefox*/
+						-ms-border-radius: 10px; /* IE 8.*/
+						-webkit-border-radius: 10px; /* Safari,Chrome.*/
+						border-radius: 10px; /* El estándar.*/
+
+						 background-color:#1E1E1E;
+						/*para la opacidad   pero opaca todo el div
+						filter:alpha(opacity=50);
+						  -moz-opacity:0.5;
+						  -khtml-opacity: 0.5;
+						  opacity: 0.5;*/
+						 
+						  /*fin opacidad*/
+						}
+
+
+						.video
+						{
+						    float:left;
+						    height:100%;
+						    width:55%;
+						    /*border:#FFF solid 1px;*/
+						}
+
+
+						/*noticias*/
+						.contMin
+						{
+						 width:45%;
+						 overflow:hidden; 
+
+						 float:left; padding: 0px 5px 5px 10px;
+						  overflow-y:scroll;
+						 height: 100%;
+						}
+
+						.Min
+						{
+						    overflow:hidden;
+						    width: 100%;
+
+						 }
+
+						.Min:hover
+						{overflow:hidden; 
+						 background:#3E3D3C; 
+						 }
+						.noti:hover h3
+						{color:#000; }
+
+
+						.ContenedorImgMin 
+						{ 
+						    padding:7px 2px 7px 2px;
+
+						    overflow:hidden; width:30%;
+						    float:left;
+						}
+
+						.nonMin
+						{   
+						    width:65%;
+						    float:left; padding:5px 5px 5px 10px;
+						    
+						    font-size: 12px;
+						}
+
+
+							
+							 img:hover{
+								color:#F70303;
+							}
+
+							.button.demo{
+								border: none;
+								padding: 18px 15px;
+								background:#0a0b0b;
+								display:inline-block;
+								margin: 15px 15px;	
+								
+							    height: 19px;
+							    line-height: 0px;
+							    bottom: 0;
+							    font-size: 14px;
+							    font-weight: 400;
+							    padding: 13px 23px;
+							    border: 1px solid #FFF;
+							    color: #fff;
+							    background: transparent;
+							    -webkit-transition: :all .3s ease;
+							    -moz-transition: all .3s ease;
+							    -o-transition: all .3s ease;
+							    transition: all .3s ease;
+							    -webkit-border-radius: 3px;
+							    -moz-border-radius: 3px;
+							    border-radius: 3px;
+							    cursor: pointer;
+
+							}
+
+							.button.demo:hover{
+								color:#fff;
+								background:#2c2c2c;
+							}
+
+							.button:hover,
+							.button:active,
+							.button:focus {
+							 background:#fff;
+							 color:#0a0b0b;
+							}
+
+							.contenedor{
+								background-color: #151515;
+								text-decoration: none;
+							}
+							.contenedor1{
+								background-color: #191e20;
+								display: none;
+								height: 500px;
+							}		
+
+							.manuales{							
+								height: 250px;
+							}	
+
+							.videos{							
+								height: 350px;
+							}				
+			
+						</style>
+						
+
+						
+
+					</div>
+					<!-- FIN contenido recursivo para seecciones de desarrollo de software -->
+
+					</br>
+
+					<div class="clearfix"></div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!-- 404 -->
+
+	</div>
+
+	<div class="categories-section">
+		<div class="container">
+	   		<div class="footer-grids">
+				<div class="col-md-4 up wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+ 					<h3>Próximos Eventos</h3>
+ 					<div class="up1">
+ 						<div class="up-img">
+							<img src="../images/im1.jpg">
+						</div>
+
+						 <div class="up-text">
+							 <a href="#">sagittis magna</a>
+							 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						 </div>
+
+						 <div class="clearfix"></div>
+				    </div>
+
+					<div class="up1">
+						<div class="up-img">
+							<img src="../images/im2.jpg">
+						</div>
+
+						<div class="up-text">
+							<a href="#">Integer molest</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</div>
+
+						<div class="clearfix"></div>
+
+					</div>
+
+	 				<div class="up1">
+ 						<div class="up-img">
+							<img src="../images/im3.jpg">
+						</div>
+
+						<div class="up-text">
+							 <a href="#">Fusce suscipit</a>
+							 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</div>
+
+						<div class="clearfix"></div>
+				    </div>
+	 			</div>
+
+				<div class="col-md-4 cat wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+	   				<h3>Categorias</h3>
+				  	<ul>
+						<li>Biometria y Seguridad.</li>
+						<li>Productos y Software</li>
+						<li>Servicios de Mantenimiento</li>
+						<li>Mineria</li>	
+					</ul>
+				</div>
+
+	 			<div class="col-md-4 cont wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+					<h3>Contactos</h3>
+					<ul>
+								<li><i class="phone"></i></li>
+								<li><p>+51 987 789 722</p>
+								<p>+51 993 026 679</p>
+								<p>+51 084 245 844</p>
+								</li>
+							</ul>
+					<ul>
+					    <li><i class="smartphone"></i></li>
+						<li><p>Av. la Cultura 772, oficina 205, </p>
+						<p>	2do nivel, Esquina del paradero Amaura</p>
+						<p> Cusco, Perú</p></li>
+					</ul>
+					<ul>
+						<li><i class="message"></i></li>
+						<li><a href="mailto:example@mail.com">Informes@itdecsa.com</a>
+				        <a href="mailto:example@mail.com">rayedgard@itdecsa.com</a></li>
+					</ul>
+				</div>
+
+				 <div class="clearfix"></div>
+	 		</div>
+	    </div>
+	</div>
+   <div class="footer-section">
+  	    <div class="container">
+  			<div class="footer-top">
+ 				<div class="social-icons wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+					<a href="https://www.facebook.com/pages/Informatic-Technology-Development-Corporation-SA/157087624356221?fref=ts" target="_blank"><i class="icon1"></i></a>
+					<a href="#"><i class="icon2"></i></a>
+					<a href="https://plus.google.com/104763782397023638437/posts" target="_blank"><i class="icon3"></i></a>
+					
+				</div>
+			</div>
+
+			<div class="footer-middle wow fadeInDown Big animated animated" data-wow-delay="0.4s">
+				<div class="bottom-menu">
+					<ul>
+						<li><a href="../index.php">Inicio</a></li>
+						<li><a href="quienessomos.php">Quienes Somos</a></li>
+						<li><a href="servicios.php">Servicios</a></li>
+						<li><a href="productos.php">Productos</a></li>
+						
+						<li><a href="contactos.php">Contactos</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer-bottom wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+				<p> Copyright &copy;2015  All rights  Reserved </p>
+			</div>
+
+			<script type="text/javascript">
+				$(document).ready(function() {
+					/*
+					var defaults = {
+			  			containerID: 'toTop', // fading element id
+						containerHoverID: 'toTopHover', // fading element hover id
+						scrollSpeed: 1200,
+						easingType: 'linear' 
+			 		};
+					*/
+					
+					$().UItoTop({ easingType: 'easeOutQuart' });
+					
+				});
+			</script>
+			<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+		</div>
+   </div>
+</body>
+</html> 
