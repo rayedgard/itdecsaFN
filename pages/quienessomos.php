@@ -191,9 +191,9 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
                            
                                 <span >Designer</span>
                                 <ul class="social">
-                                    <li><a href="#" class="fa fa-facebook" style="color:#FF2900;"></a></li>
-                                    <li><a href="#" class="fa fa-twitter" style="color:#FF2900;"></a></li>
-                                    <li><a href="#" class="fa fa-linkedin" style="color:#FF2900;"></a></li>
+                                    <li><a href="#" class="fa fa-facebook" style="color:#FF5500;"></a></li>
+                                    <li><a href="#" class="fa fa-twitter" style="color:#FF5500;"></a></li>
+                                    <li><a href="#" class="fa fa-linkedin" style="color:#FF5500;"></a></li>
                                 </ul>
                             </div> <!-- /.team-overlay -->
                         </div> <!-- /.member-thumb -->
@@ -221,9 +221,9 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
                            
                                 <span >Designer</span>
                                 <ul class="social">
-                                    <li ><a href="#" class="fa fa-facebook" style="color:#FF2900;"></a></li>
-                                    <li><a href="#" class="fa fa-twitter" style="color:#FF2900;"></a></li>
-                                    <li><a href="#" class="fa fa-linkedin" style="color:#FF2900;"></a></li>
+                                    <li ><a href="#" class="fa fa-facebook" style="color:#FF5500;"></a></li>
+                                    <li><a href="#" class="fa fa-twitter" style="color:#FF5500;"></a></li>
+                                    <li><a href="#" class="fa fa-linkedin" style="color:#FF5500;"></a></li>
                                 </ul>
                             </div> <!-- /.team-overlay -->
                         </div> <!-- /.member-thumb -->
@@ -272,7 +272,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 			  text-align: center;
 			  top: 0;
 			  left: 0;
-			  background-color: #FF2900;
+			  background-color: #FF5500;
 			  color: white;
 			  opacity: 0;
 			  visibility: hidden;
@@ -308,7 +308,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 			  height: 36px;
 			  background-color: white;
 			  line-height: 40px;
-			  color: #FF2900;
+			  color: #FF5500;
 			  border-radius: 18px;
 			  -webkit-border-radius: 18px;
 			  -moz-border-radius: 18px;
@@ -337,9 +337,9 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
                            
                                 <span >Developer</span>
                                 <ul class="social">
-                                    <li><a href="https://www.facebook.com/luisalberto.romancruz.5"  class="fa fa-facebook" target="_blank" style="color:#FF2900;"></a></li>
-                                    <li><a href="#" class="fa fa-twitter" style="color:#FF2900;"></a></li>
-                                    <li><a href="#" class="fa fa-linkedin" style="color:#FF2900;"></a></li>
+                                    <li><a href="https://www.facebook.com/luisalberto.romancruz.5"  class="fa fa-facebook" target="_blank" style="color:#FF5500;"></a></li>
+                                    <li><a href="#" class="fa fa-twitter" style="color:#FF5500;"></a></li>
+                                    <li><a href="#" class="fa fa-linkedin" style="color:#FF5500;"></a></li>
                                 </ul>
                             </div> <!-- /.team-overlay -->
                         </div> <!-- /.member-thumb -->

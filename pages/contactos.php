@@ -128,218 +128,271 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 <!--End of Zopim Live Chat Script-->
 </head>
 <body style="background-color:#000000;" >
-  <div class="header1 head-top " id="home">
+    <div class="header1 head-top " id="home">
 		<div class="container">
-		<div class="header-top">
-		<div class="top-menu">
-		<span class="menu"><img src="../images/nav.png" alt=""/> </span>
+			<div class="header-top">
 
-    <ul>
-   	<li><a href="../index.php">Inicio</a></li><label>/</label>
-    <li><a href="quienessomos.php">Quienes Somos</a></li><label>/</label>
-  	<li><a href="servicios.php">Servicios</a></li><label>/</label>
-	<li><a href="productos.php">Productos</a></li><label>/</label>
-   	
-   	<li><a href="contactos.php" class="active">Contactos</a></li>
-    </ul>
-     <!-- script for menu -->
+				<div class="top-menu">
+					<span class="menu">
+						<img src="../images/nav.png" alt=""/>
+					</span>
+
+				    <ul>
+					   	<li><a href="../index.php">Inicio</a></li><label>/</label>
+					    <li><a href="quienessomos.php">Quienes Somos</a></li><label>/</label>
+					  	<li><a href="servicios.php">Servicios</a></li><label>/</label>
+						<li><a href="productos.php">Productos</a></li><label>/</label>   	
+					   	<li><a href="contactos.php" class="active">Contactos</a></li>
+				    </ul>
+     				<!-- script for menu -->
 				
-		 <script>
-		 $("span.menu").click(function(){
-		 $(".top-menu ul").slideToggle("slow" , function(){
-		 });
-		 });
-		 </script>
-	<!-- //script for menu -->
-     </div>
+					 <script>
+					 $("span.menu").click(function(){
+					 $(".top-menu ul").slideToggle("slow" , function(){
+					 });
+					 });
+					 </script>
+					<!-- //script for menu -->
+     			</div>
 
-     <style type="text/css">
-							span.menu {
-							  display: none;
-							}
+    			<style type="text/css">
+					span.menu {
+					  display: none;
+					}
 
-							@media only screen and (max-width:648px) {
-								span.menu {
-								display: block;
-								 cursor: pointer;
-								 margin: 14px 10px;
-								}
-							}				
-			            	</style>
-	
-
-		<div class="clearfix"></div>
-	
+					@media only screen and (max-width:648px) {
+						span.menu {
+						display: block;
+						 cursor: pointer;
+						 margin: 14px 10px;
+						}
+					}				
+			    </style>	
+				<div class="clearfix"></div>	
+			</div>
+		</div>
 	</div>
 
-		</div>
-</div>
-		<div class="maine">
+	<div class="maine">
 		<div class="container">
 			<div class="contact">
-					<div class="contact-head text-center">
-						<h3>Contáctanos</h3>
-						</br>
-					</div>		
+				<div class="contact-head text-center">
+					<h3>Contáctanos</h3>
+					</br>
+				</div>		
 							
-					<div class="contact-grids">
+				<div class="contact-grids">
 
-						<div class="contact-map wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-													
-							<div id="map" style="width:100%;"></div>					 
+					<div class="contact-map wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+						<div id="map" style="width:100%">
+						</div> 
+					</div>
+
+
+
+					<!----- contact-form ------>
+					<div class="contact-form wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+						<form>
+
+							<div class="contact-form-row">
+								<div>
+									<span>Nombre :</span>
+									<input type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+								</div>
+								<div>
+									<span>Correo :</span>
+									<input type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+								</div>
+								<div>
+									<span>Asunto :</span>
+									<input type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+								</div>								
+							</div>							
+
+							<div class="contact-form-row2 wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+								<span>Mensaje :</span>
+								<textarea> </textarea>
+							</div>
+
+							<input type="submit" value="Enviar">
+
+						</form>
+					</div>
+					<div class="formu3">
+					
+					
+						<h3 class="suportt">Soporte Tecnico</h3 ></br>
+						<p class="suporttt">- Soporte@itdecsa.com</p></br></br>
+
+						<h3 class="suportt">Ventas y Servicios</h3 ></br>
+						<p class="suporttt">- ventas@itdecsa.com</p></br></br>
+
+						<h3 class="suportt">Información General</h3 ></br>
+						<p class="suporttt">-informes@itdecsa.com</p>
+
 						
 
-						</div>
-						<!----- contact-form ------>
-						<div class="contact-form wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-							<form>
-								<div class="contact-form-row">
-									<div>
-										<span>Nombre :</span>
-										<input type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
-									</div>
-									<div>
-										<span>Correo :</span>
-										<input type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
-									</div>
-									<div>
-										<span>Asunto :</span>
-										<input type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
-									</div>
-									<div class="clearfix"> </div>
-								</div>
-								
+						<style type="text/css">
+						.suportt {
+							color:#FF5500;
 
-								<div class="contact-form-row2 wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-									<span>Mensaje :</span>
-									<textarea> </textarea>
-								</div>
+						}
+						.suporttt {
+							color:#fff;
 
-								<input type="submit" value="Enviar">
-							</form>
-						</div>
+						}
+						</style>
+						
+					</div>
+
+
+					<div class="formu3" >
+					
+					
+						<h3 class="suportt">Visitas</h3 ></br >
+						<script type="text/javascript" src="//ra.revolvermaps.com/0/0/1.js?i=0qn10ctxeiw&amp;s=250&amp;m=5&amp;v=false&amp;r=false&amp;b=000000&amp;n=false&amp;c=ff0000" async="async"></script>
+
+						
+
+					
 						
 					</div>
 					
+				</div>					
 			</div>	
 		</div>
 	</div>
 
+	<div class="categories-section">
+		<div class="container">
+		    <div class="footer-grids">
+			    <div class="col-md-4 up wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+	 				<h3>Próximos Eventos</h3>
+	 				<div class="up1">
+						<div class="up-img">
+						     <img src="../images/im1.jpg">
+						</div>
+
+					    <div class="up-text">
+							<a href="#">sagittis magna</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</div>
+
+						<div class="clearfix"></div>
+       			    </div>
+
+					<div class="up1">
+						<div class="up-img">
+						    <img src="../images/im2.jpg">
+						</div>
+
+			    		<div class="up-text">
+							<a href="#">Integer molest</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					 	</div>
+						 <div class="clearfix"></div>
+			        </div>
 
 
-		   <div class="categories-section">
-		   <div class="container">
-		   <div class="footer-grids">
-			<div class="col-md-4 up wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-	  <h3>Próximos Eventos</h3>
-	  <div class="up1">
-	 <div class="up-img">
-	 <img src="../images/im1.jpg">
-	</div>
-     <div class="up-text">
-		 <a href="#">sagittis magna</a>
-		 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-		 </div>
-		 <div class="clearfix"></div>
-         </div>
-		  <div class="up1">
-	 <div class="up-img">
-	 <img src="../images/im2.jpg">
-	</div>
-     <div class="up-text">
-		 <a href="#">Integer molest</a>
-		 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-		 </div>
-		 <div class="clearfix"></div>
-         </div>
-		  <div class="up1">
-	 <div class="up-img">
-	 <img src="../images/im3.jpg">
-	</div>
-     <div class="up-text">
-		 <a href="#">Fusce suscipit</a>
-		 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-		 </div>
-		 <div class="clearfix"></div>
-         </div>
-		 </div>
-		 <div class="col-md-4 cat wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-		   <h3>Categorias</h3>
-		   <ul>
-	<li>Biometria y Seguridad.</li>
-	<li>Productos y Software</li>
-	<li>Servicios de Mantenimiento</li>
-	<li>Mineria</li>	
-	</ul>
-	</div>
-		 <div class="col-md-4 cont wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-		 <h3>Contactos</h3>
-		 <ul>
-								<li><i class="phone"></i></li>
-								<li><p>+51 987 789 722</p>
-								<p>+51 993 026 679</p>
-								<p>+51 084 245 844</p>
-								</li>
-							</ul>
-		<ul>
-	   <li><i class="smartphone"></i></li>
-		<li><p>Av. la Cultura 772, oficina 205, </p>
-		<p>2do nivel, Esquina del paradero Amaura</p>
-		<p> Cusco, Perú</p></li>
-		</ul>
-		<ul>
-		<li><i class="message"></i></li>
-		<li><a href="mailto:example@mail.com">Informes@itdecsa.com</a>
-         <a href="mailto:example@mail.com">rayedgard@itdecsa.com</a></li>
-		</ul>
-		</div>
-		 <div class="clearfix"></div>
-		  </div>
-		   </div>
-		   </div>
-		   <div class="footer-section">
-		   <div class="container">
-		   <div class="footer-top">
-		 <div class="social-icons wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-		<a href="https://www.facebook.com/pages/Informatic-Technology-Development-Corporation-SA/157087624356221?fref=ts" target="_blank"><i class="icon1"></i></a>
-		<a href="#"><i class="icon2"></i></a>
-		<a href="https://plus.google.com/104763782397023638437/posts" target="_blank"><i class="icon3"></i></a>
-		
-		</div>
-		</div>
-		 <div class="footer-middle wow fadeInDown Big animated animated" data-wow-delay="0.4s">
-		 <div class="bottom-menu">
-      <ul>
-   	<li><a href="../index.php">Inicio</a></li>
-    <li><a href="quienessomos.php">Quienes Somos</a></li>
-  	<li><a href="servicios.php">Servicios</a></li>
-	<li><a href="productos.php">Productos</a></li>
-   	
-   	<li><a href="contactos.php">Contactos</a></li>
-    </ul>
-		</div>
-		</div>
-		<div class="footer-bottom wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-									<p> Copyright &copy;2015  All rights  Reserved </p>
-									</div>
-					<script type="text/javascript">
-						$(document).ready(function() {
-							/*
-							var defaults = {
-					  			containerID: 'toTop', // fading element id
-								containerHoverID: 'toTopHover', // fading element hover id
-								scrollSpeed: 1200,
-								easingType: 'linear' 
-					 		};
-							*/
-							
-							$().UItoTop({ easingType: 'easeOutQuart' });
-							
-						});
-					</script>
-				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+					<div class="up1">
+						<div class="up-img">
+							<img src="../images/im3.jpg">
+						</div>
+
+			    		<div class="up-text">
+							<a href="#">Fusce suscipit</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					 	</div>
+					 	<div class="clearfix"></div>
+			        </div>
+		 		</div>
+
+		 		<div class="col-md-4 cat wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+		   			<h3>Categorias</h3>
+				    <ul>
+						<li>Biometria y Seguridad.</li>
+						<li>Productos y Software</li>
+						<li>Servicios de Mantenimiento</li>
+						<li>Mineria</li>	
+					</ul>
+
 				</div>
-		   </div>
 
- </body>
+				<div class="col-md-4 cont wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+		 		<h3>Contactos</h3>
+					<ul>
+						<li><i class="phone"></i></li>
+						<li><p>+51 987 789 722</p>
+						<p>+51 993 026 679</p>
+						<p>+51 084 245 844</p>
+						</li>
+					</ul>
+
+					<ul>
+					    <li><i class="smartphone"></i></li>
+						<li><p>Av. la Cultura 772, oficina 205, </p>
+						<p>2do nivel, Esquina del paradero Amaura</p>
+						<p> Cusco, Perú</p></li>
+					</ul>
+
+					<ul>
+						<li><i class="message"></i></li>
+						<li><a href="mailto:example@mail.com">Informes@itdecsa.com</a>
+				        <a href="mailto:example@mail.com">rayedgard@itdecsa.com</a></li>
+					</ul>
+				</div>
+
+				<div class="clearfix"></div>
+		    </div>
+		</div>
+	</div>
+
+	<div class="footer-section">
+		<div class="container">
+
+		    <div class="footer-top">
+		 		<div class="social-icons wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+					<a href="https://www.facebook.com/pages/Informatic-Technology-Development-Corporation-SA/157087624356221?fref=ts" target="_blank"><i class="icon1"></i></a>
+					<a href="#"><i class="icon2"></i></a>
+					<a href="https://plus.google.com/104763782397023638437/posts" target="_blank"><i class="icon3"></i></a>		
+			    </div>
+			</div>
+
+			<div class="footer-middle wow fadeInDown Big animated animated" data-wow-delay="0.4s">
+		 		<div class="bottom-menu">
+				    <ul>
+					   	<li><a href="../index.php">Inicio</a></li>
+					    <li><a href="quienessomos.php">Quienes Somos</a></li>
+					  	<li><a href="servicios.php">Servicios</a></li>
+						<li><a href="productos.php">Productos</a></li>					   	
+					   	<li><a href="contactos.php">Contactos</a></li>
+				    </ul>
+				</div>
+			</div>
+
+			<div class="footer-bottom wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+				<p> Copyright &copy;2015  All rights  Reserved </p>
+			</div>
+				<script type="text/javascript">
+					$(document).ready(function() {
+						/*
+						var defaults = {
+				  			containerID: 'toTop', // fading element id
+							containerHoverID: 'toTopHover', // fading element hover id
+							scrollSpeed: 1200,
+							easingType: 'linear' 
+				 		};
+						*/
+						
+						$().UItoTop({ easingType: 'easeOutQuart' });
+						
+					});
+				</script>
+
+				<a href="#" id="toTop" style="display: block;">
+				 	<span id="toTopHover" style="opacity: 1;"> </span>
+				</a>
+		</div>
+	</div>
+</body>
 </html> 
