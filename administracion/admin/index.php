@@ -142,23 +142,34 @@ $p = desencripta($_GET['p'],"rayedgard");
 $q = desencripta($_GET['q'],"rayedgard");
 
   if($p==1)
-  {$titulo="Gestión de Perfiles";}
+  {$titulo="Gestión de Perfiles del trabajador";}
   if($p==2)
-  {$titulo="Gestión de Uduarios";}
+  {$titulo="Gestión de Usuarios";}
   if($p==3)
   {$titulo="Gestión de Categorias";}
   if($p==4)
   {$titulo="Gestión de Productos";}
   if($p==5)
-  {$titulo="Gestión de Perfiles del Personal";}
+  {$titulo="Gestión de Videos";}
   if($p==6)
-  {$titulo="Gestión de Paquetes Turísticos";}
+  {$titulo="Gestión de Fotografias";}
   if($p==7)
-  {$titulo="Gestión de Destinos Turísticos";}
+  {$titulo="Gestión de Publicidad";}
   if($p==8)
-  {$titulo="Gestion de Fotografias";}
+  {$titulo="Gestion de Socios Estratégicos";}
   if($p==9)
+  {$titulo="Gestión de Clientes";}
+  if($p==10)
+  {$titulo="Gestión de Sistemas";}
+  if($p==11)
+  {$titulo="Gestión de Tecnologías";}
+  if($p==12)
+  {$titulo="Gestión de Noticias";}
+  if($p==13)
   {$titulo="Gestión de Eventos";}
+
+
+
 
  
   $p1=encripta('1','rayedgard');
@@ -265,10 +276,10 @@ $q = desencripta($_GET['q'],"rayedgard");
                             <a href="#"><i class="fa fa-indent nav_icon"></i>Productos<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="graphs.html">Categorias</a>
+                                    <a href="index.php?p=<?php echo encripta('3','rayedgard');?>&q=<?php echo encripta('1','rayedgard');?>">Categorias</a>
                                 </li>
                                 <li>
-                                    <a href="typography.html">Productos</a>
+                                    <a href="index.php?p=<?php echo encripta('4','rayedgard');?>&q=<?php echo encripta('1','rayedgard');?>">Productos</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -277,29 +288,60 @@ $q = desencripta($_GET['q'],"rayedgard");
                             <a href="#"><i class="fa fa-envelope nav_icon"></i>Multimedia<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="inbox.html">Videos</a>
+                                    <a href="index.php?p=<?php echo encripta('5','rayedgard');?>&q=<?php echo encripta('1','rayedgard');?>">Videos</a>
                                 </li>
                                 <li>
-                                    <a href="compose.html">Fotos</a>
+                                    <a href="index.php?p=<?php echo encripta('6','rayedgard');?>&q=<?php echo encripta('1','rayedgard');?>">Fotografias</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="widgets.html"><i class="fa fa-flask nav_icon"></i>Widgets</a>
+                          
+                            <a href="#"><i class="fa fa-flask nav_icon"></i>Publicidad<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="index.php?p=<?php echo encripta('7','rayedgard');?>&q=<?php echo encripta('1','rayedgard');?>">Publicidad - Index</a>
+                                </li>
+                                <li>
+                                    <a href="index.php?p=<?php echo encripta('8','rayedgard');?>&q=<?php echo encripta('1','rayedgard');?>">Socios Estratégicos</a>
+                                </li>
+                                <li>
+                                    <a href="index.php?p=<?php echo encripta('9','rayedgard');?>&q=<?php echo encripta('1','rayedgard');?>">Clientes</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+
+
+
                         </li>
                          <li>
                             <a href="#"><i class="fa fa-check-square-o nav_icon"></i>Servicios<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="forms.html">Software</a>
+                                    <a href="index.php?p=<?php echo encripta('10','rayedgard');?>&q=<?php echo encripta('1','rayedgard');?>">Sistemas Desarrollados</a>
                                 </li>
                                 <li>
-                                    <a href="validation.html">Tecnologias</a>
+                                    <a href="index.php?p=<?php echo encripta('11','rayedgard');?>&q=<?php echo encripta('1','rayedgard');?>">Tecnologías</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
+                      
+                        <li>
+                            <a href="#"><i class="fa fa-sitemap fa-fw nav_icon"></i>Actualidad<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="index.php?p=<?php echo encripta('12','rayedgard');?>&q=<?php echo encripta('1','rayedgard');?>">Noticias</a>
+                                </li>
+                                <li>
+                                    <a href="index.php?p=<?php echo encripta('13','rayedgard');?>&q=<?php echo encripta('1','rayedgard');?>">Eventos</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+
+
                         <li>
                             <a href="#"><i class="fa fa-table nav_icon"></i>Tables<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
@@ -309,18 +351,8 @@ $q = desencripta($_GET['q'],"rayedgard");
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
-                        <li>
-                            <a href="#"><i class="fa fa-sitemap fa-fw nav_icon"></i>Eventos<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="media.html">Noticias</a>
-                                </li>
-                                <li>
-                                    <a href="login.html">Eventos</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
+
+
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
@@ -401,15 +433,15 @@ $q = desencripta($_GET['q'],"rayedgard");
       case 2:
         if($q==1)
         {
-            include("listarNoticias.php");
+            include("listarUsuario.php");
         }
         if($q==2)
         {
-            include("nuevoNoticias.php");
+            include("nuevoUsuario.php");
         }
         if($q==3)
         {
-            include("modificarNoticias.php");
+            include("modificaUsuario.php");
         }
          if($q==4)
         {
@@ -420,15 +452,15 @@ $q = desencripta($_GET['q'],"rayedgard");
       case 3:
         if($q==1)
         {
-        include("listarPublicidad.php");
+        include("listarCategoria.php");
         }
         if($q==2)
         {
-          include("nuevoPublicidad.php");
+          include("nuevoCategoria.php");
         }
         if($q==3)
         {
-            include("modificarPublicidad.php");
+            include("modificaCategoria.php");
         }
           if($q==4)
         {
@@ -440,16 +472,16 @@ $q = desencripta($_GET['q'],"rayedgard");
       case 4:
         if($q==1)
         {
-        include("listarUsuarios.php");
+        include("listarProducto.php");
         }
         if($q==2)
         {
         
-        include("nuevoUsuario.php");
+        include("nuevoProducto.php");
         }
         if($q==3)
         {
-            include("modificarUsuario.php");
+            include("modificaProducto.php");
         }
           if($q==4)
         {
@@ -461,16 +493,16 @@ $q = desencripta($_GET['q'],"rayedgard");
      case 5:
         if($q==1)
         {
-        include("listarPerfil.php");
+        include("listarVideo.php");
         }
         if($q==2)
         {
         
-        include("nuevoPerfil.php");
+        include("nuevoVideo.php");
         }
         if($q==3)
         {
-            include("modificarPerfil.php");
+            include("modificaVideo.php");
         }
           if($q==4)
         {
@@ -481,16 +513,16 @@ $q = desencripta($_GET['q'],"rayedgard");
       case 6:
         if($q==1)
         {
-        include("listarPaquete.php");
+        include("listarFoto.php");
         }
         if($q==2)
         {
         
-        include("nuevoPaquete.php");
+        include("nuevoFoto.php");
         }
         if($q==3)
         {
-            include("modificarPaquete.php");
+            include("modificaFoto.php");
         }
          if($q==4)
         {
@@ -502,16 +534,16 @@ $q = desencripta($_GET['q'],"rayedgard");
       case 7:
         if($q==1)
         {
-        include("listarDestino.php");
+        include("listarPublicidad.php");
         }
         if($q==2)
         {
         
-        include("nuevoDestino.php");
+        include("nuevoPublicidad.php");
         }
         if($q==3)
         {
-            include("modificarDestino.php");
+            include("modificaPublicidad.php");
         }
          if($q==4)
         {
@@ -522,16 +554,16 @@ $q = desencripta($_GET['q'],"rayedgard");
       case 8:
         if($q==1)
         {
-        include("listarCategoriaFotos.php");
+        include("listarSocio.php");
         }
         if($q==2)
         {
         
-        include("nuevoCategoriaFotos.php");
+        include("nuevoSocio.php");
         }
         if($q==3)
         {
-            include("modificarCategoriaFotos.php");
+            include("modificaSocio.php");
         }
         if($q==4)
         {
@@ -543,6 +575,87 @@ $q = desencripta($_GET['q'],"rayedgard");
        case 9:
         if($q==1)
         {
+        include("listarCliente.php");
+        }
+        if($q==2)
+        {
+        
+        include("nuevoCliente.php");
+        }
+        if($q==3)
+        {
+            include("modificaCliente.php");
+        }
+        if($q==4)
+        {
+            include("mensaje.php");
+        }
+      
+      break;  
+      
+      case 10:
+        if($q==1)
+        {
+        include("listarSistema.php");
+        }
+        if($q==2)
+        {
+        
+        include("nuevoSistema.php");
+        }
+        if($q==3)
+        {
+            include("modificaSistema.php");
+        }
+        if($q==4)
+        {
+            include("mensaje.php");
+        }
+      
+      break;  
+      case 11:
+        if($q==1)
+        {
+        include("listarTecnologia.php");
+        }
+        if($q==2)
+        {
+        
+        include("nuevoTecnologia.php");
+        }
+        if($q==3)
+        {
+            include("modificaTecnologia.php");
+        }
+        if($q==4)
+        {
+            include("mensaje.php");
+        }
+      
+      break; 
+      case 12:
+        if($q==1)
+        {
+        include("listarNoticia.php");
+        }
+        if($q==2)
+        {
+        
+        include("nuevoNoticia.php");
+        }
+        if($q==3)
+        {
+            include("modificaNoticia.php");
+        }
+        if($q==4)
+        {
+            include("mensaje.php");
+        }
+      
+      break;  
+       case 13:
+        if($q==1)
+        {
         include("listarEvento.php");
         }
         if($q==2)
@@ -552,7 +665,7 @@ $q = desencripta($_GET['q'],"rayedgard");
         }
         if($q==3)
         {
-            include("modificarEvento.php");
+            include("modificaEvento.php");
         }
         if($q==4)
         {
@@ -560,7 +673,6 @@ $q = desencripta($_GET['q'],"rayedgard");
         }
       
       break;  
-      
   
     } 
   }

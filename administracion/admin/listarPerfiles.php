@@ -118,11 +118,12 @@ while($row2 = mysql_fetch_array($resultado))
 							<tr >
 								<th width="10">#</th>
 								<th>Nombres</th>
-								<th width="15">Estado</th>
-								<th width="15">Modificar</th>
-								<th width="15">Activar</th>
-								<th width="15">Desactivar</th>
-								<th width="15">Eliminar</th>
+								<th width="32">         </th>
+								<th width="60">Estado</th>
+								<th width="70">Modificar</th>
+								<th width="60">Activar</th>
+								<th width="70">Desactivar</th>
+								<th width="70">Eliminar</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -134,9 +135,10 @@ while($row2 = mysql_fetch_array($resultado))
 							<tr <?php if($cont%2==0){echo 'class="intermedio"';}   ?> >
 								<td><?php echo $cont;?></td>
 								<td ><?php echo $nombre[$j];?></td>
-								<td  <?php if($estado[$j]==1){echo 'class="minimo"';} ?>><?php if($estado[$j]==1){echo 'Desactivo';} if($estado[$j]==0){echo 'Activo';} ?></td>
+								<td  <?php if($estado[$j]==1){echo 'class="minimo"';} ?>></td>
+								<td ><?php if($estado[$j]==1){echo 'Desactivo';} if($estado[$j]==0){echo 'Activo';} ?></td>
 								<td>
-									 <a href="principal.php?p=<?php echo $p;?>&q=3&cod=<?php echo $id[$j];?>&nick=<?php echo $nick1;?>" title="MODIFICAR"><img src="../images/modificar.png"></a>
+									<a href="index.php?p=<?php echo $p;?>&q=<?php echo encripta('3','rayedgard');?>&cod=<?php echo encripta($id[$j],'rayedgard');?>" title="MODIFICAR"><img src="../images/modificar.png"></a>
     							</td>
 								<td>
 									<a href="index.php?p=<?php echo $p;?>&q=<?php echo $q?>&e=<?php echo encripta('0','rayedgard');?>&cod=<?php echo encripta($id[$j],'rayedgard');?>" title="ACTIVAR"><img src="../images/activar.png"></a>
