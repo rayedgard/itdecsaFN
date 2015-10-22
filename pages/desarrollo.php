@@ -177,11 +177,11 @@ border-bottom-left-radius:2em;">
 										$link = Conectarse();
 
 										//CONESTA CONSULTA CAPTURAMOS EL MAXIMO Y ULTIMO DE LOS VIDEOS AGREGADOS 
-										$consulta5 = mysql_query("SELECT max(id)  FROM video",$link);
+										$consulta5 = mysql_query("SELECT max(id)  FROM tvideos where estado=0",$link);
 										$id= mysql_fetch_array($consulta5);
 
 
-										$consulta4 = mysql_query("SELECT linkvideo  FROM video WHERE id='$id[0]' ",$link);
+										$consulta4 = mysql_query("SELECT link  FROM tvideos WHERE id='$id[0]' ",$link);
 										$row4= mysql_fetch_array($consulta4);
 										?>
 							    
@@ -205,7 +205,7 @@ border-bottom-left-radius:2em;">
 
 									<div class="contMin">
 									    <?php
-											$consulta3="SELECT nombre, linkvideo FROM video WHERE eliminar=0 ORDER BY id DESC"; 
+											$consulta3="SELECT nombre, link FROM tvideos WHERE estado=0 ORDER BY id DESC"; 
 											$resultado3 = mysql_query($consulta3,$link);
 											//nombre del titulo
 												$titulo3=array();

@@ -14,7 +14,8 @@ html, body{
     font-size: 100%;
   	background:#000;
   	overflow-x: hidden;
-}
+    margin-top:-11px; 
+  }
 body a{
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
@@ -223,7 +224,7 @@ body a{
   font-family: 'Roboto', sans-serif;
 }
 nav.top1.navbar.navbar-default.navbar-static-top {
-  background-color:rgb(6, 217, 149);
+  background-color:rgb(255, 63, 0);
   font-family: 'Roboto', sans-serif;
 }
 .navbar-default .navbar-brand {
@@ -340,7 +341,7 @@ ul.dropdown {
 }
 .wrapper-dropdown-5 i.dropdown-icon{
   width: 15px;
-  height: 12px;
+  height: 5px;
   display: block;
   background: url(../images/up-down.png) no-repeat -3px -13px;
   float: left;
@@ -825,6 +826,7 @@ i.dollar1{
   color: #fff;
   font-weight: 600;
   padding: 0em 0 0.5em 0;
+  
 }
 .world-map p {
   float: right;
@@ -2889,5 +2891,4 @@ padding:10px 3px 10px 3px;
   background: #E1E2E3;
 }
 /*------fin tablas-------------*/
-
 

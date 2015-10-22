@@ -5,12 +5,7 @@ if(isset($_SESSION['idname']))
 else
 { echo "<meta http-equiv ='refresh' content ='0;url=../login.php?cs=1'>"; } 
 ?>
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -72,7 +67,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     theme_advanced_toolbar_align : "left",
     theme_advanced_statusbar_location : "bottom",
     theme_advanced_resizing : true,
-    theme_advanced_width : 800,
+  
 
 
     // Example content CSS (should be your site CSS)
@@ -129,14 +124,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 
-
-
-
 <?php
 include("../../conexion.php");
 include("../funciones.php");
 $link = Conectarse();
-//$td=$_GET['td'];
 
 $p = desencripta($_GET['p'],"rayedgard");
 $q = desencripta($_GET['q'],"rayedgard");
@@ -170,17 +161,6 @@ $q = desencripta($_GET['q'],"rayedgard");
 
 
 
-
- 
-  $p1=encripta('1','rayedgard');
-  $p2=encripta('2','rayedgard');
-  $p3=encripta('3','rayedgard');
-  $p4=encripta('4','rayedgard');
-  $p5=encripta('5','rayedgard');
-  $p6=encripta('6','rayedgard');
-  $p7=encripta('7','rayedgard');
-
-
 ?>
 
 
@@ -198,21 +178,21 @@ $q = desencripta($_GET['q'],"rayedgard");
 
 <div id="wrapper">
      <!-- Navigation -->
-        <nav class="top1 navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+    <nav class="top1 navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0;">
+            
+
+            <!--//////////////ENCABEZADO Y TITULO/////////////////-->
             <div class="navbar-header">
-              
                 <a class="navbar-brand" href="index.html">Sistema de Administración de Contenidos</a>
             </div>
             <!-- /.navbar-header -->
         
 
 
-
+      <!--////////////////////////CODIGO PARA EL MENU DEL USUARIO///////////////////-->
       <!--CODIGO PARA EL MENU DEL USUARIO-->
       <ul class="nav navbar-nav navbar-right">
-
 			    <li class="dropdown">
-
 
 	        		<a href="#" class="dropdown-toggle avatar" data-toggle="dropdown"><img src="../images/1.png" alt=""/><span class="badge">9</span></a>
 	        		<ul class="dropdown-menu">
@@ -220,7 +200,7 @@ $q = desencripta($_GET['q'],"rayedgard");
 							    <strong>
                                     <?php echo $nombre; ?>
                                
-                                </strong>
+                   </strong>
     					 	  </li>
     						  <li class="m_2">
                     <a href="#"><i class="fa fa-user">  </i> Mi Perfil</a>
@@ -251,11 +231,12 @@ $q = desencripta($_GET['q'],"rayedgard");
 
 
 
-
+          <!--///////////////////////////MENU DEL SISTEMA//////////////////////-->
             <!--MENU DEL SISTEMA-->
 
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
+
                     <ul class="nav" id="side-menu">
                         <li>
                             <a href="index.html"><i class="fa fa-dashboard fa-fw nav_icon"></i>Inicio</a>
@@ -312,9 +293,9 @@ $q = desencripta($_GET['q'],"rayedgard");
                             </ul>
                             <!-- /.nav-second-level -->
 
-
-
                         </li>
+
+
                          <li>
                             <a href="#"><i class="fa fa-check-square-o nav_icon"></i>Servicios<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
@@ -352,15 +333,27 @@ $q = desencripta($_GET['q'],"rayedgard");
                             <!-- /.nav-second-level -->
                         </li>
 
-
                     </ul>
+
                 </div>
                 <!-- /.sidebar-collapse -->
             </div>
-            <!-- /.navbar-static-side -->
+            <!--CERRAMOS MENU DEL SISTEMA-->
+
+
+
         </nav>
-        <div id="page-wrapper">
-        <div class="col-md-12 graphs">
+
+
+
+
+
+
+
+
+
+<div id="page-wrapper">
+  <div class="col-md-12 graphs">
 	   <div class="xs">
   	 
       <!--FI MENU-->
@@ -369,28 +362,27 @@ $q = desencripta($_GET['q'],"rayedgard");
 
 
   
+          <!--////////////////PARA EL TITULO DE LOS FORMULARIOS////////////////-->
+            <div>
+              <a href="#" class="cabecera" ><?php echo $titulo; ?></a>
+              <div class="boton">
+                   <div>
+                    <a href="index.php?p=<?php echo encripta($p,'rayedgard');?>&q=<?php echo encripta('2','rayedgard');?>">
+                   <img src="../images/nuevo.png" width="40" />
+                   </a> </div>
+                   <div>
+                   <a href="index.php?p=<?php echo encripta($p,'rayedgard');?>&q=<?php echo encripta('2','rayedgard');?>">Nuevo</a></div>
 
-    <div>
+               </div>
+               <div class="boton">
+               <div><a href="index.php?p=<?php echo encripta($p,'rayedgard');?>&q=<?php echo encripta('1','rayedgard');?>">
+                   <img src="../images/listar.png" width="40" /></a> </div>
+                   <div><a href="index.php?p=<?php echo encripta($p,'rayedgard');?>&q=<?php echo encripta('1','rayedgard');?>">Listar</a></div>
 
-    <a href="#" class="cabecera" ><?php echo $titulo; ?></a>
-         <div class="boton">
-         <div>
-          <a href="index.php?p=<?php echo encripta($p,'rayedgard');?>&q=<?php echo encripta('2','rayedgard');?>">
-         <img src="../images/nuevo.png" width="40" />
-         </a> </div>
-         <div>
-         <a href="index.php?p=<?php echo encripta($p,'rayedgard');?>&q=<?php echo encripta('2','rayedgard');?>">Nuevo</a></div>
-
-     </div>
-     <div class="boton">
-         <div><a href="index.php?p=<?php echo encripta($p,'rayedgard');?>&q=<?php echo encripta('1','rayedgard');?>">
-         <img src="../images/listar.png" width="40" /></a> </div>
-         <div><a href="index.php?p=<?php echo encripta($p,'rayedgard');?>&q=<?php echo encripta('1','rayedgard');?>">Listar</a></div>
-
-     </div>
-    </div>
+               </div>
+            </div>
+            <!--////////////////FIN EL TITULO DE LOS FORMULARIOS////////////////-->
  
- 
 
 
 
@@ -398,309 +390,308 @@ $q = desencripta($_GET['q'],"rayedgard");
 
 
 
-<?php  // codigo para insertar las paginas 
+                <?php  // codigo para insertar las paginas 
 
 
 
-//para los mensajes de eliminacion
-  $s = $_GET['s'];
+                //para los mensajes de eliminacion
+                  $s = $_GET['s'];
 
 
-  $e = $_GET['e'];
- 
- 
-  if ($p) {
-    switch ($p) {
-      //
-      case 1:
-        if($q==1)
-        {
-            include("listarPerfiles.php");
-        }
-        if($q==2)
-        {
-              include("nuevoPerfil.php");
-        }
-        if($q==3)
-        {
-            include("modificaPerfil.php");
-        }
-          if($q==4)
-        {
-            include("mensaje.php");
-        }
-      break;
-      case 2:
-        if($q==1)
-        {
-            include("listarUsuario.php");
-        }
-        if($q==2)
-        {
-            include("nuevoUsuario.php");
-        }
-        if($q==3)
-        {
-            include("modificaUsuario.php");
-        }
-         if($q==4)
-        {
-            include("mensaje.php");
-        }
-      
-      break;
-      case 3:
-        if($q==1)
-        {
-        include("listarCategoria.php");
-        }
-        if($q==2)
-        {
-          include("nuevoCategoria.php");
-        }
-        if($q==3)
-        {
-            include("modificaCategoria.php");
-        }
-          if($q==4)
-        {
-            include("mensaje.php");
-        }
-       
-      
-      break;
-      case 4:
-        if($q==1)
-        {
-        include("listarProducto.php");
-        }
-        if($q==2)
-        {
-        
-        include("nuevoProducto.php");
-        }
-        if($q==3)
-        {
-            include("modificaProducto.php");
-        }
-          if($q==4)
-        {
-            include("mensaje1.php");
-        }
-      
-      break;
-      
-     case 5:
-        if($q==1)
-        {
-        include("listarVideo.php");
-        }
-        if($q==2)
-        {
-        
-        include("nuevoVideo.php");
-        }
-        if($q==3)
-        {
-            include("modificaVideo.php");
-        }
-          if($q==4)
-        {
-            include("mensaje.php");
-        }
-      
-      break;
-      case 6:
-        if($q==1)
-        {
-        include("listarFoto.php");
-        }
-        if($q==2)
-        {
-        
-        include("nuevoFoto.php");
-        }
-        if($q==3)
-        {
-            include("modificaFoto.php");
-        }
-         if($q==4)
-        {
-            include("mensaje.php");
-        }
-       
-      
-      break;
-      case 7:
-        if($q==1)
-        {
-        include("listarPublicidad.php");
-        }
-        if($q==2)
-        {
-        
-        include("nuevoPublicidad.php");
-        }
-        if($q==3)
-        {
-            include("modificaPublicidad.php");
-        }
-         if($q==4)
-        {
-            include("mensaje.php");
-        }
-      break;
-          
-      case 8:
-        if($q==1)
-        {
-        include("listarSocio.php");
-        }
-        if($q==2)
-        {
-        
-        include("nuevoSocio.php");
-        }
-        if($q==3)
-        {
-            include("modificaSocio.php");
-        }
-        if($q==4)
-        {
-            include("mensaje.php");
-        }
-      
-      break;  
-      
-       case 9:
-        if($q==1)
-        {
-        include("listarCliente.php");
-        }
-        if($q==2)
-        {
-        
-        include("nuevoCliente.php");
-        }
-        if($q==3)
-        {
-            include("modificaCliente.php");
-        }
-        if($q==4)
-        {
-            include("mensaje.php");
-        }
-      
-      break;  
-      
-      case 10:
-        if($q==1)
-        {
-        include("listarSistema.php");
-        }
-        if($q==2)
-        {
-        
-        include("nuevoSistema.php");
-        }
-        if($q==3)
-        {
-            include("modificaSistema.php");
-        }
-        if($q==4)
-        {
-            include("mensaje.php");
-        }
-      
-      break;  
-      case 11:
-        if($q==1)
-        {
-        include("listarTecnologia.php");
-        }
-        if($q==2)
-        {
-        
-        include("nuevoTecnologia.php");
-        }
-        if($q==3)
-        {
-            include("modificaTecnologia.php");
-        }
-        if($q==4)
-        {
-            include("mensaje.php");
-        }
-      
-      break; 
-      case 12:
-        if($q==1)
-        {
-        include("listarNoticia.php");
-        }
-        if($q==2)
-        {
-        
-        include("nuevoNoticia.php");
-        }
-        if($q==3)
-        {
-            include("modificaNoticia.php");
-        }
-        if($q==4)
-        {
-            include("mensaje.php");
-        }
-      
-      break;  
-       case 13:
-        if($q==1)
-        {
-        include("listarEvento.php");
-        }
-        if($q==2)
-        {
-        
-        include("nuevoEvento.php");
-        }
-        if($q==3)
-        {
-            include("modificaEvento.php");
-        }
-        if($q==4)
-        {
-            include("mensaje.php");
-        }
-      
-      break;  
-  
-    } 
-  }
-  else
-  {
-    include("portada.php");
-  }
-  //fin codigo para isertar paginas
-?>
-
-
-
-
-
-
+                  $e = $_GET['e'];
+                 
+                 
+                  if ($p) {
+                    switch ($p) {
+                      //
+                      case 1:
+                        if($q==1)
+                        {
+                            include("listarPerfiles.php");
+                        }
+                        if($q==2)
+                        {
+                              include("nuevoPerfil.php");
+                        }
+                        if($q==3)
+                        {
+                            include("modificaPerfil.php");
+                        }
+                          if($q==4)
+                        {
+                            include("mensaje.php");
+                        }
+                      break;
+                      case 2:
+                        if($q==1)
+                        {
+                            include("listarUsuario.php");
+                        }
+                        if($q==2)
+                        {
+                            include("nuevoUsuario.php");
+                        }
+                        if($q==3)
+                        {
+                            include("modificaUsuario.php");
+                        }
+                         if($q==4)
+                        {
+                            include("mensaje.php");
+                        }
+                      
+                      break;
+                      case 3:
+                        if($q==1)
+                        {
+                        include("listarCategoria.php");
+                        }
+                        if($q==2)
+                        {
+                          include("nuevoCategoria.php");
+                        }
+                        if($q==3)
+                        {
+                            include("modificaCategoria.php");
+                        }
+                          if($q==4)
+                        {
+                            include("mensaje.php");
+                        }
+                       
+                      
+                      break;
+                      case 4:
+                        if($q==1)
+                        {
+                        include("listarProducto.php");
+                        }
+                        if($q==2)
+                        {
+                        
+                        include("nuevoProducto.php");
+                        }
+                        if($q==3)
+                        {
+                            include("modificaProducto.php");
+                        }
+                          if($q==4)
+                        {
+                            include("mensaje1.php");
+                        }
+                      
+                      break;
+                      
+                     case 5:
+                        if($q==1)
+                        {
+                        include("listarVideo.php");
+                        }
+                        if($q==2)
+                        {
+                        
+                        include("nuevoVideo.php");
+                        }
+                        if($q==3)
+                        {
+                            include("modificaVideo.php");
+                        }
+                          if($q==4)
+                        {
+                            include("mensaje.php");
+                        }
+                      
+                      break;
+                      case 6:
+                        if($q==1)
+                        {
+                        include("listarFoto.php");
+                        }
+                        if($q==2)
+                        {
+                        
+                        include("nuevoFoto.php");
+                        }
+                        if($q==3)
+                        {
+                            include("modificaFoto.php");
+                        }
+                         if($q==4)
+                        {
+                            include("mensaje.php");
+                        }
+                       
+                      
+                      break;
+                      case 7:
+                        if($q==1)
+                        {
+                        include("listarPublicidad.php");
+                        }
+                        if($q==2)
+                        {
+                        
+                        include("nuevoPublicidad.php");
+                        }
+                        if($q==3)
+                        {
+                            include("modificaPublicidad.php");
+                        }
+                         if($q==4)
+                        {
+                            include("mensaje.php");
+                        }
+                      break;
+                          
+                      case 8:
+                        if($q==1)
+                        {
+                        include("listarSocio.php");
+                        }
+                        if($q==2)
+                        {
+                        
+                        include("nuevoSocio.php");
+                        }
+                        if($q==3)
+                        {
+                            include("modificaSocio.php");
+                        }
+                        if($q==4)
+                        {
+                            include("mensaje.php");
+                        }
+                      
+                      break;  
+                      
+                       case 9:
+                        if($q==1)
+                        {
+                        include("listarCliente.php");
+                        }
+                        if($q==2)
+                        {
+                        
+                        include("nuevoCliente.php");
+                        }
+                        if($q==3)
+                        {
+                            include("modificaCliente.php");
+                        }
+                        if($q==4)
+                        {
+                            include("mensaje.php");
+                        }
+                      
+                      break;  
+                      
+                      case 10:
+                        if($q==1)
+                        {
+                        include("listarSistema.php");
+                        }
+                        if($q==2)
+                        {
+                        
+                        include("nuevoSistema.php");
+                        }
+                        if($q==3)
+                        {
+                            include("modificaSistema.php");
+                        }
+                        if($q==4)
+                        {
+                            include("mensaje.php");
+                        }
+                      
+                      break;  
+                      case 11:
+                        if($q==1)
+                        {
+                        include("listarTecnologia.php");
+                        }
+                        if($q==2)
+                        {
+                        
+                        include("nuevoTecnologia.php");
+                        }
+                        if($q==3)
+                        {
+                            include("modificaTecnologia.php");
+                        }
+                        if($q==4)
+                        {
+                            include("mensaje.php");
+                        }
+                      
+                      break; 
+                      case 12:
+                        if($q==1)
+                        {
+                        include("listarNoticia.php");
+                        }
+                        if($q==2)
+                        {
+                        
+                        include("nuevoNoticia.php");
+                        }
+                        if($q==3)
+                        {
+                            include("modificaNoticia.php");
+                        }
+                        if($q==4)
+                        {
+                            include("mensaje.php");
+                        }
+                      
+                      break;  
+                       case 13:
+                        if($q==1)
+                        {
+                        include("listarEvento.php");
+                        }
+                        if($q==2)
+                        {
+                        
+                        include("nuevoEvento.php");
+                        }
+                        if($q==3)
+                        {
+                            include("modificaEvento.php");
+                        }
+                        if($q==4)
+                        {
+                            include("mensaje.php");
+                        }
+                      
+                      break;  
+                  
+                    } 
+                  }
+                  else
+                  {
+                    include("portada.php");
+                  }
+                  //fin codigo para isertar paginas
+                ?>
 
 
 
   
-  <div class="copy_layout">
-      <p>Copyright © 2015 ITDECSA. All Rights Reserved | Design by <a href="http://itdecsa.com/" target="_blank">itdecsa.com</a> </p>
-  </div>
-   </div>
+                <div class="copy_layout">
+                    <p>Copyright © 2015 ITDECSA. All Rights Reserved | Design by <a href="http://itdecsa.com/" target="_blank">itdecsa.com</a> </p>
+                </div>
+
+
+
+
+         </div>
       </div>
       <!-- /#page-wrapper -->
    </div>
     <!-- /#wrapper -->
 <!-- Nav CSS -->
+</div>
 <link href="../css/custom.css" rel="stylesheet">
 <!-- Metis Menu Plugin JavaScript -->
 <script src="../js/metisMenu.min.js"></script>
