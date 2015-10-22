@@ -494,8 +494,8 @@ a.button {
   
 }
 .up-text a {
-   font-size: 1.3em;
-  color: #fff;
+   font-size:0.9em;
+  color: #CDC8C8;
     margin-bottom: 0.3em;
 	text-decoration:none;
 }
@@ -708,6 +708,7 @@ color:#FF5500;
   text-transform: capitalize;
   font-weight: 500;
   
+
 }
 .right-grid  p {
   font-size: 1em;
@@ -2106,4 +2107,15 @@ a.b-home {
     width: 100%;
     z-index: -100;
 }*/
+/*---para la alineacion de noticas*/
+.alinia1
+{
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 58.33333333%;
+  float: left;
+}
+
 

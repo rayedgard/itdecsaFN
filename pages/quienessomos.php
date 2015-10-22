@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 
 <!DOCTYPE HTML>
-<html> 
+<html>
 <head>
 <title>ITDECSA - Informatic Technology Development Corporation S.A. </title>
 <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
@@ -56,15 +56,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </script>
 <!---/End-Animation---->
 
-<!--Start of Zopim Live Chat Script-->
-<script type="text/javascript">
-window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
-d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
-_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
-$.src="//v2.zopim.com/?3OU3AV4FqT8DIgIfcN0DBfkbqk96DpTr";z.t=+new Date;$.
-type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
-</script>
-<!--End of Zopim Live Chat Script-->
+
 </head>
 <body style="background:#000000;">
     <div class="header1" id="home">
@@ -81,7 +73,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 					    <li><a href="quienessomos.php" class="active">Quienes Somos</a></li><label>/</label>
 					  	<li><a href="servicios.php">Servicios</a></li><label>/</label>
 					    <li><a href="productos.php">Productos</a></li><label>/</label>
-					   	
+					   	<li><a href="blog.php">Blog</a></li><label>/</label>
 					   	<li><a href="contactos.php">Contactos</a></li>
 				    </ul>
 		    		 <!-- script for menu -->
@@ -191,9 +183,9 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
                            
                                 <span >Designer</span>
                                 <ul class="social">
-                                    <li><a href="#" class="fa fa-facebook" style="color:#FF5500;"></a></li>
-                                    <li><a href="#" class="fa fa-twitter" style="color:#FF5500;"></a></li>
-                                    <li><a href="#" class="fa fa-linkedin" style="color:#FF5500;"></a></li>
+                                    <li><a href="#" class="fa fa-facebook" style="color:#FB9F00;"></a></li>
+                                    <li><a href="#" class="fa fa-twitter" style="color:#FB9F00;"></a></li>
+                                    <li><a href="#" class="fa fa-linkedin" style="color:#FB9F00;"></a></li>
                                 </ul>
                             </div> <!-- /.team-overlay -->
                         </div> <!-- /.member-thumb -->
@@ -221,9 +213,9 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
                            
                                 <span >Designer</span>
                                 <ul class="social">
-                                    <li ><a href="#" class="fa fa-facebook" style="color:#FF5500;"></a></li>
-                                    <li><a href="#" class="fa fa-twitter" style="color:#FF5500;"></a></li>
-                                    <li><a href="#" class="fa fa-linkedin" style="color:#FF5500;"></a></li>
+                                    <li ><a href="#" class="fa fa-facebook" style="color:#FB9F00;"></a></li>
+                                    <li><a href="#" class="fa fa-twitter" style="color:#FB9F00;"></a></li>
+                                    <li><a href="#" class="fa fa-linkedin" style="color:#FB9F00;"></a></li>
                                 </ul>
                             </div> <!-- /.team-overlay -->
                         </div> <!-- /.member-thumb -->
@@ -272,7 +264,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 			  text-align: center;
 			  top: 0;
 			  left: 0;
-			  background-color: #FF5500;
+			  background-color: #FB9F00;
 			  color: white;
 			  opacity: 0;
 			  visibility: hidden;
@@ -308,7 +300,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 			  height: 36px;
 			  background-color: white;
 			  line-height: 40px;
-			  color: #FF5500;
+			  color: #ec523f;
 			  border-radius: 18px;
 			  -webkit-border-radius: 18px;
 			  -moz-border-radius: 18px;
@@ -337,9 +329,9 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
                            
                                 <span >Developer</span>
                                 <ul class="social">
-                                    <li><a href="https://www.facebook.com/luisalberto.romancruz.5"  class="fa fa-facebook" target="_blank" style="color:#FF5500;"></a></li>
-                                    <li><a href="#" class="fa fa-twitter" style="color:#FF5500;"></a></li>
-                                    <li><a href="#" class="fa fa-linkedin" style="color:#FF5500;"></a></li>
+                                    <li><a href="https://www.facebook.com/luisalberto.romancruz.5"  class="fa fa-facebook" target="_blank" style="color:#FB9F00;"></a></li>
+                                    <li><a href="#" class="fa fa-twitter" style="color:#FB9F00;"></a></li>
+                                    <li><a href="#" class="fa fa-linkedin" style="color:#FB9F00;"></a></li>
                                 </ul>
                             </div> <!-- /.team-overlay -->
                         </div> <!-- /.member-thumb -->
@@ -411,13 +403,13 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 	</div>
 		 <div class="col-md-4 cont wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 		 <h3>Contactos</h3>
-		<ul>
-								<li><i class="phone"></i></li>
-								<li><p>+51 987 789 722</p>
-								<p>+51 993 026 679</p>
-								<p>+51 084 245 844</p>
-								</li>
-							</ul>
+		 <ul>
+		<li><i class="phone"></i></li>
+		<li><p>+51 984 216 127</p>
+		<p>+51 984 550 800</p>
+		<p>+51 971 454 446</p>
+		<p>+51 084 272650</p></li>
+		</ul>
 		<ul>
 	   <li><i class="smartphone"></i></li>
 		<li><p>Av. la Cultura 772, oficina 205, </p>
@@ -441,7 +433,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 		<a href="https://www.facebook.com/pages/Informatic-Technology-Development-Corporation-SA/157087624356221?fref=ts" target="_blank"><i class="icon1"></i></a>
 		<a href="#"><i class="icon2"></i></a>
 		<a href="https://plus.google.com/104763782397023638437/posts" target="_blank"><i class="icon3"></i></a>
-		
+		<a href="#"><i class="icon4"></i></a>
 		</div>
 		</div>
 		 <div class="footer-middle wow fadeInDown Big animated animated" data-wow-delay="0.4s">
@@ -451,7 +443,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
     <li><a href="quienessomos.php">Quienes Somos</a></li>
   	<li><a href="servicios.php">Servicios</a></li>
 	<li><a href="productos.php">Productos</a></li>
-   	
+   	<li><a href="blog.php">blog</a></li>
    	<li><a href="contactos.php">Contactos</a></li>
     </ul>
 		</div>
