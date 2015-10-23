@@ -31,7 +31,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				event.preventDefault();
 				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
 			});
-		});
+		}); 
 	</script>
 <!---End-smoth-scrolling---->
 <link rel="stylesheet" href="../css/swipebox.css">
@@ -64,7 +64,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 		<div class="container">
 		<div class="header-top">
 		<div class="top-menu">
-		<span class="menu"><img src="../images/nav.png" alt=""/> </span>
+		<span class="menu"><img src="../images/nav1.png" alt=""/> </span>
 		<ul>
    	<li><a href="../index.php">Inicio</a></li><label>/</label>
     <li><a href="quienessomos.php">Quienes Somos</a></li><label>/</label>

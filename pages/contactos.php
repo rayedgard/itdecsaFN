@@ -11,7 +11,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <title>ITDECSA - Informatic Technology Development Corporation S.A. </title>
   <style type="text/css">
             /* Set a size for our map container, the Google Map will take up 100% of this container */
-            #map {
+            #map { 
                 width: 500px;
                 height: 300px;
             }
@@ -134,7 +134,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 
 				<div class="top-menu">
 					<span class="menu">
-						<img src="../images/nav.png" alt=""/>
+						<img src="../images/nav1.png" alt=""/>
 					</span>
 
 				    <ul>

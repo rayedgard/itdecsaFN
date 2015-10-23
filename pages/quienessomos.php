@@ -49,7 +49,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					});
 				</script>
 				<!--Animation-->
+				 
 <script src="../js/wow.min.js"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+ 		var opciones="toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=yes, width=400, height=400, top=150, left=450";
+	    $('#show').click( function() {  
+	        window.open('perfil.php',"",opciones);  
+	    }); 
+	});
+</script>
+
+
 <link href="../css/animate.css" rel='stylesheet' type='text/css' />
 <script>
 	new WOW().init();
@@ -65,6 +78,10 @@ $.src="//v2.zopim.com/?3OU3AV4FqT8DIgIfcN0DBfkbqk96DpTr";z.t=+new Date;$.
 type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 </script>
 <!--End of Zopim Live Chat Script-->
+
+
+
+
 </head>
 <body style="background:#000000;">
     <div class="header1" id="home">
@@ -201,7 +218,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
                 </div> <!-- /.row -->
             </div> <!-- /.container -->
 
-	  <h5>Edgard Rayme</h5>
+	  <h5 id="show" style="cursor:pointer">Edgard Rayme</h5>
 	  <p>Donec pellentesque lacus at magna porttitor pulvinar. Morbi risus lorem; sollicitudin sit</p>
 
 
@@ -233,7 +250,27 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 
             <style type="text/css">
 
-			@media screen and (min-width: 1200px) {
+            	@media only screen and (max-width:1024px) {
+ 
+				}
+
+				@media only screen and (max-width:768px) {
+
+				}
+
+				@media only screen and (max-width:648px) {
+
+				}
+
+				@media only screen and (max-width:480px){
+				
+				}
+
+				@media only screen and (max-width:320px){
+				
+				}
+
+			
 
 			.content-section {
 			  margin-top: 80px;
@@ -317,7 +354,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 			  opacity: 1;
 			  visibility: visible;
 			}
-		}
+		
             </style>
 	  <h5>Lizbeth Bejar</h5>
 	  <p>Donec pellentesque lacus at magna porttitor pulvinar. Morbi risus lorem; sollicitudin sit</p>
@@ -335,7 +372,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
                             <img src="../images/personal/luis.jpg" alt="" style="display: block;">
                             <div class="team-overlay">
                            
-                                <span >Developer</span>
+                                <span>Developer</span>
                                 <ul class="social">
                                     <li><a href="https://www.facebook.com/luisalberto.romancruz.5"  class="fa fa-facebook" target="_blank" style="color:#FF5500;"></a></li>
                                     <li><a href="#" class="fa fa-twitter" style="color:#FF5500;"></a></li>
@@ -346,16 +383,16 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
                     </div> <!-- /.team-member -->
                 </div> <!-- /.row -->
             </div> <!-- /.container -->
-	  <h5>Luis Román</h5>
+	  <h5 >Luis Román</h5>
 	  <p>Donec pellentesque lacus at magna porttitor pulvinar. Morbi risus lorem; sollicitudin sit</p>
       </div>
 
 
+
       </div>	  
+       					
 
-
-
-
+						
 
 		 <div class="clearfix"></div>
 

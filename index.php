@@ -166,10 +166,9 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 										    <img src="images/iconos/seguridad3.png"  class="img-responsive" alt="/"  >
 										</a>
 										<h4>Biometria y Seguridad </h4>
-											<p>- Relojes biometricos</br>
-											- Camaras de Seguridad</br>
-											- Sistema contra incendios</br>
-											- Alarmas de seguridad
+											<p>- Relojes </br>
+											- Sistema CCTV</br>											
+											- Alarmas de seguridad 
 											.</p>
 									</div>
 								</div>
@@ -370,6 +369,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 							 		<div class="textbox">										
 									 </div>									
 								</div>
+								<!--
 
 								<div class="col-md-3 latest-grid work wow fadeInDown Big animated animated" data-wow-delay="0.4s">
 								  	</br></br></br>
@@ -389,6 +389,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 										<img src="images/logos/as.png" class="img-responsive"  alt="/" style="">
 									</div>
 								</div>
+								-->
 
 		  						<div class="clearfix"></div>
 

@@ -63,7 +63,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 		<div class="container">
 		<div class="header-top">
 		<div class="top-menu">
-		<span class="menu"><img src="../images/nav.png" alt=""/> </span>
+		<span class="menu"><img src="../images/nav1.png" alt=""/> </span>
 
      <ul>
    	<li><a href="../index.php">Inicio</a></li><label>/</label>
@@ -83,7 +83,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 		 });
 		 </script>
 	<!-- //script for menu -->
-     </div>
+     </div> 
 
      <style type="text/css">
 							span.menu {
@@ -115,15 +115,15 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 						<div class="service1">
 							<div class="col-md-4 services-grid wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 								 <a href="../images/servicios/desarrollo.jpg" class="swipebox">
-								 <img src="../images/servicios/desarrollo1.jpg" class="img-responsive" alt="" style="border-radius:50%;" /></a>
+								 <img src="../images/servicios/desarrollo1.jpg" class="img-responsive" alt="" style="border-radius:50%;margin-left:18%;" /></a>
 								 <h5>Desarrollo de Software</h5>
 								<p style="text-align:justify">Desarrollo de Software con distintos lenguajes para múltiples plataformas (Escritorio, Móviles, Web) y dispositivos (PCs, Smartphones, Tablets) siempre en constante innovación, buscando, desarrollando e implementando nuevas tecnologías.</p>
 								<a href="desarrollo.php" class="button1 hvr-shutter-in-vertical">leer más</a>
 							</div>
 
 						<div class="col-md-4 services-grid wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-						<a href="../images/servicios/go.jpg" class="swipebox">
-						<img src="../images/servicios/go1.jpg" class="img-responsive" alt="" style="border-radius:50%;"/></a>
+						<a href="../images/servicios/go.jpg" class="swipebox" >
+						<img src="../images/servicios/go1.jpg" class="img-responsive" alt="" style="border-radius:50%;margin-left:18%;"/></a>
 						<h5>Diseño y Desarrollo Web</h5>
 					<p style="text-align:justify">Diseño y desarrollo de sitios Web mediante la implementación de herramientas y tendencias actuales e innovadoras como lo son HTML5, CSS3 y Bootstrap, así como la gestión e implementación de plataformas autoadministrables.</p>
 						<a href="productos.php" class="button1 hvr-shutter-in-vertical">leer más</a>
@@ -132,7 +132,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 						
 						<div class="col-md-4 services-grid wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 						 <a href="../images/servicios/car.jpg" class="swipebox">
-						 <img src="../images/servicios/car1.jpg" class="img-responsive" alt="" style="border-radius:50%;"/></a>
+						 <img src="../images/servicios/car1.jpg" class="img-responsive" alt="" style="border-radius:50%;margin-left:18%;"/></a>
 						 <h5>Tiendas en Linea</h5>
 					<p style="text-align:justify">Desarrollo, gestión e implementación de Tiendas en Línea 100% autoadministrables, con integración a redes sociales adaptadas a móviles y tablets.</p>
 						<a href="productos.php" class="button1 hvr-shutter-in-vertical">leer más</a>

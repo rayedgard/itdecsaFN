@@ -1,10 +1,7 @@
-<!--
-Au<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+
+
+
+
 <!DOCTYPE HTML> 
 <html>
 <head>
@@ -25,10 +22,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="text/javascript" src="../js/move-top.js"></script>
 <script type="text/javascript" src="../js/easing.js"></script>
 
+
+
+
+
+
+
+
+
+
 		 <!--para los videos-->
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>	
 		<!--fin videos-->
-
+ 
  <script type="text/javascript">
 		jQuery(document).ready(function($) {
 			$(".scroll").click(function(event){		
@@ -64,12 +70,12 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 <!--End of Zopim Live Chat Script-->
 </head>
 <body>
- 	<div class="header1 head-top " id="home">
+ 	<div class="header2 head-top " id="home">
 		<div class="container">
 			<div class="header-top">
 				<div class="top-menu">
 					<span class="menu">
-						<img src="../images/nav.png" alt=""/>
+						<img src="../images/nav1.png" alt=""/>
 					</span>
 					<ul>
 					   	<li><a href="../index.php">Inicio</a></li><label>/</label>
@@ -117,37 +123,20 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 
 	<div class="services-section">
 		<div class="container">
-			<h3> Desarrollo de Software</h3>
+			<h3> Sistema de Control de Asistencia</h3>
 			<div class="services-grids">
 				<div class="services">
 
-					
-
-
 					<!-- contenido recursivo para seecciones de desarrollo de software -->
 					<div class="services-grid wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-						
-						<img src="../images/desarrollogif/huella.gif" class="img-responsive" alt="" style="border-radius:15px;float:left;margin:20px;width:15%;height:150px;" />
 
-						<h5>Sistema de Control de Asistencia</h5>
 						<p style="text-align:justify;">Como solución a esta necesidad existen distintos tipos de Sistemas Computarizados del Control de Asistencia, con uso de fotochecks con códigos de barras, banda magnéticas o tarjetas de proximidad. Todos los cuales se basan en algo que el empleado posee (el fotocheck) pero que puede ser prestado, olvidado, robado o perdido y sin tener la certeza que la persona que lo presenta es el usuario auténtico (suplantación).</br>
 						Sin embargo, si le preocupa la posible suplantación al momento de marcación y le interesa VERIFICAR PERSONAS y no tarjetas de plástico (fotochecks), que como dijimos son sujetos de préstamo, pérdida o extravío; puede utilizar nuestros lectores de huella digital, los cuales ya se encuentran instalados y operativos satisfactoriamente en una serie de Instituciones públicas y privadas del medio.
 						</p>
 						
-						<div class="tabs">							
-							<!--
-							<div class="contenedor">						
-								<ul>
-									<a href="#manual"><li class="button demo" >Manuales</li></a>									
-		  	  						<a href="#video"><li class="button demo">Videos</li></a>
-		  							<a href="#software"><li class="button demo">Software Desarrollados</li></a>
-									<a href="#especifica"><li class="button demo">Especificaciones</li> 	</a>		
-				   				</ul>  
+						<div class="tabs" style="border:2px solid #FE0202" >	
 
-							</div>
-							-->
-
-							<div class="contenedor" style="border-top-left-radius: 2em ;border-top-right-radius: 2em;">						
+							<div class="contenedor" style="border-top-left-radius: 2em ;border-top-right-radius: 2em;border:2px solid #00FF48">						
 								<ul>
 									<li class="button demo manu" >Manuales</li>									
 		  	  						<li class="button demo vi">Videos</li>
@@ -157,19 +146,24 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 
 							</div>
 
-							<div class="contenedor1 manuales " style="display:none;border-bottom-right-radius: 2em;
-border-bottom-left-radius:2em;">
-								<h3 style="font-size:2.5em;padding-top:25px;">ATENCION AL CLIENTE</h3>	
+							<div class="contenedor1 manuales " style="display:none;border-bottom-right-radius: 2em;border-bottom-left-radius:2em;">
 
-								<a href="#" style="font-size:1.8em;color:#fff;" target="_blank">Manual de Usuario <img src="../images/iconos/downloads.png" style="width:20px;height:20px;"></a>
+
+							
+								<h3 style="font-size:2.5em;padding-top:8%;">Manual De Usuario</h3>	
+
+								<a href="#" style="color:#fff;text-align: center;" target="_blank">
+									<img src="../images/iconos/downloads.png" style="width:10%;height:18%;">
+								</a></br></br>
 								<p style="">13.25 MB, PDF, ESPAÑOL</br>
-								2014.08.26<p>
-								
+								2014.08.26<p>					
+
+
+
 
 							</div>
 
-							<div class="contenedor1 videos"  style="display:none;border-bottom-right-radius: 2em;
-border-bottom-left-radius:2em;">
+							<div class="contenedor1 videos"  style="border-bottom-right-radius: 2em;border-bottom-left-radius:2em;">
 								<div id="videos"><!--VIDEOS-->
 									<div class="video">   <!--reprosuctor de video grande-->			    
 										<?php 
@@ -238,17 +232,11 @@ border-bottom-left-radius:2em;">
 								</div><!--FIN VIDEOS-->  
 							</div>
 
-							<div class="contenedor1 software" style="display:none;border-bottom-right-radius: 2em;
-border-bottom-left-radius:2em;">
-								
-								
+							<div class="contenedor1 software" style="display:none;border-bottom-right-radius: 2em;border-bottom-left-radius:2em;">
 
 							</div>
 
-							<div class="contenedor1 especificaciones"  style="display:none;border-bottom-right-radius: 2em;
-border-bottom-left-radius:2em;">
-								
-								
+							<div class="contenedor1 especificaciones"  style="display:none;border-bottom-right-radius: 2em;border-bottom-left-radius:2em;">
 
 							</div>
 							
@@ -284,95 +272,92 @@ border-bottom-left-radius:2em;">
 					        	$('.manuales').fadeOut(1);
 					            $('.especificaciones').slideToggle(1);
 					        });
-					   
-
-
 
     				    </script>
 
 						<style type="text/css">
 
+							/*videos*/
+							#videos
+							{
 
-						/*videos*/
-						#videos
-						{
+							overflow:inherit;
+							width:100%;
+							float:left;
+							height:335px;
 
-						overflow:inherit;
-						width:100%;
-						float:left;
-						height:335px;
-
-						background:url(../images/fon.png);
-						padding-left:20px;
-						padding-top:20px;
-
-
-						-moz-border-radius: 10px; /* Firefox*/
-						-ms-border-radius: 10px; /* IE 8.*/
-						-webkit-border-radius: 10px; /* Safari,Chrome.*/
-						border-radius: 10px; /* El estándar.*/
-
-						 background-color:#1E1E1E;
-						/*para la opacidad   pero opaca todo el div
-						filter:alpha(opacity=50);
-						  -moz-opacity:0.5;
-						  -khtml-opacity: 0.5;
-						  opacity: 0.5;*/
-						 
-						  /*fin opacidad*/
-						}
+							background:url(../images/fon.png);
+							padding-left:20px;
+							padding-top:20px;
 
 
-						.video
-						{
-						    float:left;
-						    height:100%;
-						    width:55%;
-						    /*border:#FFF solid 1px;*/
-						}
+							-moz-border-radius: 10px; /* Firefox*/
+							-ms-border-radius: 10px; /* IE 8.*/
+							-webkit-border-radius: 10px; /* Safari,Chrome.*/
+							border-radius: 10px; /* El estándar.*/
+
+							 background-color:#1E1E1E;
+							/*para la opacidad   pero opaca todo el div
+							filter:alpha(opacity=50);
+							  -moz-opacity:0.5;
+							  -khtml-opacity: 0.5;
+							  opacity: 0.5;*/
+							 
+							  /*fin opacidad*/
+							}
 
 
-						/*noticias*/
-						.contMin
-						{
-						 width:45%;
-						 overflow:hidden; 
-
-						 float:left; padding: 0px 5px 5px 10px;
-						  overflow-y:scroll;
-						 height: 100%;
-						}
-
-						.Min
-						{
-						    overflow:hidden;
-						    width: 100%;
-
-						 }
-
-						.Min:hover
-						{overflow:hidden; 
-						 background:#3E3D3C; 
-						 }
-						.noti:hover h3
-						{color:#000; }
+							.video
+							{
+							    float:left;
+							    height:100%;
+							    width:55%;
+							    /*border:#FFF solid 1px;*/
+							}
 
 
-						.ContenedorImgMin 
-						{ 
-						    padding:7px 2px 7px 2px;
+							/*noticias*/
+							.contMin
+							{
+							 width:45%;
+							 overflow:hidden; 
+							 margin-top:25px;
 
-						    overflow:hidden; width:30%;
-						    float:left;
-						}
+							 float:left; padding: 0px 5px 5px 10px;
+							  overflow-y:scroll;
+							 height: 100%;
+							}
 
-						.nonMin
-						{   
-						    width:65%;
-						    float:left; padding:5px 5px 5px 10px;
-						    
-						    font-size: 12px;
-						}
+							.Min
+							{
+							    overflow:hidden;
+							    width: 100%;
+
+							 }
+
+							.Min:hover
+							{overflow:hidden; 
+							 background:#3E3D3C; 
+							 }
+							.noti:hover h3
+							{color:#000; }
+
+
+							.ContenedorImgMin 
+							{ 
+							    padding:7px 2px 7px 2px;
+
+							    overflow:hidden; width:30%;
+							    float:left;
+							}
+
+							.nonMin
+							{   
+							    width:65%;
+							    float:left; padding:5px 5px 5px 10px;
+							    
+							    font-size: 12px;
+							}
 
 
 							
@@ -425,29 +410,84 @@ border-bottom-left-radius:2em;">
 							}
 							.contenedor1{
 								background-color: #191e20;
-								display: none;
-								height: 500px;
+								
+								height: 400px;
 							}		
 
 							.manuales{							
-								height: 250px;
+								height: 400px;
 							}	
 
 							.videos{							
-								height: 350px;
-							}				
+								height: 400px;
+							}	
+							/*
+
+					        .captionOrange, .captionBlack
+					        {
+					            color: #fff;
+					            font-size: 20px;
+					            line-height: 30px;
+					            text-align: center;
+					            border-radius: 4px;
+					        }
+					        .captionOrange
+					        {
+					            background: #EB5100;
+					            background-color: rgba(235, 81, 0, 0.6);
+					        }
+					        .captionBlack
+					        {
+					        	font-size:16px;
+					            background: #000;
+					            background-color: rgba(0, 0, 0, 0.4);
+					        }
+					        a.captionOrange, A.captionOrange:active, A.captionOrange:visited
+					        {
+					        	color: #ffffff;
+					        	text-decoration: none;
+					        }
+					        a.captionOrange:hover
+					        {
+					            color: #eb5100;
+					            text-decoration: underline;
+					            background-color: #eeeeee;
+					            background-color: rgba(238, 238, 238, 0.7);
+					        }
+					        .bricon
+					        {
+					            background: url(../img/browser-icons.png);
+					        }
+    		*/
 			
-						</style>
-						
-
-						
-
+						</style>						
+	
 					</div>
 					<!-- FIN contenido recursivo para seecciones de desarrollo de software -->
 
-					</br>
-
 					<div class="clearfix"></div>
+
+					<div class="clase1" style="float:left;width:50%;margin-top:100px;">
+						<div id="fb-root"></div>
+						<script>(function(d, s, id) {
+							  var js, fjs = d.getElementsByTagName(s)[0];
+							  if (d.getElementById(id)) return;
+							  js = d.createElement(s); js.id = id;
+							  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.5";
+							  fjs.parentNode.insertBefore(js, fjs);
+							}(document, 'script', 'facebook-jssdk'));
+						</script>
+
+						<div class="fb-comments" data-href="https://www.facebook.com/Informatic-Technology-Development-Corporation-SA-157087624356221/" data-width="100%" data-numposts="5" data-colorscheme="dark"></div>
+					</div>
+
+					<div class="clase2" style="float:left;width:50%; margin-top:100px;">
+
+
+					<h3 style="font-size:1.2em">DÉJENOS UN RECUERDO</h3>
+						
+	
+					</div>
 
 				</div>
 			</div>
