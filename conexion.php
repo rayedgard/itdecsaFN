@@ -7,7 +7,10 @@ $db_nombre="itdecsa1"; // Nombre de la Base de Datos que se desea utilizar
 
 $db_user="root"; // Nombre del usuario con permisos para acceder
 
+
 $db_pass="123455"; // Contraseña de dicho usuario
+
+
 
 
 //$db_host="localhost"; // Host al que conectar, habitualmente es el ‘localhost’

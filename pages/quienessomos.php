@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 
 <!DOCTYPE HTML>
-<html> 
+<html>
 <head>
 <title>ITDECSA - Informatic Technology Development Corporation S.A. </title>
 <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
@@ -69,6 +69,7 @@ $(document).ready(function(){
 </script>
 <!---/End-Animation---->
 
+<<<<<<< HEAD
 <!--Start of Zopim Live Chat Script-->
 <script type="text/javascript">
 window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
@@ -81,6 +82,8 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 
 
 
+=======
+>>>>>>> e4260176997bc9f098594a6e8fbb200198491759
 
 </head>
 <body style="background:#000000;">
@@ -98,7 +101,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 					    <li><a href="quienessomos.php" class="active">Quienes Somos</a></li><label>/</label>
 					  	<li><a href="servicios.php">Servicios</a></li><label>/</label>
 					    <li><a href="productos.php">Productos</a></li><label>/</label>
-					   	
+					   	<li><a href="blog.php">Blog</a></li><label>/</label>
 					   	<li><a href="contactos.php">Contactos</a></li>
 				    </ul>
 		    		 <!-- script for menu -->
@@ -188,7 +191,39 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
       </div>
 
 
+<?php
 
+include("../conexion.php");
+$link = Conectarse();
+
+
+$consulta ="SELECT id,nombre,cargo,correo,face,google,lin,imagen FROM tperfil where estado=0 ORDER BY id desc "; 
+$resultado = mysql_query($consulta,$link);
+
+	//nombre del titulo
+	$id=array();
+	$nombre=array();
+	$cargo=array();
+	$correo=array();
+	$face=array();
+	$google=array();
+	$lin=array();
+	$imagen=array();
+	
+while($row2 = mysql_fetch_array($resultado))
+		{
+		array_push($id,$row2[0]);
+		array_push($nombre,$row2[1]);
+		array_push($cargo,$row2[2]);
+		array_push($correo,$row2[3]);
+		array_push($face,$row2[4]);
+		array_push($google,$row2[5]);
+		array_push($lin,$row2[6]);
+		array_push($imagen,$row2[7]);
+		}
+		
+
+?>
 
      
 
@@ -196,21 +231,28 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
        <h4>Nuestro grupo de trabajo</h4>
 
 
+
+	<?php
+	
+	for($j=0;$j<count($nombre);$j++)
+	{
+	?>
+
       <div class="col-md-4 team-grid">
 
 
-		<div class="container">
+			<div class="container">
                 <div class="row">
                     <div class="team-member col-md-3 col-sm-6" style="padding-left:0px;">
                         <div class="member-thumb">
-                            <img src="../images/personal/edgard.jpg" alt="" style="display: block;">
+                            <img src="../administracion/imagenes/perfil/<?php echo $imagen[$j]; ?>" alt="" style="display: block;">
                             <div class="team-overlay">
                            
-                                <span >Designer</span>
+                                <span> <?php echo $cargo[$j]; ?> </span>
                                 <ul class="social">
-                                    <li><a href="#" class="fa fa-facebook" style="color:#FF5500;"></a></li>
-                                    <li><a href="#" class="fa fa-twitter" style="color:#FF5500;"></a></li>
-                                    <li><a href="#" class="fa fa-linkedin" style="color:#FF5500;"></a></li>
+                                    <li><a href="<?php echo $face[$j]; ?>" class="fa fa-facebook" style="color:#FB9F00;"></a></li>
+                                    <li><a href="<?php echo $google[$j]; ?>" class="fa fa-fw fa-google-plus" style="color:#FB9F00;"></a></li>
+                                    <li><a href="<?php echo $lin[$j]; ?>" class="fa fa-linkedin" style="color:#FB9F00;"></a></li>
                                 </ul>
                             </div> <!-- /.team-overlay -->
                         </div> <!-- /.member-thumb -->
@@ -218,37 +260,93 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
                 </div> <!-- /.row -->
             </div> <!-- /.container -->
 
+<<<<<<< HEAD
 	  <h5 id="show" style="cursor:pointer">Edgard Rayme</h5>
 	  <p>Donec pellentesque lacus at magna porttitor pulvinar. Morbi risus lorem; sollicitudin sit</p>
+=======
+	  		<h5 style="font-size:15px; text-align: center; "><?php echo $nombre[$j]; ?></h5>
+	  		<p style="text-align: center; "><mailto><?php echo $correo[$j]; ?></mailto></p>
+>>>>>>> e4260176997bc9f098594a6e8fbb200198491759
 
 
       </div>
-
+		<?php
+			}
+		?>
       						
 
 
 
-	   <div class="col-md-4 team-grid">
-	   		<div class="container">
-                <div class="row">
-                    <div class="team-member col-md-3 col-sm-6" style="padding-left:0px;">
-                        <div class="member-thumb">
-                            <img src="../images/member1.jpg" alt="" style="display: block;">
-                            <div class="team-overlay">
-                           
-                                <span >Designer</span>
-                                <ul class="social">
-                                    <li ><a href="#" class="fa fa-facebook" style="color:#FF5500;"></a></li>
-                                    <li><a href="#" class="fa fa-twitter" style="color:#FF5500;"></a></li>
-                                    <li><a href="#" class="fa fa-linkedin" style="color:#FF5500;"></a></li>
-                                </ul>
-                            </div> <!-- /.team-overlay -->
-                        </div> <!-- /.member-thumb -->
-                    </div> <!-- /.team-member -->
-                </div> <!-- /.row -->
-            </div> <!-- /.container -->
 
-            <style type="text/css">
+
+
+		 <div class="clearfix"></div>
+
+
+		 </div>
+			</div>
+			</div>
+			</div>
+
+
+
+
+
+
+
+
+
+		   
+
+
+
+
+		   <div class="footer-section">
+		   <div class="container">
+		   <div class="footer-top">
+		 <div class="social-icons wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+		<a href="https://www.facebook.com/pages/Informatic-Technology-Development-Corporation-SA/157087624356221?fref=ts" target="_blank"><i class="icon1"></i></a>
+		<a href="#"><i class="icon2"></i></a>
+		<a href="https://plus.google.com/104763782397023638437/posts" target="_blank"><i class="icon3"></i></a>
+		<a href="#"><i class="icon4"></i></a>
+		</div>
+		</div>
+		 <div class="footer-middle wow fadeInDown Big animated animated" data-wow-delay="0.4s">
+		 <div class="bottom-menu">
+      <ul>
+   	<li><a href="../index.php">Inicio</a></li>
+    <li><a href="quienessomos.php">Quienes Somos</a></li>
+  	<li><a href="servicios.php">Servicios</a></li>
+	<li><a href="productos.php">Productos</a></li>
+   	<li><a href="blog.php">blog</a></li>
+   	<li><a href="contactos.php">Contactos</a></li>
+    </ul>
+		</div>
+		</div>
+		<div class="footer-bottom wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+									<p> Copyright &copy;2015  All rights  Reserved </p>
+									</div>
+					<script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+				</div>
+		   </div>
+
+<!--stilo para los perfiles-->
+  <style type="text/css">
 
             	@media only screen and (max-width:1024px) {
  
@@ -309,7 +407,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 			  text-align: center;
 			  top: 0;
 			  left: 0;
-			  background-color: #FF5500;
+			  background-color: #FB9F00;
 			  color: white;
 			  opacity: 0;
 			  visibility: hidden;
@@ -345,7 +443,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 			  height: 36px;
 			  background-color: white;
 			  line-height: 40px;
-			  color: #FF5500;
+			  color: #ec523f;
 			  border-radius: 18px;
 			  -webkit-border-radius: 18px;
 			  -moz-border-radius: 18px;
@@ -356,6 +454,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 			}
 		
             </style>
+<<<<<<< HEAD
 	  <h5>Lizbeth Bejar</h5>
 	  <p>Donec pellentesque lacus at magna porttitor pulvinar. Morbi risus lorem; sollicitudin sit</p>
       </div>
@@ -514,6 +613,8 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 				</div>
 		   </div>
+=======
+>>>>>>> e4260176997bc9f098594a6e8fbb200198491759
 
  </body>
 </html> 
