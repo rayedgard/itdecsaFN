@@ -1,7 +1,7 @@
 <?php
  $cod=desencripta($_GET['cod'],"rayedgard");
  // consulta a la base de datos
-$consulta = mysql_query("SELECT nombre,cargo,correo,imagen,descripcion,file,estado FROM tperfil WHERE id='$cod'",$link);
+$consulta = mysql_query("SELECT nombre,cargo,correo,face,google,lin,imagen,descripcion,file,estado FROM tperfil WHERE id='$cod'",$link);
 $resultado = mysql_fetch_array($consulta);
 
 ?>
@@ -22,16 +22,35 @@ $resultado = mysql_fetch_array($consulta);
 		</div>
 	</div>
 
-		<div class="form-group">
+	<div class="form-group">
 		<div class="col-sm-8 ">
 			<input type="text" name="correo" class="form-control1" id="focusedinput" value="<?php echo $resultado[2];?>" placeholder="E-mail Institucional">
 		</div>
 	</div>
+	
+	<div class="form-group">
+		<div class="col-sm-8 ">
+			<input type="text" name="face" class="form-control1" id="focusedinput" value="<?php echo $resultado[3];?>" placeholder="URL de su cuenta de FACEBOOK">
+		</div>
+	</div>
+	
+	<div class="form-group">
+		<div class="col-sm-8 ">
+			<input type="text" name="google" class="form-control1" id="focusedinput" value="<?php echo $resultado[4];?>" placeholder="URL de su cuenta de GOOGLE+">
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="col-sm-8 ">
+			<input type="text" name="lin" class="form-control1" id="focusedinput" value="<?php echo $resultado[5];?>" placeholder="URL de su cuenta de LINKEDIN">
+		</div>
+	</div>
+
 
  	<div class="form-group">
         <div class="col-sm-8">
 	        <label for="exampleInputFile">Ya existe una imagen asociado a este perfil
-	        <img src="../imagenes/perfil/<?php echo $resultado[3];?>" height="80" width="80"/> 
+	        <img src="../imagenes/perfil/<?php echo $resultado[6];?>" height="80" width="80"/> 
 	        </label>
 	        <label for="exampleInputFile">
 	        Si desea remplazarlo, seleccione otra imagen.
@@ -43,14 +62,14 @@ $resultado = mysql_fetch_array($consulta);
 
 	<div class="form-group">
 	    <div class="col-sm-8">
-	     	<textarea name="descripcion"  onFocus="if(this.value == 'Texto aqui...') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Texto aqui...';}"><?php echo $resultado[4]; ?></textarea>
+	     	<textarea name="descripcion"  onFocus="if(this.value == 'Texto aqui...') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Texto aqui...';}"><?php echo $resultado[7]; ?></textarea>
 		</div>
 	</div>
 
 	<div class="form-group">
         <div class="col-sm-8">
         	<label for="exampleInputFile">
-        	Ya existe un archivo asociado a este perfil, de nombre: <?php echo $resultado[5];?>
+        	Ya existe un archivo asociado a este perfil, de nombre: <?php echo $resultado[8];?>
         	</label>
 	        <label for="exampleInputFile">Si desea remplazarlo, seleccione otro Archivo</label>
 	        <input type="file" name="file" id="exampleInputFile">
@@ -83,6 +102,9 @@ if($aceptar)
 $nombre= $_POST['nombre'];
 $cargo=$_POST['cargo'];
 $correo= $_POST['correo'];
+$face= $_POST['face'];
+$google= $_POST['google'];
+$lin= $_POST['lin'];
 $descripcion= $_POST['descripcion'];
 
 $path1="../imagenes/perfil/";	 
@@ -109,7 +131,7 @@ if($_FILES['foto']['name']!="" && $_FILES['file']['name']!="")
 	else
 	{
 		//realizamos el cambio
-		$modificar = mysql_query("UPDATE tperfil SET nombre='$nombre',cargo='$cargo',correo ='$correo',imagen='$nombre_archivo1', descripcion='$descripcion', file='$nombre_archivo2' WHERE id=$cod",$link);
+		$modificar = mysql_query("UPDATE tperfil SET nombre='$nombre',cargo='$cargo',correo ='$correo',face ='$face',google ='$google',lin ='$lin',imagen='$nombre_archivo1', descripcion='$descripcion', file='$nombre_archivo2' WHERE id=$cod",$link);
 
 		$my_error = mysql_error($link);
 		if(!empty($my_error))
@@ -168,7 +190,7 @@ if($_FILES['foto']['name']!="")
 	else
 	{
 		//realizamos el cambio
-		$modificar = mysql_query("UPDATE tperfil SET nombre='$nombre',cargo='$cargo',correo ='$correo',imagen='$nombre_archivo1', descripcion='$descripcion' WHERE id=$cod",$link);
+		$modificar = mysql_query("UPDATE tperfil SET nombre='$nombre',cargo='$cargo',correo ='$correo',face ='$face',google ='$google',lin ='$lin',imagen='$nombre_archivo1', descripcion='$descripcion' WHERE id=$cod",$link);
 
 		$my_error = mysql_error($link);
 		if(!empty($my_error))
@@ -209,7 +231,7 @@ if($_FILES['foto']['name']!="")
 if($_FILES['file']['name']!="")
 {
 	//realizamos el cambio
-	$modificar = mysql_query("UPDATE tperfil SET nombre='$nombre',cargo='$cargo',correo ='$correo', descripcion='$descripcion', file='$nombre_archivo2' WHERE id=$cod",$link);
+	$modificar = mysql_query("UPDATE tperfil SET nombre='$nombre',cargo='$cargo',correo ='$correo',face ='$face',google ='$google',lin ='$lin', descripcion='$descripcion', file='$nombre_archivo2' WHERE id=$cod",$link);
 
 	$my_error = mysql_error($link);
 	if(!empty($my_error))
@@ -249,7 +271,7 @@ if($_FILES['file']['name']!="")
 if($_FILES['foto']['name']=="" && $_FILES['file']['name']=="")
 {
 	//realizamos el cambio
-	$modificar = mysql_query("UPDATE tperfil SET nombre='$nombre',cargo='$cargo',correo ='$correo', descripcion='$descripcion' WHERE id=$cod",$link);
+	$modificar = mysql_query("UPDATE tperfil SET nombre='$nombre',cargo='$cargo',correo ='$correo',face ='$face',google ='$google',lin ='$lin', descripcion='$descripcion' WHERE id=$cod",$link);
 
 	$my_error = mysql_error($link);
 	if(!empty($my_error))

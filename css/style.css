@@ -1354,6 +1354,7 @@ a.button {
 }
 .right-grid h5 {
   font-size: 1.05em;
+  
 }
 .right-grid p {
   font-size: 0.92em;
@@ -2119,3 +2120,91 @@ a.b-home {
 }
 
 
+/*stilo de quienes somos*/
+
+      @media screen and (min-width: 1200px) {
+
+      .content-section {
+        margin-top: 80px;
+        padding-top: 60px;
+      }
+
+
+
+      .content-section#services {
+        margin-top: 0px;
+      }
+
+
+      .team-member {
+        margin-bottom: 30px;
+      }
+      .team-member .member-thumb {
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        width: 185px;
+        height:185px;
+      }
+      .team-member .member-thumb img {
+        width: 100%;
+      }
+      .team-member .member-thumb .team-overlay {
+        position: absolute;
+        width: 101%;
+        height: 101%;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        text-align: center;
+        top: 0;
+        left: 0;
+        background-color: #FB9F00;
+        color: white;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: all 200ms ease-in-out;
+        -moz-transition: all 200ms ease-in-out;
+        transition: all 200ms ease-in-out;
+      }
+      .team-member .member-thumb .team-overlay h3 {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: white;
+        display: inline-block;
+        padding-bottom: 10px;
+        border-bottom: 1px solid white;
+        margin-top: 64px;
+      }
+      .team-member .member-thumb .team-overlay span {
+        text-transform: uppercase;
+        font-weight: 300;
+        margin-top: 10px;
+        display: block;
+        padding-top:25%; border-bottom: 3px solid white;padding-bottom:12px;
+      }
+      .team-member .member-thumb .team-overlay ul.social {
+        display: block;
+        margin-top: 20px;
+      }
+      .team-member .member-thumb .team-overlay ul.social li {
+        display: inline-block;
+      }
+      .team-member .member-thumb .team-overlay ul.social li a {
+        width: 36px;
+        height: 36px;
+        background-color: white;
+        line-height: 40px;
+        color: #ec523f;
+        border-radius: 18px;
+        -webkit-border-radius: 18px;
+        -moz-border-radius: 18px;
+      }
+      .team-member .member-thumb:hover .team-overlay {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+/*fin quienes somos*/

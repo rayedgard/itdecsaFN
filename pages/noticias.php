@@ -60,6 +60,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 
+			<?php
+			include("inferior.php");
+			?>
 
 
 
@@ -99,7 +102,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				    </span>
 					<ul>
 					   	<li><a href="../index.php">Inicio</a></li><label>/</label>
-					    <li><a href="quienessomos.php" class="active">Quienes Somos</a></li><label>/</label>
+					    <li><a href="quienessomos.php" >Quienes Somos</a></li><label>/</label>
 					  	<li><a href="servicios.php">Servicios</a></li><label>/</label>
 					    <li><a href="productos.php">Productos</a></li><label>/</label>
 					   	<li><a href="blog.php">Blog</a></li><label>/</label>
@@ -151,6 +154,26 @@ $link = Conectarse();
 $id=$_GET['c'];
 $consulta = mysql_query("SELECT nombre,imagen,descripcion,fecha,link FROM tnoticias where estado=0  and id='$id'",$link);
 $resultado = mysql_fetch_array($consulta);
+
+
+$consulta1 ="SELECT id,nombre,imagen,descripcion,fecha FROM tnoticias where estado=0 ORDER BY fecha desc"; 
+$resultado1 = mysql_query($consulta1,$link);
+
+	//nombre del titulo
+	$ids=array();
+	$nombres=array();
+	$imagens=array();
+	$descripcions = array();
+	$fechas = array();
+while($row2 = mysql_fetch_array($resultado1))
+		{
+		array_push($ids,$row2[0]);
+		array_push($nombres,$row2[1]);
+		array_push($imagens,$row2[2]);
+		array_push($descripcions,$row2[3]);
+		array_push($fechas,$row2[4]);
+		}
+
 ?>
 
 
@@ -210,46 +233,39 @@ $resultado = mysql_fetch_array($consulta);
     </div>
 
 
+<div class=" wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+
+<h2>Notícias relacionadas</h2>
+							<?php
+							//bucle para generar las noticias automaticamente
+							for($j=0;$j<count($nombres);$j++)
+							{
+								?>
 
 
-					</div>
+					  			<div style="width:30%;float:left;">
+									<div style="float:left; width:39%;">
+										<img src="../administracion/imagenes/noticias/<?php echo $imagens[$j]; ?>" style="width:80%;">
+									</div>
 
-					<div class="col-md-5 left-grid wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-							<div class="aboutus1">
-								<h4>Ventajas</h4>
-								<ul>
-									<li>Integra al equipo</li>
-									<li>Ahorra el tiempo de los clientes</li>
-									<li>La tecnología permite comunicar a todos los niveles</li>
-									<li>Las ventajas de los dispositivos móviles</li>
-									<li>La experiencia del cloud computing</li>
-									<li>La tecnología diferencia a los negocios</li>
-									<li>Si no puedes adquirir el equipo, réntalo</li>
-								</ul>
-							</div>
+				   					<div style="float:left; width:60%">
+						 				<a href="noticias.php?c=<?php echo $ids[$j];?>"><?php echo  substr(strip_tags($nombres[$j]),0,50)."..."; ?></a>
+										<p>
+										<?php echo $fechas[$j];?>
+										</p>
+									</div>
 
-							
-			 				<div class="clearfix"></div>
-			 		</div>
-     
-		
-  <div class="col-md-5 left-grid wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-						<div class="aboutus1">
-							<h4>Ventajas</h4>
-							<ul>
-								<li>Integra al equipo</li>
-								<li>Ahorra el tiempo de los clientes</li>
-								<li>La tecnología permite comunicar a todos los niveles</li>
-								<li>Las ventajas de los dispositivos móviles</li>
-								<li>La experiencia del cloud computing</li>
-								<li>La tecnología diferencia a los negocios</li>
-								<li>Si no puedes adquirir el equipo, réntalo</li>
-							</ul>
-						</div>
+									<div class="clearfix"></div>
+				        		</div>
 
-						
-		 				<div class="clearfix"></div>
-		 		</div>
+								<?php
+								}
+							?>
+
+</div>
+
+
+
 
 
 			</div>

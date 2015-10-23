@@ -15,11 +15,30 @@
 		</div>
 	</div>
 
-		<div class="form-group">
+	<div class="form-group">
 		<div class="col-sm-8 ">
 			<input type="text" name="correo" class="form-control1" id="focusedinput" placeholder="E-mail Institucional">
 		</div>
 	</div>
+
+	<div class="form-group">
+		<div class="col-sm-8 ">
+			<input type="text" name="face" class="form-control1" id="focusedinput" placeholder="URL de su cuenta de FACEBOOK">
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="col-sm-8 ">
+			<input type="text" name="google" class="form-control1" id="focusedinput" placeholder="URL de su cuenta de GOOGLE +">
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="col-sm-8 ">
+			<input type="text" name="lin" class="form-control1" id="focusedinput" placeholder="URL de su cuenta de LINKEDIN">
+		</div>
+	</div>
+
 
  	<div class="form-group">
         <div class="col-sm-8">
@@ -68,6 +87,9 @@ if($aceptar)
 $nombre= $_POST['nombre'];
 $cargo=$_POST['cargo'];
 $correo= $_POST['correo'];
+$face= $_POST['face'];
+$google= $_POST['google'];
+$lin= $_POST['lin'];
 $descripcion= $_POST['descripcion'];
 
 $path1="../imagenes/perfil/";	 
@@ -90,7 +112,7 @@ else
 { 
 
 
-$resultado = mysql_query("INSERT INTO tperfil(nombre,cargo,correo,imagen,descripcion,file) VALUES ('$nombre','$cargo','$correo','$nombre_archivo1','$descripcion','$nombre_archivo2')",$link);
+$resultado = mysql_query("INSERT INTO tperfil(nombre,cargo,correo,face,google,lin,imagen,descripcion,file) VALUES ('$nombre','$cargo','$correo','$face','$google','$lin','$nombre_archivo1','$descripcion','$nombre_archivo2')",$link);
 
 $my_error = mysql_error($link);
 

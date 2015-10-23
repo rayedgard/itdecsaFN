@@ -163,7 +163,39 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       </div>
 
 
+<?php
 
+include("../conexion.php");
+$link = Conectarse();
+
+
+$consulta ="SELECT id,nombre,cargo,correo,face,google,lin,imagen FROM tperfil where estado=0 ORDER BY id desc "; 
+$resultado = mysql_query($consulta,$link);
+
+	//nombre del titulo
+	$id=array();
+	$nombre=array();
+	$cargo=array();
+	$correo=array();
+	$face=array();
+	$google=array();
+	$lin=array();
+	$imagen=array();
+	
+while($row2 = mysql_fetch_array($resultado))
+		{
+		array_push($id,$row2[0]);
+		array_push($nombre,$row2[1]);
+		array_push($cargo,$row2[2]);
+		array_push($correo,$row2[3]);
+		array_push($face,$row2[4]);
+		array_push($google,$row2[5]);
+		array_push($lin,$row2[6]);
+		array_push($imagen,$row2[7]);
+		}
+		
+
+?>
 
      
 
@@ -171,21 +203,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
        <h4>Nuestro grupo de trabajo</h4>
 
 
+
+	<?php
+	
+	for($j=0;$j<count($nombre);$j++)
+	{
+	?>
+
       <div class="col-md-4 team-grid">
 
 
-		<div class="container">
+			<div class="container">
                 <div class="row">
                     <div class="team-member col-md-3 col-sm-6" style="padding-left:0px;">
                         <div class="member-thumb">
-                            <img src="../images/personal/edgard.jpg" alt="" style="display: block;">
+                            <img src="../administracion/imagenes/perfil/<?php echo $imagen[$j]; ?>" alt="" style="display: block;">
                             <div class="team-overlay">
                            
-                                <span >Designer</span>
+                                <span> <?php echo $cargo[$j]; ?> </span>
                                 <ul class="social">
-                                    <li><a href="#" class="fa fa-facebook" style="color:#FB9F00;"></a></li>
-                                    <li><a href="#" class="fa fa-twitter" style="color:#FB9F00;"></a></li>
-                                    <li><a href="#" class="fa fa-linkedin" style="color:#FB9F00;"></a></li>
+                                    <li><a href="<?php echo $face[$j]; ?>" class="fa fa-facebook" style="color:#FB9F00;"></a></li>
+                                    <li><a href="<?php echo $google[$j]; ?>" class="fa fa-fw fa-google-plus" style="color:#FB9F00;"></a></li>
+                                    <li><a href="<?php echo $lin[$j]; ?>" class="fa fa-linkedin" style="color:#FB9F00;"></a></li>
                                 </ul>
                             </div> <!-- /.team-overlay -->
                         </div> <!-- /.member-thumb -->
@@ -193,37 +232,88 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div> <!-- /.row -->
             </div> <!-- /.container -->
 
-	  <h5>Edgard Rayme</h5>
-	  <p>Donec pellentesque lacus at magna porttitor pulvinar. Morbi risus lorem; sollicitudin sit</p>
+	  		<h5 style="font-size:15px; text-align: center; "><?php echo $nombre[$j]; ?></h5>
+	  		<p style="text-align: center; "><mailto><?php echo $correo[$j]; ?></mailto></p>
 
 
       </div>
-
+		<?php
+			}
+		?>
       						
 
 
 
-	   <div class="col-md-4 team-grid">
-	   		<div class="container">
-                <div class="row">
-                    <div class="team-member col-md-3 col-sm-6" style="padding-left:0px;">
-                        <div class="member-thumb">
-                            <img src="../images/member1.jpg" alt="" style="display: block;">
-                            <div class="team-overlay">
-                           
-                                <span >Designer</span>
-                                <ul class="social">
-                                    <li ><a href="#" class="fa fa-facebook" style="color:#FB9F00;"></a></li>
-                                    <li><a href="#" class="fa fa-twitter" style="color:#FB9F00;"></a></li>
-                                    <li><a href="#" class="fa fa-linkedin" style="color:#FB9F00;"></a></li>
-                                </ul>
-                            </div> <!-- /.team-overlay -->
-                        </div> <!-- /.member-thumb -->
-                    </div> <!-- /.team-member -->
-                </div> <!-- /.row -->
-            </div> <!-- /.container -->
 
-            <style type="text/css">
+
+
+		 <div class="clearfix"></div>
+
+
+		 </div>
+			</div>
+			</div>
+			</div>
+
+
+
+
+
+
+
+
+
+		   
+
+
+
+
+		   <div class="footer-section">
+		   <div class="container">
+		   <div class="footer-top">
+		 <div class="social-icons wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+		<a href="https://www.facebook.com/pages/Informatic-Technology-Development-Corporation-SA/157087624356221?fref=ts" target="_blank"><i class="icon1"></i></a>
+		<a href="#"><i class="icon2"></i></a>
+		<a href="https://plus.google.com/104763782397023638437/posts" target="_blank"><i class="icon3"></i></a>
+		<a href="#"><i class="icon4"></i></a>
+		</div>
+		</div>
+		 <div class="footer-middle wow fadeInDown Big animated animated" data-wow-delay="0.4s">
+		 <div class="bottom-menu">
+      <ul>
+   	<li><a href="../index.php">Inicio</a></li>
+    <li><a href="quienessomos.php">Quienes Somos</a></li>
+  	<li><a href="servicios.php">Servicios</a></li>
+	<li><a href="productos.php">Productos</a></li>
+   	<li><a href="blog.php">blog</a></li>
+   	<li><a href="contactos.php">Contactos</a></li>
+    </ul>
+		</div>
+		</div>
+		<div class="footer-bottom wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+									<p> Copyright &copy;2015  All rights  Reserved </p>
+									</div>
+					<script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+				</div>
+		   </div>
+
+<!--stilo para los perfiles-->
+  <style type="text/css">
 
 			@media screen and (min-width: 1200px) {
 
@@ -311,164 +401,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			}
 		}
             </style>
-	  <h5>Lizbeth Bejar</h5>
-	  <p>Donec pellentesque lacus at magna porttitor pulvinar. Morbi risus lorem; sollicitudin sit</p>
-      </div>
-
-
-
-
-
-	   <div class="col-md-4 team-grid">
-	  <div class="container">
-                <div class="row">
-                    <div class="team-member col-md-3 col-sm-6" style="padding-left:0px;">
-                        <div class="member-thumb">
-                            <img src="../images/personal/luis.jpg" alt="" style="display: block;">
-                            <div class="team-overlay">
-                           
-                                <span >Developer</span>
-                                <ul class="social">
-                                    <li><a href="https://www.facebook.com/luisalberto.romancruz.5"  class="fa fa-facebook" target="_blank" style="color:#FB9F00;"></a></li>
-                                    <li><a href="#" class="fa fa-twitter" style="color:#FB9F00;"></a></li>
-                                    <li><a href="#" class="fa fa-linkedin" style="color:#FB9F00;"></a></li>
-                                </ul>
-                            </div> <!-- /.team-overlay -->
-                        </div> <!-- /.member-thumb -->
-                    </div> <!-- /.team-member -->
-                </div> <!-- /.row -->
-            </div> <!-- /.container -->
-	  <h5>Luis Román</h5>
-	  <p>Donec pellentesque lacus at magna porttitor pulvinar. Morbi risus lorem; sollicitudin sit</p>
-      </div>
-
-
-      </div>	  
-
-
-
-
-
-		 <div class="clearfix"></div>
-
-
-		 </div>
-			</div>
-			</div>
-			</div>
-		    <div class="categories-section">
-		   <div class="container">
-		   <div class="footer-grids">
-			<div class="col-md-4 up wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-	  <h3>Próximos Eventos</h3>
-	  <div class="up1">
-	 <div class="up-img">
-	 <img src="../images/im1.jpg">
-	</div>
-     <div class="up-text">
-		 <a href="#">sagittis magna</a>
-		 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-		 </div>
-		 <div class="clearfix"></div>
-         </div>
-		  <div class="up1">
-	 <div class="up-img">
-	 <img src="../images/im2.jpg">
-	</div>
-     <div class="up-text">
-		 <a href="#">Integer molest</a>
-		 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-		 </div>
-		 <div class="clearfix"></div>
-         </div>
-		  <div class="up1">
-	 <div class="up-img">
-	 <img src="../images/im3.jpg">
-	</div>
-     <div class="up-text">
-		 <a href="#">Fusce suscipit</a>
-		 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-		 </div>
-		 <div class="clearfix"></div>
-         </div>
-		 </div>
-		 <div class="col-md-4 cat wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-		   <h3>Categorias</h3>
-		   <ul>
-	<li>Biometria y Seguridad.</li>
-	<li>Productos y Software</li>
-	<li>Servicios de Mantenimiento</li>
-	<li>Mineria</li>	
-	</ul>
-	</div>
-		 <div class="col-md-4 cont wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-		 <h3>Contactos</h3>
-		 <ul>
-		<li><i class="phone"></i></li>
-		<li><p>+51 984 216 127</p>
-		<p>+51 984 550 800</p>
-		<p>+51 971 454 446</p>
-		<p>+51 084 272650</p></li>
-		</ul>
-		<ul>
-	   <li><i class="smartphone"></i></li>
-		<li><p>Av. la Cultura 772, oficina 205, </p>
-		<p>2do nivel, Esquina del paradero Amaura</p>
-		<p> Cusco, Perú</p></li>
-		</ul>
-		<ul>
-		<li><i class="message"></i></li>
-		<li><a href="mailto:example@mail.com">Informes@itdecsa.com</a>
-      </li>
-		</ul>
-		</div>
-		 <div class="clearfix"></div>
-		  </div>
-		   </div>
-		   </div>
-		   <div class="footer-section">
-		   <div class="container">
-		   <div class="footer-top">
-		 <div class="social-icons wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-		<a href="https://www.facebook.com/pages/Informatic-Technology-Development-Corporation-SA/157087624356221?fref=ts" target="_blank"><i class="icon1"></i></a>
-		<a href="#"><i class="icon2"></i></a>
-		<a href="https://plus.google.com/104763782397023638437/posts" target="_blank"><i class="icon3"></i></a>
-		<a href="#"><i class="icon4"></i></a>
-		</div>
-		</div>
-		 <div class="footer-middle wow fadeInDown Big animated animated" data-wow-delay="0.4s">
-		 <div class="bottom-menu">
-      <ul>
-   	<li><a href="../index.php">Inicio</a></li>
-    <li><a href="quienessomos.php">Quienes Somos</a></li>
-  	<li><a href="servicios.php">Servicios</a></li>
-	<li><a href="productos.php">Productos</a></li>
-   	<li><a href="blog.php">blog</a></li>
-   	<li><a href="contactos.php">Contactos</a></li>
-    </ul>
-		</div>
-		</div>
-		<div class="footer-bottom wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-									<p> Copyright &copy;2015  All rights  Reserved </p>
-									</div>
-					<script type="text/javascript">
-						$(document).ready(function() {
-							/*
-							var defaults = {
-					  			containerID: 'toTop', // fading element id
-								containerHoverID: 'toTopHover', // fading element hover id
-								scrollSpeed: 1200,
-								easingType: 'linear' 
-					 		};
-							*/
-							
-							$().UItoTop({ easingType: 'easeOutQuart' });
-							
-						});
-					</script>
-				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-				</div>
-		   </div>
 
  </body>
 </html> 
