@@ -35,6 +35,7 @@ body{
 	padding:0 0;
 	margin:0 0; 
 	font-family: 'Roboto', sans-serif;
+  background: #000;
 }
 /*.header {
   background: url("../images/banner10.jpg")no-repeat 0px 0px;
@@ -57,13 +58,13 @@ body{
   margin: auto;
 
   height: 700px;
+  background: #000;
 }
 
 .header1 {
-  background: url("../images/background/header2.jpg");
-
-  background-size:cover;
-  min-height: 150px;
+  background:#000 url("../images/background/innovacion.png");
+  background-size: conver;
+  min-height: 300px;
   text-align: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -72,9 +73,8 @@ body{
 }
 
 .header2 {
-  background: url("../images/background/header2.jpg");
 
-  background-size:cover;
+  background:#000 ;
   min-height: 320px;
   text-align: center;
   -webkit-background-size: cover;
@@ -97,7 +97,18 @@ body{
 /*fin video*/
 .header-top {
   margin-top: 1em;
-  background: rgba(0, 0, 0, 0.91);
+  background:#FF5500 ;
+  -moz-border-radius: 9px 9px 9px 9px;
+/*para Safari y Chrome*/
+-webkit-border-radius: 9px 9px 9px 9px;
+/* para Opera */
+border-radius: 9px 9px 9px 9px;
+
+
+background: -webkit-linear-gradient(#000,#FF5500);
+background: -moz-linear-gradient(#000,#FF5500);
+background: -o-linear-gradient(#000,#FF5500);
+background: linear-gradient(#000,#FF5500);
 }
 .logo {
  
@@ -122,8 +133,8 @@ body{
   color: #fff;
 }
  .top-menu ul li a:hover {
-  border-top: 4px solid #FF5500;
-  color: #FF5500;/*FAEE0D*/
+  border-top: 4px solid #88FC0B;
+  color:#88FC0B;/*FAEE0D*/
     
   }
 }
@@ -137,8 +148,8 @@ span.menu {
   text-decoration: none;
 }
 .top-menu ul li a.active {
-  border-top: 4px solid #FF5500;
-  color:  #FF5500;
+  border-top: 4px solid #000;
+  color:  #000;
 }
 .search{
 	float:right;
@@ -233,7 +244,8 @@ span.menu {
 }
 .about-section {
   padding: 15em 0 4em;
-  background: url(../images/background/4.png);/*color del fondo del comienzo #eee*/
+  background:#000 url(../images/background/quien.png) no-repeat;/*color del fondo del comienzo #eee*/
+  background-position: right bottom, left top;
 }
 .about-img img {
   width: 100%;
@@ -296,8 +308,20 @@ span.menu {
 }
 .work-section {
   padding: 4em 0;
-  background:#000000;/*AD601C - ultimo #f5f5f5*/
+  background:#000000 url(../images/background/herr.png) no-repeat;/*AD601C - ultimo #f5f5f5*/
+  background-position: right bottom;
  }
+ .work-section2 {
+  padding: 4em 0;
+  background:#000000;
+ }
+.work-section2 h3 {
+  font-size: 2.5em;
+  text-transform: capitalize;
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+} 
 .work-section h3 {
   font-size: 2.5em;
   text-transform: capitalize;
@@ -346,7 +370,7 @@ transition: all 0.7s ease;
 }
 .news-section{
 padding:4em 0;
-background: #ffffff;
+background: #000;
 }
 }
 .news-section h3 {
@@ -461,8 +485,8 @@ a.button {
   transform: scaleY(0);
 }
 .categories-section {
-  padding: 4em 0;
-  background:url(../images/background/3.png);
+  padding: 0em 0;
+  background:#000 url(../images/background/infe.png);
 }
 .cat h3 {
   font-size: 2.5em;
@@ -497,6 +521,8 @@ a.button {
   float: left;
   width: 21%;
   margin-right: 3%;
+
+   
 }
 .up-text {
   float: left;
@@ -504,6 +530,10 @@ a.button {
 }
 .up-img img {
   width: 100%;
+
+   border-radius: 20%;
+   border:#FF5500 1px solid;
+   box-shadow: 0px 0px 10px 0px rgb(191, 61, 0);
 }
 .up1 {
   margin-top: 1.2em;
@@ -810,7 +840,7 @@ a.button1 {
 }
 .services-section1 {
   padding: 1em 0 4em;
-  background: #f5f5f5;
+  background: #000;
 }
 
 
@@ -2220,7 +2250,7 @@ a.b-home {
       .team-member .member-thumb .team-overlay ul.social li a {
         width: 36px;
         height: 36px;
-        background-color: white;
+        background-color:#000;
         line-height: 40px;
         color: #ec523f;
         border-radius: 18px;
@@ -2233,4 +2263,5 @@ a.b-home {
       }
     }
 /*fin quienes somos*/
->>>>>>> e4260176997bc9f098594a6e8fbb200198491759
+
+

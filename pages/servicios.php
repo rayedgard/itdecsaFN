@@ -144,76 +144,30 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 					  </div>
 					
 		   </div>
-		     <div class="categories-section">
-		   <div class="container">
-		   <div class="footer-grids">
-			<div class="col-md-4 up wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-	  <h3>Próximos Eventos</h3>
-	  <div class="up1">
-	 <div class="up-img">
-	 <img src="../images/im1.jpg">
-	</div>
-     <div class="up-text">
-		 <a href="#">sagittis magna</a>
-		 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-		 </div>
-		 <div class="clearfix"></div>
-         </div>
-		  <div class="up1">
-	 <div class="up-img">
-	 <img src="../images/im2.jpg">
-	</div>
-     <div class="up-text">
-		 <a href="#">Integer molest</a>
-		 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-		 </div>
-		 <div class="clearfix"></div>
-         </div>
-		  <div class="up1">
-	 <div class="up-img">
-	 <img src="../images/im3.jpg">
-	</div>
-     <div class="up-text">
-		 <a href="#">Fusce suscipit</a>
-		 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-		 </div>
-		 <div class="clearfix"></div>
-         </div>
-		 </div>
-		 <div class="col-md-4 cat wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-		   <h3>Categorias</h3>
-		   <ul>
-	<li>Biometria y Seguridad.</li>
-	<li>Productos y Software</li>
-	<li>Servicios de Mantenimiento</li>
-	<li>Mineria</li>	
-	</ul>
-	</div>
-		 <div class="col-md-4 cont wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-		 <h3>Contactos</h3>
-		<ul>
-								<li><i class="phone"></i></li>
-								<li><p>+51 987 789 722</p>
-								<p>+51 993 026 679</p>
-								<p>+51 084 245 844</p>
-								</li>
-							</ul>
-		<ul>
-	   <li><i class="smartphone"></i></li>
-		<li><p>Av. la Cultura 772, oficina 205, </p>
-		<p>2do nivel, Esquina del paradero Amaura</p>
-		<p> Cusco, Perú</p></li>
-		</ul>
-		<ul>
-		<li><i class="message"></i></li>
-		<li><a href="mailto:example@mail.com">Informes@itdecsa.com</a>
-         <a href="mailto:example@mail.com">rayedgard@itdecsa.com</a></li>
-		</ul>
-		</div>
-		 <div class="clearfix"></div>
-		  </div>
-		   </div>
-		   </div>
+		    
+
+
+
+
+
+
+
+			<?php
+				include("../conexion.php");
+				$link = Conectarse();
+				include("inferior.php");
+			?>
+
+
+
+
+
+
+
+
+
+
+
 		   <div class="footer-section">
 		   <div class="container">
 		   <div class="footer-top">

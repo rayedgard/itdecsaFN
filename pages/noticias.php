@@ -60,10 +60,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 
-			<?php
-			include("inferior.php");
-			?>
-
+		
 
 
 
@@ -98,7 +95,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="header-top" >
 				<div class="top-menu" >
 				    <span class="menu">
-				    	<img src="../images/nav1.png" alt=""/>
+				    	<img src="../images/nav1.png" alt="" />
 				    </span>
 					<ul>
 					   	<li><a href="../index.php">Inicio</a></li><label>/</label>

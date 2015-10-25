@@ -2,7 +2,6 @@
 <?php
 
 
-
 $consulta ="SELECT id,nombre,imagen,descripcion,fecha FROM tnoticias where estado=0 ORDER BY fecha desc limit 3"; 
 $resultado = mysql_query($consulta,$link);
 
@@ -49,8 +48,7 @@ while($row2 = mysql_fetch_array($resultado))
 				  			<div class="up1">
 								<div class="up-img">
 								
-									<img src="administracion/imagenes/noticias/<?php echo $imagen[$j]; ?>">
-								
+									<img src="../administracion/imagenes/noticias/<?php echo $imagen[$j]; ?>">
 								</div>
 
 			   					<div class="up-text">

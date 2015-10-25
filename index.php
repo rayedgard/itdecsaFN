@@ -451,7 +451,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 		    <!-- Jssor Slider Begin -->
 		    <!-- To move inline styles to css file/block, please specify a class name for each element. --> 
 
-  			<div class="work-section">
+  			<div class="work-section2">
 				<div class="container">
 					<h3 style="text-align:left;">Nuestros Partners</h3></br>
    					<div id="slider1_container" style="position: relative; margin: 0 auto; width: 980px; height: 100px; overflow: hidden; background:#f5f5f5; ">
@@ -489,7 +489,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
  			</div>
 
 
-  			<div class="work-section">
+  			<div class="work-section2">
 				<div class="container">
 					<h3 style="text-align:left;">Nuestros Clientes</h3></br>
    					<div id="slider1_container1" style="position: relative; margin: 0 auto; width: 980px; height: 100px; overflow: hidden; background:#f5f5f5; ">
@@ -528,6 +528,8 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 
 		
 			<?php
+			include("conexion.php");
+			$link = Conectarse();
 			include("inferior.php");
 			?>
 
