@@ -637,67 +637,45 @@ $(document).ready(function(){
 <!-- AQUI COMIENZA EL PANEL DESLIZANTE menu de productos-->
   
 <div class="panel">
-	<h3>Plataforma de desarrollo</h3>
-	<p>ITDECSA se dedica exclusivamente al desarrollo de sistemas de apoyo a las decisiones de su entidad, para lo cual le ofrecemos un conjunto de soluciones y productos que se acomoden a sus necesidades m&aacute;s exigentes</p>
-<br><hr>
+	<h3>FORMULARIO DE ACCESO</h3>
+	<br><hr>
 
 <div style="clear:both;"></div>
 
-	<div class="columns">
-		<div class="colleft2">
-		
-        <img  align="top" src="images/web2.png" width="150" height="150" /><br>
-        		<a href="index.php?p=24&t=web" title="DESARROLLO DE SISTEMAS WEB"><span class="dropcap">D</span>erarrollo de sistemas web</a><br>
-                <a href="index.php?p=24&t=web" title="TEMPLATES DE SITIOS WEB"><span class="dropcap">P</span>lantillas web</a><br>
-                <a href="#" title="SISTEMA DE TRAMITE DOCUMENTARIO"><span class="dropcap">T</span>r&aacute;mite documentario</a><br>
-                <a href="#" title="ELEMENTOS QUE NO DEBEN DE FALTAR EN TU WEB"><span class="dropcap">E</span>lementos Web</a><br>
-			
+	
+
+<form class="form-horizontal" method="post" enctype="multipart/form-data" name="form2" >
+
+	<div class="form-group">
+		<div class="col-sm-8">
+			<input type="text" name="nombre" class="form-control1" id="focusedinput" placeholder="Titulo de Noticia">
 		</div>
-
-
-
-
-	<div class="colleft3">
-
-		
-<a href="index.php?p=20&t=camara" title="CAMARAS DE VIDEOVIGILANCIA"><span class="dropcap">C</span>&aacute;maras de videovigilancia</a><br>
-<a href="index.php?p=20&t=dvr" title="ALMACENAMIENTO DE VIDEOS"><span class="dropcap">V</span>ideo Grabadores, DVR</a><br>
-<a href="index.php?p=20&t=joystick" title="CONTROLADORES DE VIDEOVIGILANCIA"><span class="dropcap">C</span>ontroladores de c&aacute;maras de seguridad</a><br>
-<a href="index.php?p=20&t=micro" title="MICROFONOS DE VIDEOVIGILANCIA"><span class="dropcap">M</span>icr&oacute;fonos para vigilancia de audio</a><br>
-<a href="index.php?p=20&t=kitcamara" title="KIT DE CAMARAS DE VIDEOVIGILANCIA"><span class="dropcap">K</span>it de c&aacute;maras de Videovigilancia</a><br>
-			<img align="bottom" src="images/cctv.png" alt="Camaras IP" />
-		</div>
-
-
-   <div class="colleft1">
-        <img src="images/sof.png"  width="150" height="150"b align="top"/><br>
-					    
-<a href="#" title="MINESIM V1.0"><span class="dropcap">S</span>istema de control de asistencia</a><br>
-<a href="#" title="SICA V1.0"><span class="dropcap">S</span>istema de extracci&oacute;n minera</a><br>
-<a href="#" title="SISTEMA DE FACTURACION"><span class="dropcap">S</span>istema de facturaci&oacute;n, ventas</a><br>
-<a href="#" title="SISTEMA DE ACCESO"><span class="dropcap">S</span>istema de acceso a PCs</a><br>
-			
-		</div>
-
-
-	  <div class="colright">
-<a href="index.php?p=20&t=reloj" title="ACCESO POR HUELLA DACTILAR, PROXIMAL"><span class="dropcap">R</span>eloj de Control de asistencia</a><br>
-<a href="index.php?p=20&t=kitalarma" title="KIT DE ALARMAS CONTRA ROBOS"><span class="dropcap">K</span>it de alarmas de seguridad</a><br>
-<a href="index.php?p=20&t=sensor" title="SENSORES DE ACCESO"><span class="dropcap">S</span>ensores</a><br>
-<a href="index.php?p=20&t=kitincendio" title="KIT DE ALARMAS CONTRA INCENDIOS "><span class="dropcap">K</span>it de alarmas contra incendios</a><br>
-	  <img src="images/domo.png" width="150" height="150" align="bottom"/></div>
-      
-     
-        
-          <div class="colleft6" >
-<!--ANIMACION PARA LOS RELOJES DACTILARES-->
-  <div id="carousel">
-		<p>This slideshow requires <a href="http://www.adobe.com/go/getflashplayer">Adobe Flash Player 9.0</a> (or higher). JavaScript must be enabled.</p>
 	</div>
 
-<script type="text/javascript">
-	swfobject.embedSWF("slideShowFLASH/Carousel.swf", "carousel", "780", "150", "9.0.0", false, {xmlfile:"default.xml", loaderColor:"0x666666"}, {wmode: "transparent"});
-</script>
+	<div class="form-group">
+		<div class="col-sm-8 ">
+			<input type="text" name="link" class="form-control1" id="focusedinput" placeholder="Ingrese el link de la noticia (Fuente)">
+		</div>
+	</div>
+
+
+	<div class="form-group">
+	    <div class="col-sm-8">
+	     	<textarea name="descripcion"  onFocus="if(this.value == 'Texto aqui...') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Texto aqui...';}">Descripción...</textarea>
+		</div>
+	</div>
+
+
+
+	<div class="form-group">
+        <div class="col-sm-8">
+	        <input name="aceptar" type="submit" class="btn-success btn">
+	    </div>
+    </div>
+</form>
+
+
+
 <!--FIN FLAS RELOJES--->
             
         </div>
