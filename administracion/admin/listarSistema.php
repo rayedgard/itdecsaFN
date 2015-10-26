@@ -85,8 +85,6 @@ if(!empty($my_error ))
 
 
 
-
-
 $consulta ="SELECT id,nombre,estado FROM tsistemas ORDER BY id"; 
 $resultado = mysql_query($consulta,$link);
 

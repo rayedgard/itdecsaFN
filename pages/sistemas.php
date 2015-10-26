@@ -68,7 +68,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
      <ul>
    	<li><a href="../index.php">Inicio</a></li><label>/</label>
     <li><a href="quienessomos.php">Quienes Somos</a></li><label>/</label>
-  	<li><a href="servicios.php" class="active">Servicios</a></li><label>/</label>
+  	<li><a href="servicios.php" >Servicios</a></li><label>/</label>
 	<li><a href="productos.php">Productos</a></li><label>/</label>
    	
    	<li><a href="contactos.php">Contactos</a></li>
@@ -107,37 +107,68 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 		
 </div>
 </div>
+
+
+
+
+<?php
+
+include("../conexion.php");
+$link = Conectarse();
+
+
+
+$consulta ="SELECT id,nombre,imagen FROM tsistemas where estado=0 ORDER BY id"; 
+$resultado = mysql_query($consulta,$link);
+
+	//nombre del titulo
+	$id=array();
+	$nombre=array();
+	$imagen = array();
+while($row2 = mysql_fetch_array($resultado))
+		{
+		array_push($id,$row2[0]);
+		array_push($nombre,$row2[1]);
+		array_push($imagen,$row2[2]);
+		}
+		
+
+?>
+
+
+
+
+
 		 <div class="content">
 		 		 <div class="services-section">
 		 		<div class="container">
-						<h3> Nuestros Servicios</h3>
+						<h3> Nuestros Sistemas Desarrollados </h3>
 						<div class="services-grids">
 						<div class="service1">
+						
+
+
+							<?php
+							for($j=0;$j<count($nombre);$j++)
+							{
+							?>
+
 							<div class="col-md-4 services-grid wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-								 <a href="../images/servicios/desarrollo.jpg" class="swipebox">
-								 <img src="../images/servicios/desarrollo1.jpg" class="img-responsive" alt="" style="border-radius:50%;margin-left:18%;" /></a>
-								 <h5>Desarrollo de Software</h5>
-								<p style="text-align:justify">Desarrollo de Software con distintos lenguajes para múltiples plataformas (Escritorio, Móviles, Web) y dispositivos (PCs, Smartphones, Tablets) siempre en constante innovación, buscando, desarrollando e implementando nuevas tecnologías.</p>
-								<a href="sistemas.php" class="button1 hvr-shutter-in-vertical">leer más</a>
+								 <a href="../administracion/imagenes/sistemas/<?php echo $imagen[$j];?>" class="swipebox">
+								 <img src="../administracion/imagenes/sistemas/<?php echo $imagen[$j];?>" class="img-responsive" alt="" style="border-radius:50%;margin-left:18%;" /></a>
+								 <h5><?php echo $nombre[$j];?></h5>
+								
+								<a href="desarrollo.php" class="button1 hvr-shutter-in-vertical">leer más</a>
 							</div>
 
-						<div class="col-md-4 services-grid wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-						<a href="../images/servicios/go.jpg" class="swipebox" >
-						<img src="../images/servicios/go1.jpg" class="img-responsive" alt="" style="border-radius:50%;margin-left:18%;"/></a>
-						<h5>Diseño y Desarrollo Web</h5>
-					<p style="text-align:justify">Diseño y desarrollo de sitios Web mediante la implementación de herramientas y tendencias actuales e innovadoras como lo son HTML5, CSS3 y Bootstrap, así como la gestión e implementación de plataformas autoadministrables.</p>
-						<a href="productos.php" class="button1 hvr-shutter-in-vertical">leer más</a>
-						</div>
+							<?php 
+							$cont++;
+							} 
+							?>
 
-						
-						<div class="col-md-4 services-grid wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-						 <a href="../images/servicios/car.jpg" class="swipebox">
-						 <img src="../images/servicios/car1.jpg" class="img-responsive" alt="" style="border-radius:50%;margin-left:18%;"/></a>
-						 <h5>Tiendas en Linea</h5>
-					<p style="text-align:justify">Desarrollo, gestión e implementación de Tiendas en Línea 100% autoadministrables, con integración a redes sociales adaptadas a móviles y tablets.</p>
-						<a href="productos.php" class="button1 hvr-shutter-in-vertical">leer más</a>
-						</div>
-			
+
+
+
 						</div>
 						</div>
 						</div>
@@ -153,8 +184,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 
 
 			<?php
-				include("../conexion.php");
-				$link = Conectarse();
+				
 				include("inferior.php");
 			?>
 

@@ -58,7 +58,7 @@ body{
   margin: auto;
 
   height: 700px;
-  background: #000;
+ 
 }
 
 .header1 {
@@ -92,7 +92,7 @@ body{
     height:118%;
     position:absolute;
     width:100%;
-    z-index: -20;
+    z-index: -10;
 }
 /*fin video*/
 .header-top {
@@ -124,6 +124,7 @@ background: linear-gradient(#000,#FF5500);
 .top-menu {
    float:left;
      padding-top: 0.3em;
+
   }
 .top-menu ul li {
   display: inline-block;
@@ -1499,7 +1500,7 @@ padding:6px 0 ;
 }
 .top-menu  ul{
 margin:6px 0;
-z-index: 999;
+z-index: 100;
 position: absolute;
 width: 95%;
 background:#394C53;

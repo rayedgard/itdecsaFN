@@ -52,7 +52,7 @@ while($row2 = mysql_fetch_array($resultado))
 								</div>
 
 			   					<div class="up-text">
-					 				<a href="pages/noticias.php?c=<?php echo $id[$j];?>"><?php echo  substr(strip_tags($nombre[$j]),0,50)."..."; ?></a>
+					 				<a href="noticias.php?c=<?php echo $id[$j];?>"><?php echo  substr(strip_tags($nombre[$j]),0,50)."..."; ?></a>
 									<p>
 									<?php echo $fecha[$j];?>
 									</p>
