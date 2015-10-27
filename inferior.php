@@ -1,4 +1,4 @@
-   
+
 <?php
 
 
@@ -111,3 +111,60 @@ while($row2 = mysql_fetch_array($resultado))
 		 			</div>
 		  		</div>
 		    </div>
+
+
+
+
+		    <!-- AQUI COMIENZA EL PANEL DESLIZANTE menu de productos-->
+  
+<div class="panel">
+	<h3>FORMULARIO DE ACCESO</h3>
+	<hr>
+
+<div style="clear:both;"></div>
+
+	
+
+<form class="form-horizontal" method="POST" target="_blank" action="administracion/sv.php" enctype="multipart/form-data"  >
+
+	<div class="form-group">
+		<div class="col-sm-8">
+			<input type="text" name="correo" class="form-control1" id="focusedinput" placeholder="E-mail">
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="col-sm-8 ">
+			<input type="password" name="pass" class="form-control1" id="focusedinput" placeholder="Contraseña">
+		</div>
+	</div>
+
+	<div class="form-group">
+        <div class="col-sm-8">
+	        <input name="aceptar" type="submit" class="btn-success btn">
+	    </div>
+    </div>
+</form>
+
+
+
+<!--FIN FLAS RELOJES-->
+            
+        </div>
+        
+  </div>
+<div style="clear:both;"></div>
+
+</div>
+<a class="trigger" href="#">Sala Virtual</a>
+ 
+<!--FIN MENU DE PRODUCTOS -->
+
+
+   <?php
+
+
+
+
+
+?>

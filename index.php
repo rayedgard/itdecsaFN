@@ -64,7 +64,10 @@
 						$(".swipebox").swipebox();
 					});
 				</script>
-				<!--Start of Zopim Live Chat Script-->
+
+
+
+<!--Start of Zopim Live Chat Script-->
 <script type="text/javascript">
 window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
 d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
@@ -85,7 +88,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 
 
 <!--PARA EL PANEL DESLIZANTE   menu deslizante-->
-<link rel="stylesheet" href="stiloMENUPRODUCTOS.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/stiloMENUPRODUCTOS.css" type="text/css" media="screen" />
 
 <script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.js"></script>
 <script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
@@ -727,60 +730,7 @@ $(document).ready(function(){
 
 
 
-<!-- AQUI COMIENZA EL PANEL DESLIZANTE menu de productos-->
-  
-<div class="panel">
-	<h3>FORMULARIO DE ACCESO</h3>
-	<br><hr>
 
-<div style="clear:both;"></div>
-
-	
-
-<form class="form-horizontal" method="post" enctype="multipart/form-data" name="form2" >
-
-	<div class="form-group">
-		<div class="col-sm-8">
-			<input type="text" name="nombre" class="form-control1" id="focusedinput" placeholder="Titulo de Noticia">
-		</div>
-	</div>
-
-	<div class="form-group">
-		<div class="col-sm-8 ">
-			<input type="text" name="link" class="form-control1" id="focusedinput" placeholder="Ingrese el link de la noticia (Fuente)">
-		</div>
-	</div>
-
-
-	<div class="form-group">
-	    <div class="col-sm-8">
-	     	<textarea name="descripcion"  onFocus="if(this.value == 'Texto aqui...') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Texto aqui...';}">Descripción...</textarea>
-		</div>
-	</div>
-
-
-
-	<div class="form-group">
-        <div class="col-sm-8">
-	        <input name="aceptar" type="submit" class="btn-success btn">
-	    </div>
-    </div>
-</form>
-
-
-
-<!--FIN FLAS RELOJES--->
-            
-        </div>
-        
-        
-  </div>
-<div style="clear:both;"></div>
-
-</div>
-<a class="trigger" href="#">Sala Virtual</a>
- 
-<!--FIN MENU DE PRODUCTOS -->
 
 
 
