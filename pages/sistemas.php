@@ -112,7 +112,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 
 
 <?php
-
+include("../administracion/funciones.php");
 include("../conexion.php");
 $link = Conectarse();
 
@@ -156,9 +156,9 @@ while($row2 = mysql_fetch_array($resultado))
 							<div class="col-md-4 services-grid wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 								 <a href="../administracion/imagenes/sistemas/<?php echo $imagen[$j];?>" class="swipebox">
 								 <img src="../administracion/imagenes/sistemas/<?php echo $imagen[$j];?>" class="img-responsive" alt="" style="border-radius:50%;margin-left:18%;" /></a>
-								 <h5><?php echo $nombre[$j];?></h5>
+								 <p><?php echo $nombre[$j];?></p>
 								
-								<a href="desarrollo.php" class="button1 hvr-shutter-in-vertical">leer más</a>
+								<a href="desarrollo.php?c=<?php echo encripta($id[$j],'rayedgard');?>" class="button1 hvr-shutter-in-vertical">leer más</a>
 							</div>
 
 							<?php 

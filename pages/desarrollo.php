@@ -43,6 +43,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 		});
 	</script>
+
+
+
+
+
 <!---End-smoth-scrolling---->
 <link rel="stylesheet" href="../css/swipebox.css">
 			<script src="../js/jquery.swipebox.min.js"></script> 
@@ -59,6 +64,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </script>
 <!---/End-Animation---->
 
+
+
+
+
+
 <!--Start of Zopim Live Chat Script-->
 <script type="text/javascript">
 window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
@@ -68,8 +78,52 @@ $.src="//v2.zopim.com/?3OU3AV4FqT8DIgIfcN0DBfkbqk96DpTr";z.t=+new Date;$.
 type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 </script>
 <!--End of Zopim Live Chat Script-->
+
+
+
+
+
+
+
+
+
+
+
+
+
 </head>
 <body>
+
+
+
+<?php
+include("../administracion/funciones.php");
+include("../conexion.php");
+$link = Conectarse();
+$id=desencripta($_GET['c'],"rayedgard");
+
+$consulta = mysql_query("SELECT nombre,imagen,descripcion,file,tecnicas,requisitos FROM tsistemas where estado=0  and id='$id'",$link);
+$resultado = mysql_fetch_array($consulta);
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  	<div class="header2 head-top " id="home">
 		<div class="container">
 			<div class="header-top">
@@ -116,8 +170,15 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 
 			
 		</div>
-<img src="../images/background/innovacion.png" alt="" style="z-index:-100;" />
-		
+
+
+
+		<img src="../administracion/imagenes/sistemas/<?php echo $resultado[1];?>" alt="" style="z-index:-100;" />
+	
+
+
+
+
 	</div>
 
 	<div class="content">
@@ -125,16 +186,18 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 
 	<div class="services-section">
 		<div class="container">
-			<h3> Sistema de Control de Asistencia</h3>
+			<h3><?php echo $resultado[0];?></h3>
 			<div class="services-grids">
 				<div class="services">
 
 					<!-- contenido recursivo para seecciones de desarrollo de software -->
 					<div class="services-grid wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 
-						<p style="text-align:justify;">Como solución a esta necesidad existen distintos tipos de Sistemas Computarizados del Control de Asistencia, con uso de fotochecks con códigos de barras, banda magnéticas o tarjetas de proximidad. Todos los cuales se basan en algo que el empleado posee (el fotocheck) pero que puede ser prestado, olvidado, robado o perdido y sin tener la certeza que la persona que lo presenta es el usuario auténtico (suplantación).</br>
-						Sin embargo, si le preocupa la posible suplantación al momento de marcación y le interesa VERIFICAR PERSONAS y no tarjetas de plástico (fotochecks), que como dijimos son sujetos de préstamo, pérdida o extravío; puede utilizar nuestros lectores de huella digital, los cuales ya se encuentran instalados y operativos satisfactoriamente en una serie de Instituciones públicas y privadas del medio.
-						</p>
+
+						<?php
+
+							echo $resultado[2];
+						?>
 						
 						<div class="tabs" style="border:2px solid #FE0202" >	
 
@@ -154,11 +217,22 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 							
 								<h3 style="font-size:2.5em;padding-top:8%;">Manual De Usuario</h3>	
 
-								<a href="#" style="color:#fff;text-align: center;" target="_blank">
+								<a href="../administracion/imagenes/sistemas/<?php echo $resultado[3];?>" style="color:#fff;text-align: center;" target="_blank">
 									<img src="../images/iconos/downloads.png" style="width:10%;height:18%;">
 								</a></br></br>
-								<p style="">13.25 MB, PDF, ESPAÑOL</br>
-								2014.08.26<p>					
+								<p style="">
+
+								Tamano de Archivo: <?php echo filesize("../administracion/imagenes/sistemas/$resultado[3]");?>
+
+								</br>
+								Ultimo acceso al archivo: <?php echo fileatime("../administracion/imagenes/sistemas/$resultado[3]");?>
+ 								</br>
+
+								Propietario del archivo: <?php echo fileperms("../administracion/imagenes/sistemas/$resultado[3]");?>
+ 								</br>
+							
+
+								<p>					
 
 
 
@@ -169,11 +243,9 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 								<div id="videos"><!--VIDEOS-->
 									<div class="video">   <!--reprosuctor de video grande-->			    
 										<?php 
-										include_once("../conexion.php");
-										$link = Conectarse();
-
+								
 										//CONESTA CONSULTA CAPTURAMOS EL MAXIMO Y ULTIMO DE LOS VIDEOS AGREGADOS 
-										$consulta5 = mysql_query("SELECT max(id)  FROM tvideos where estado=0",$link);
+										$consulta5 = mysql_query("SELECT max(id)  FROM tvideos where estado=0 and ids='$id'",$link);
 										$id= mysql_fetch_array($consulta5);
 
 
@@ -236,9 +308,20 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 
 							<div class="contenedor1 software" style="display:none;border-bottom-right-radius: 2em;border-bottom-left-radius:2em;">
 
+
+							<?php
+								echo $resultado[4];
+							?>
+
 							</div>
 
 							<div class="contenedor1 especificaciones"  style="display:none;border-bottom-right-radius: 2em;border-bottom-left-radius:2em;">
+
+
+							<?php
+								echo $resultado[5];
+							?>
+
 
 							</div>
 							
@@ -486,7 +569,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 					<div class="clase2" style="float:left;width:50%; margin-top:100px;">
 
 
-					<h3 style="font-size:1.2em">DÉJENOS UN RECUERDO</h3>
+					<h3 style="font-size:1.2em">DÉJENOS UN Mensaje</h3>
 						
 	
 					</div>
@@ -504,6 +587,12 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 	</div>
 
 	
+
+
+
+
+
+
 
 
 
