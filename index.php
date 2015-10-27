@@ -4,10 +4,10 @@
 <title>ITDECSA</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Cultivation Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<meta name="keywords" content="Cultivation Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href='http://fonts.googleapis.com/ccolss?family=Lobster' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -26,8 +26,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="css/animate.css" rel='stylesheet' type='text/css' />
 
 
-    <script type="text/javascript" src="js/jssor.js"></script>
-    <script type="text/javascript" src="js/jssor.slider.js"></script>
+<script type="text/javascript" src="js/jssor.js"></script>
+ <script type="text/javascript" src="js/jssor.slider.js"></script>
+
+
+ 
+    <!-- You can use open graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+    <meta property="og:url"           content="http://www.itdecsa.com/muestras/itdecsaprueba/index.php" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Informatic Technology Development" />
+    <meta property="og:description"   content="Es una empresa Peruana que brinda servicios de desarrollo de sistemas de software contamos con la tecnologia de vanguardia y con el personal especializado en cada área para brindar propuestas innovadoras de acuerdo con cada una de la necesidades de nuestros clientes a lo largo de nuestra trayectoria." />
+    <meta property="og:image"         content="http://www.itdecsa.com/muestras/itdecsaprueba/banner6.jpg" />
 
 
 
@@ -96,12 +106,94 @@ $(document).ready(function(){
 
 
 
-
-
-
+<div id="spot-im-root"></div>
+<script>!function(t,e,o){function p(){var t=e.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"==e.location.protocol?"https":"http")+":"+o,e.body.appendChild(t)}t.spotId="5304a36d3e7274c3644c355a49117551",t.position="right",t.state="spot-state",t.embed="wordpress",t.spotName="",t.allowDesktop=1,t.containerId="spot-im-root",p()}(window.SPOTIM={},document,"//www.spot.im/embed/scripts/launcher.js");
+</script>
+<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
 </head>
 
 <body>
+
+	
+
+		<!-----pop-up-grid---->
+
+								 <div id="small-dialog" class="mfp-hide">
+									<div class="pop_up">
+									 	<div class="payment-online-form-left">
+											<form>
+												<h4><span class="shipping"> </span>Shipping</h4>
+												<ul>
+													<li><input class="text-box-dark" type="text" value="Frist Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Frist Name';}"></li>
+													<li><input class="text-box-dark" type="text" value="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Last Name';}"></li>
+												</ul>
+												<ul>
+													<li><input class="text-box-dark" type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"></li>
+													<li><input class="text-box-dark" type="text" value="Company Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Company Name';}"></li>
+												</ul>
+												<ul>
+													<li><input class="text-box-dark" type="text" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}"></li>
+													<li><input class="text-box-dark" type="text" value="Address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Address';}"></li>
+													<div class="clear"> </div>
+												</ul>
+												<div class="clear"> </div>
+											<ul class="payment-type">
+												<h4><span class="payment"> </span> Payments</h4>
+												<li><span class="col_checkbox">
+													<input id="3" class="css-checkbox1" type="checkbox">
+													<label for="3" name="demo_lbl_1" class="css-label1"> </label>
+													<a class="visa" href="#"> </a>
+													</span>
+													
+												</li>
+												<li>
+													<span class="col_checkbox">
+														<input id="4" class="css-checkbox2" type="checkbox">
+														<label for="4" name="demo_lbl_2" class="css-label2"> </label>
+														<a class="paypal" href="#"> </a>
+													</span>
+												</li>
+												<div class="clear"> </div>
+											</ul>
+												<ul>
+													<li><input class="text-box-dark" type="text" value="Card Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Card Number';}"></li>
+													<li><input class="text-box-dark" type="text" value="Name on card" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name on card';}"></li>
+													<div class="clear"> </div>
+												</ul>
+												<ul>
+													<li><input class="text-box-light hasDatepicker" type="text" id="datepicker" value="Expiration Date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Expiration Date';}"><em class="pay-date"> </em></li>
+													<li><input class="text-box-dark" type="text" value="Security Code" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Security Code';}"></li>
+													<div class="clear"> </div>
+												</ul>
+												<ul class="payment-sendbtns">
+													<li><input type="reset" value="Cancel"></li>
+													<li><input type="submit" value="Process order"></li>
+												</ul>
+												<div class="clear"> </div>
+											</form>
+										</div>
+						  			</div>
+								</div>
+								<!-----pop-up-grid---->
+				<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+
+				<script>
+					$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+					});
+				});
+		</script>
+
+
 					<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:10px; top:10px;">
 					    <a href="https://www.facebook.com/icpnac?fref=ts" class="a2a_button_facebook"></a>
 					    <a href="https://twitter.com/ICPNACultural" class="a2a_button_twitter"></a>
@@ -238,6 +330,7 @@ $(document).ready(function(){
 								 		  - Mant. de comp. y dips. mov.</br>
 								 		  - Instalación de redes
 										</p>
+										<a class="popup-with-zoom-anim" href="#small-dialog">Buy Now</a>
 									</div>
 								</div>
 					
