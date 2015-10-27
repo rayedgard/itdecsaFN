@@ -69,14 +69,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 
- <title>Your Website Title</title>
+
     <!-- You can use open graph tags to customize link previews.
     Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
-    <meta property="og:url"           content="http://www.your-domain.com/your-page.html" />
+    <meta property="og:url"           content="http://www.itdecsa.com/muestras/itdecsaprueba/index.php" />
     <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="Your Website Title" />
-    <meta property="og:description"   content="Your description" />
-    <meta property="og:image"         content="http://www.your-domain.com/path/image.jpg" />
+    <meta property="og:title"         content="Informatic Technology Development" />
+    <meta property="og:description"   content="Es una empresa Peruana que brinda servicios de desarrollo de sistemas de software contamos con la tecnologia de vanguardia y con el personal especializado en cada área para brindar propuestas innovadoras de acuerdo con cada una de la necesidades de nuestros clientes a lo largo de nuestra trayectoria." />
+    <meta property="og:image"         content="http://www.itdecsa.com/muestras/itdecsaprueba/banner6.jpg" />
 
 
 
@@ -88,6 +88,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 </head>
 <body style="background:#000000;">
+
+
+<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:10px; top:10px;">
+					    <a href="https://www.facebook.com/icpnac?fref=ts" class="a2a_button_facebook"></a>
+					    <a href="https://twitter.com/ICPNACultural" class="a2a_button_twitter"></a>
+					    <a href="https://www.google.com/maps/d/viewer?t=m&oe=UTF8&msa=0&ie=UTF8&mid=z2GfYE6MToNk.kwwE1r--3cL0" class="a2a_button_google_plus"></a>
+					    <a class="a2a_button_pinterest"></a>
+					    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+					</div>
+
+					<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+
+
     <div class="header1" id="home">
 		<div class="container">
 
