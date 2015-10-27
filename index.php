@@ -106,16 +106,63 @@ $(document).ready(function(){
 
 
 
-
-
-
-<div id="spot-im-root"></div>
-<script>!function(t,e,o){function p(){var t=e.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"==e.location.protocol?"https":"http")+":"+o,e.body.appendChild(t)}t.spotId="5304a36d3e7274c3644c355a49117551",t.position="right",t.state="spot-state",t.embed="wordpress",t.spotName="",t.allowDesktop=1,t.containerId="spot-im-root",p()}(window.SPOTIM={},document,"//www.spot.im/embed/scripts/launcher.js");
-</script>
-
 </head>
 
 <body>
+
+
+
+
+
+
+<!--/////////////// CODIGO PRA EL POPUP INICIAL ////////////////-->
+<link rel="stylesheet" type="text/css" href="css/popup.css">
+<script src="js/popup.min.js"></script>
+<script src="js/jquery.colorbox.js"></script>
+<!--/////////////// FIN POPUP INICIAL ////////////////-->
+
+
+
+
+
+</head>
+
+
+
+
+
+
+
+<body >
+
+
+ 
+
+<!--/////////////// CODIGO QUE LLAMA EL POPUP INICIAL ////////////////-->
+    <script>
+      function openColorBox(){
+        $.colorbox({iframe:true, overlayClose: false, fixed: true ,width:"80%", height:"80%", href:"http://www.sitepoint.com"});
+      }
+      
+      setTimeout(openColorBox, 1000);
+ 
+    </script>
+<!--/////////////// FIN EL POPUP INICIAL ////////////////-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 					<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:10px; top:10px;">
 					    <a href="https://www.facebook.com/icpnac?fref=ts" class="a2a_button_facebook"></a>
