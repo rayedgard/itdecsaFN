@@ -195,13 +195,13 @@ $resultado = mysql_fetch_array($consulta);
 
 
 						<?php
-
 							echo $resultado[2];
 						?>
+							
 						
-						<div class="tabs" style="border:2px solid #FE0202" >	
+						<div class="tabs" >	
 
-							<div class="contenedor" style="border-top-left-radius: 2em ;border-top-right-radius: 2em;border:2px solid #00FF48">						
+							<div class="contenedor" style="border-top-left-radius: 2em ;border-top-right-radius: 2em">						
 								<ul>
 									<li class="button demo manu" >Manuales</li>									
 		  	  						<li class="button demo vi">Videos</li>
@@ -222,21 +222,23 @@ $resultado = mysql_fetch_array($consulta);
 								</a></br></br>
 								<p style="">
 
-								Tamano de Archivo: <?php echo filesize("../administracion/imagenes/sistemas/$resultado[3]");?>
-
+								Tamano de Archivo: <?php echo filesize("../administracion/imagenes/sistemas/$resultado[3]")."&nbsp KB";?>
 								</br>
-								Ultimo acceso al archivo: <?php echo fileatime("../administracion/imagenes/sistemas/$resultado[3]");?>
+								
+
+								Ultima modificacion del archivo:
+
+								 <?php 
+
+								$nombre_archivo = "../administracion/imagenes/sistemas/$resultado[3]";						
+
+								if (file_exists($nombre_archivo)) {
+								    echo date("F d Y H:i:s.", fileatime($nombre_archivo));
+								}
+
+								?>
  								</br>
-
-								Propietario del archivo: <?php echo fileperms("../administracion/imagenes/sistemas/$resultado[3]");?>
- 								</br>
-							
-
-								<p>					
-
-
-
-
+								<p>		
 							</div>
 
 							<div class="contenedor1 videos"  style="border-bottom-right-radius: 2em;border-bottom-left-radius:2em;">
@@ -569,7 +571,7 @@ $resultado = mysql_fetch_array($consulta);
 					<div class="clase2" style="float:left;width:50%; margin-top:100px;">
 
 
-					<h3 style="font-size:1.2em">DÉJENOS UN Mensaje</h3>
+					<h3 style="font-size:2.2em">Otro Software</h3>
 						
 	
 					</div>

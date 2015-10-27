@@ -4,7 +4,7 @@
 <!--PARA EL PANEL DESLIZANTE   menu deslizante-->
 <link rel="stylesheet" href="../css/stiloMENUPRODUCTOS.css" type="text/css" media="screen" />
 
-<script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.js"></script>
+
 <script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
 <script type="text/javascript">
 $(document).ready(function(){
@@ -56,12 +56,6 @@ while($row2 = mysql_fetch_array($resultado))
 		  			<div class="footer-grids">
 						<div class="col-md-4 up wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 							<h3>Noticias Recientes</h3>
-				  		
-
-
-
-
-
 
 							<?php
 							//bucle para generar las noticias automaticamente

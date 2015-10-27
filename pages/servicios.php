@@ -126,7 +126,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 						<img src="../images/servicios/go1.jpg" class="img-responsive" alt="" style="border-radius:50%;margin-left:18%;"/></a>
 						<h5>Diseño y Desarrollo Web</h5>
 					<p style="text-align:justify">Diseño y desarrollo de sitios Web mediante la implementación de herramientas y tendencias actuales e innovadoras como lo son HTML5, CSS3 y Bootstrap, así como la gestión e implementación de plataformas autoadministrables.</p>
-						<a href="productos.php" class="button1 hvr-shutter-in-vertical">leer más</a>
+						<a href="web1.php" class="button1 hvr-shutter-in-vertical">leer más</a>
 						</div>
 
 						

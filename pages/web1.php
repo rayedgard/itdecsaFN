@@ -5,7 +5,7 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
-<!DOCTYPE HTML>  
+<!DOCTYPE HTML> 
 <html>
 <head>
 <title>ITDECSA - Informatic Technology Development Corporation S.A. </title>
@@ -13,32 +13,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Cultivation Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
-<script src="../js/jquery-1.11.1.min.js"></script>
 
- <link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" />
 <!---- start-smoth-scrolling---->
-<script type="text/javascript" src="../js/move-top.js"></script>
-<script type="text/javascript" src="../js/easing.js"></script>
-
-
-
-<!-- Custom Theme files -->
-<link href="css/style.css" rel='stylesheet' type='text/css' />	
-<script src="js/jquery.min.js"> </script>
-<!--webfonts-->
-
-
-
-
-
-
-
 
  <script type="text/javascript">
 		jQuery(document).ready(function($) {
@@ -49,30 +29,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		}); 
 	</script>
 <!---End-smoth-scrolling---->
-<link rel="stylesheet" href="../css/swipebox.css">
-			<script src="../js/jquery.swipebox.min.js"></script> 
-			    <script type="text/javascript">
-					jQuery(function($) {
-						$(".swipebox").swipebox();
-					});
-				</script>
+
 				<!--Animation-->
 <script src="../js/wow.min.js"></script>
 <link href="../css/animate.css" rel='stylesheet' type='text/css' />
+
+<script src="../jssliderweb/jquery.min.js"> </script>
 <script>
 	new WOW().init();
 </script>
 <!---/End-Animation---->
 
-<!--Start of Zopim Live Chat Script-->
-<script type="text/javascript">
-window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
-d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
-_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
-$.src="//v2.zopim.com/?3OU3AV4FqT8DIgIfcN0DBfkbqk96DpTr";z.t=+new Date;$.
-type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
-</script>
-<!--End of Zopim Live Chat Script-->
 </head>
 <body>
 
@@ -86,8 +53,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
    	<li><a href="../index.php">Inicio</a></li><label>/</label>
     <li><a href="quienessomos.php">Quienes Somos</a></li><label>/</label>
   	<li><a href="servicios.php">Servicios</a></li><label>/</label>
-	<li><a href="productos.php" class="active">Productos</a></li><label>/</label>
-   	
+	<li><a href="productos.php">Productos</a></li><label>/</label>   	
    	<li><a href="contactos.php">Contactos</a></li>
     </ul>
      <!-- script for menu -->
@@ -117,31 +83,19 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 		<div class="clearfix"></div>
 	
 	</div>
-	
 		
 </div>
 </div>
-		<div class="content">
-			<!--tainers-section-->
-				  <div class="tainers-section" style="">
+		
+			  <div class="tainers-section" style="background:#151515">
 	 				 <div class="container">
-	 				 <h3 style="
-						  font-size: 3.5em;
-  						  text-transform: capitalize;
-				          color: #fff;
-				   		  margin: 0 17px;
-				 	     font-family: 'Josefin Sans', sans-serif;
-				         font-weight: 600;
-				         text-align:center;
-	
-	 				 ">Desarrollo de Paginas Web</h3>
 						<!--sreen-gallery-cursual-->
 						<div class="col-md-3 tainer wow bounceInLeft" data-wow-delay="0.4s">
-						      <h3>Nuestros Paquetes</h3>
-							  <p>Planes Diseño Web e Instalación de Sitios personales, profesionales o empresariales.</p>
+						      <h3 style="color:#ff5000;">Nuestros Paquetes</h3>
+							  <p>Planes Diseño Web e Instalación de Sitios personales, profesionales o empresariales</p>
 						</div>
 						<div class="col-md-9 sreen-gallery-cursual wow bounceInRight" data-wow-delay="0.4s">
-							<!-- start content_slider -->
+							
 						       <div id="owl-demo" class="owl-carousel">
 					                <div class="item">
 					                	<div class="item-grid">
@@ -181,40 +135,42 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 					                 <div class="item">
 					                	<div class="item-grid">
 					                		<div class="item-pic">
-					                			<img src="../images/t3 (2).jpg" />
+					                			<img src="../images/t4 (2).jpg" />
                                                </div>
 					                		</div>
 					                	</div>
 					               <div class="item">
 					                	<div class="item-grid">
 					                		<div class="item-pic">
-					                			<img src="../images/t1 (2).jpg" />
+					                			<img src="../images/t3 (2).jpg" />
                                                </div>
 					                		</div>
 					                	</div>
 					                 <div class="item">
 					                	<div class="item-grid">
 					                		<div class="item-pic">
-					                			<img src="../images/t2 (2).jpg" />
+					                			<img src="../images/t1 (2).jpg" />
                                                </div>
 					                		</div>
 					                	</div>
 					                	 <div class="item">
 					                	<div class="item-grid">
 					                		<div class="item-pic">
-					                			<img src="../images/t3 (2).jpg" />
+					                			<img src="../images/t4 (2).jpg" />
                                                </div>
 					                		</div>
 					                	</div>
 					                </div>
 				              </div>
 							  <div class="clearfix"></div>
-						<!--//sreen-gallery-cursual-->
+						
 					</div>
 				</div>
-				<!-- requried-jsfiles-for owl -->
-							<link href="../css/owl.carousel.css" rel="stylesheet">
-							    <script src="../js/owl.carousel.js"></script>
+
+					
+				
+							<link href="../csssliderweb/owl.carousel.css" rel="stylesheet">
+							    <script src="../jssliderweb/owl.carousel.js"></script>
 							        <script>
 							    $(document).ready(function() {
 							      $("#owl-demo").owlCarousel({
@@ -227,63 +183,153 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 							      });
 							    });
 							    </script>
-							 
-			 <!-- //requried-jsfiles-for owl -->
-  <!-- //End-team-->
-<!--classes-->
 
-		</div>
+
 		<style type="text/css">
-
-		.tainers-section {
-		  padding: 4em 0;
-		}
-		.col-md-3.tainer {
-		    margin: 0;
-		  background-color: #000;
-		  min-height: 442px;
-		  margin-top: 1.2em;
-		   padding: 2em 2em;
-		}
-		.tainer  h3 {
-		   font-size: 2.5em;
-		  font-weight: 700;
-		  color: #FF5500;
-		  font-family: 'Orbitron', sans-serif;
-		  
-		  line-height: 1.4em;
-		}
-		.tainer  p {
-		  line-height: 1.7em;
-		  font-size: 0.9em;
-		  color: #fff;
-		  margin: 1em 0;
-		}
-
-		@media (max-width:1024px){
-			.trainee-section h3,  .tainer h3 {
-			  font-size: 2.2em;
-			}
-			.tainer h3{
-			 font-size: 2em;
-			}
-				.trainee-grid a h4, .trainee-grid a h5 {
-			  font-size: 1em;
-			  padding: 0.4em;
-			  width: 93%;
-			  }
-			  .trainee-grid a h5 {
-			  width: 83%;
-			}
+			
 			.trainee-section {
-			  padding: 3em 0;
+			  padding: 5em 0;
+			  background-color: #eee;
 			}
-		}
+			.trainee-section h3 {
+			  font-size: 2.5em;
+			  font-weight: 700;
+			  color: #151515;
+			  text-align: center;
+			  font-family: 'Orbitron', sans-serif;
+			}
+			.trainee-grids {
+			  margin-top: 5em;
+			}
+			.trainee-grid{
+			  position:relative;
+			    cursor:pointer;
+			}
+			.trainee-grid img {
+			  border-radius: 50%;
+			  -o-border-radius: 50%;
+			  -moz-border-radius: 50%;
+			  -webkit-border-radius: 50%;
+			  -ms-border-radius: 50%;
+			}
 
-						@media (max-width:768px){
+			.trainee-grid h4 ,.trainee-grid a h5{
+			  color: #fff;
+			  text-align: center;
+			  background-color: #FF5000;
+			  font-size: 1em;
+			  
+			  padding: 0.4em;
+			  width: 80%;
+			  margin: 0 auto 0;
+			 }
+			.trainee-grid a h5 {
+			   width: 67%;
+			 }
+			 .trainee-grid p {
+			  text-align: center;
+			  line-height: 1.7em;
+			  font-size: 0.9em;
+			  color: #1b1b1b;
+			  margin-top: 1.5em;
+			    cursor: text;
+			}
+
+			.trainee-grid:hover  .date{
+			  transform: rotateY(360deg);
+			  -webkit-transform: rotateY(360deg);
+			  -moz-transform: rotateY(360deg);
+			  -o-transform: rotateY(360deg);
+			  -webkit-transition: 0.8s;
+			  -moz-transition: 0.8s;
+			  -o-transition: 0.8s;
+			}
+
+			.tainers-section {
+			  padding: 4em 0;
+			}
+			.col-md-3.tainer {
+			    margin: 0;
+			  background-color: #000;
+			  min-height: 442px;
+			  margin-top: 1.2em;
+			   padding: 2em 2em;
+			}
+			.tainer  h3 {
+			   font-size: 2.5em;
+			  font-weight: 700;
+			  color: #ff1791;
+			  font-family: 'Orbitron', sans-serif;
+			  
+			  line-height: 1.4em;
+			}
+			.tainer  p {
+			  line-height: 1.7em;
+			  font-size: 0.9em;
+			  color: #fff;
+			  margin: 1em 0;
+			}
+
+			/*-----Responsive-----*/
+			@media (max-width:1440px){
+
+			}
+			@media (max-width:1366px){
+				
+			}
+			@media (max-width:1280px){
+				
+				 .trainee-section h3,.tainer h3 {
+				  font-size: 2.3em;
+				  }
+			}
+
+			@media (max-width:1024px){
+				.trainee-section h3,.tainer h3 {
+				  font-size: 2.2em;
+				}
+				.tainer h3{
+				 font-size: 2em;
+				}
+					.top-menu {
+					  float: right;
+					}
+				  .blog_grid h3 a, .blog_grid h3 {
+				  font-size: 0.95em;
+				  }
+				  .blog_grid h3 {
+					  font-size: 1.3em;
+					}
 					
-					
-					.trainee-section h3,.tainer h3 {
+				  .col-md-3.tainer {
+				  margin: 0;
+				  min-height: 267px;
+				  margin-top: 1em;
+				  padding: 1em 1em;
+				}
+				
+				h4.col-md-3.f-logo {
+				  width: 90px;
+				  height: 143px;
+				  font-size: 4em;
+				  padding: 37px 10px 14px 23px;
+				  }
+				 
+				.trainee-grid a h4, .trainee-grid a h5 {
+				  font-size: 1em;
+				  padding: 0.4em;
+				  width: 93%;
+				  }
+				  .trainee-grid a h5 {
+				  width: 83%;
+				}
+				.trainee-section {
+				  padding: 3em 0;
+				}	
+			}
+				@media (max-width:768px){
+				
+					.trainee-section h3, .tainer h3 {
 					  font-size: 2em;
 					}
 					.col-md-3.tainer {
@@ -292,8 +338,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 					  margin-top: 1em;
 					  padding: 1em 1em;
 					}
-					
-					
+				
 					h4.col-md-3.f-logo {
 					  width: 59px;
 					  height: 97px;
@@ -302,6 +347,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 					  float: left;
 					  margin-top: 8px;
 					}
+
 					.content {
 					  padding: 2em 0;
 					}
@@ -313,36 +359,38 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 					}
 					.trainee-grid:nth-child(3){
 					  display:none;
-					}				
-				}
-				@media (max-width:640px){
-					
-					  .tainers-section {
-					  padding: 2em 0;
-					}
-				
-				 .trainee-section h3, .tainer h3 {
-					  font-size: 1.8em;
-					}
-					
-					
-					.trainee-grid a h4, .trainee-grid a h5 {
-					  font-size: 0.9em;
-					  padding: 0.4em;
-					  width: 93%;
-					}
-					.trainee-grid a h5 {
-					  width: 78%;
-					}
-					
-					
-					.trainee-grids {
-				  margin-top: 2em;
 					}
 				
 				}
+
+
+					@media (max-width:640px){
+					
+						  .tainers-section {
+						  padding: 2em 0;
+						}
+						.trainee-section h3, .tainer h3 {
+						  font-size: 1.8em;
+						}					
+						
+						.trainee-grid a h4, .trainee-grid a h5 {
+						  font-size: 0.9em;
+						  padding: 0.4em;
+						  width: 93%;
+						}
+						.trainee-grid a h5 {
+						  width: 78%;
+						}
+						
+						
+						.trainee-grids {
+					  margin-top: 2em;
+						}
+					
+					}
+
+
 				@media (max-width:480px){
-					
 					
 					.trainee-section h3, .tainer h3 {
 					  font-size: 1.6em;
@@ -350,11 +398,8 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 					.tainers-section {
 					  padding: 1em 0;
 					}
-					.content textarea {
-					  resize: none;
-					  height: 167px;
-					}
-				
+					
+					
 					.tainer p {
 					  font-size: 0.9em;
 					  margin: 0.5em 0;
@@ -365,8 +410,11 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 					  margin-top: 1em;
 					  padding: 1em 1em;
 					}
-				
 					
+					.bottom-color p {
+					  font-size: 0.85em;
+					}
+				
 					.trainee-grid img {
 					  border-radius: 50%;
 					  -o-border-radius: 50%;
@@ -382,17 +430,13 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 					.trainee-section {
 					  padding: 1.5em 0 0.5em 0;
 					}
-					
 					  .trainee-grid:nth-child(3){
 					   display:block;
 					  }
-					 
 				}
 				@media (max-width:320px){
 					
-					
-					
-					.trainee-section h3, .tainer h3{
+					 .trainee-section h3, .tainer h3 {
 					  font-size: 1.25em;
 					}
 					.tainer p {
@@ -405,7 +449,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 					  margin-top: 1em;
 					  padding: 0.5em 0.5em;
 					}
-				
+					
 					
 					.trainee-grid a h4, .trainee-grid a h5 {
 					  font-size: 0.85em;
@@ -422,17 +466,9 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 					.trainee-grid {
 					  width: 100%;
 					  margin: 0 auto 11%;
-					}
+					}				
 				}
 		</style>
-
-		
-
-
-
-
-
-
 
 			<?php
 				include("../conexion.php");
@@ -441,15 +477,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 			?>
 
 
-
-
-
-
-
-
-
-
-		   <div class="footer-section">
+		<div class="footer-section">
 		   <div class="container">
 		   <div class="footer-top">
 		 <div class="social-icons wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
@@ -493,5 +521,5 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 				</div>
 		   </div>
 
- </body>
+	</body>
 </html> 
