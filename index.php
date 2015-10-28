@@ -141,7 +141,7 @@ $(document).ready(function(){
 <!--/////////////// CODIGO QUE LLAMA EL POPUP INICIAL ////////////////-->
     <script>
       function openColorBox(){
-        $.colorbox({iframe:true, overlayClose: false, fixed: true ,width:"80%", height:"80%", href:"http://www.sitepoint.com"});
+        $.colorbox({iframe:true, overlayClose: false, fixed: true ,width:"80%", height:"80%", href:"publicidad/"});
       }
       
       setTimeout(openColorBox, 1000);
