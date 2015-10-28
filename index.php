@@ -128,15 +128,13 @@ $(document).ready(function(){
 
 <!--/////////////// CODIGO QUE LLAMA EL POPUP INICIAL ////////////////-->
     <script>
-      function openColorBox(){
-<<<<<<< HEAD
+      function openColorBox()
+      {
+
         $.colorbox({iframe:true, overlayClose: false, fixed: true ,width:"80%", height:"80%", href:"publicidad/"});
       }
-      
-=======
-        $.colorbox({iframe:true, overlayClose: false, fixed: true ,width:"80%", height:"80%", href:"http://www.sitepoint.com"});
-      }      
->>>>>>> 8a99fefc54a756ef06690ae4d7f1a4f51067d23d
+
+
       setTimeout(openColorBox, 1000);
  
     </script>

@@ -1,7 +1,7 @@
 <?php
  $cod=desencripta($_GET['cod'],"rayedgard");
  // consulta a la base de datos
-$consulta = mysql_query("SELECT nombre,imagen,descripcion,file,tecnicas,requisitos FROM tsistemas WHERE id='$cod'",$link);
+$consulta = mysql_query("SELECT nombre,imagen,descripcion,file,tecnicas,requisitos,icono FROM tsistemas WHERE id='$cod'",$link);
 $resultado = mysql_fetch_array($consulta);
 
 ?>
@@ -15,6 +15,18 @@ $resultado = mysql_fetch_array($consulta);
 			<input type="text" name="nombre" class="form-control1" id="focusedinput" value="<?php echo $resultado[0];?>" placeholder="Nombres del Sistema">
 		</div>
 	</div>
+	<div class="form-group">
+        <div class="col-sm-8">
+	        <label for="exampleInputFile">Ya existe un icono asociado a este sistema
+	        <img src="../imagenes/sistemas/<?php echo $resultado[6];?>" height="80" width="80"/> 
+	        </label>
+	        <label for="exampleInputFile">
+	        Si desea remplazarlo, seleccione otro icono.
+	        </label>
+	        <input type="file" name="icono" id="exampleInputFile">
+	        <p class="help-block">Formatos PNG, JPG, GIF.</p>
+	    </div>
+    </div>
 
 	<div class="form-group">
         <div class="col-sm-8">
@@ -97,11 +109,104 @@ $nombre_archivo2 =$_FILES['file']['name'];
 $tipo_archivo2 = $_FILES['file']['type']; 
 $tamano_archivo2 =$_FILES['file']['size'];
 
+$nombre_temporal3= $_FILES['icono']['tmp_name'];
+$nombre_archivo3 =$_FILES['icono']['name'];
+$tipo_archivo3 = $_FILES['icono']['type']; 
+$tamano_archivo3 =$_FILES['icono']['size'];
+
+/*
+					1	2	3
+					---------
+							S --->  s,s,s  se cambia en los tres archivos
+						S
+							N --->	s,s,n 	no se cambia en el icono  
+					S 		S
+						N	
+							N						
+				X			S
+						S	
+					N 		N
+							S
+						N
+							N
+
+
+*/
 //validaciones para cada archivo y fotografia
 
+//-----> s,s,s
 //validadcion N° 01 CARGA NUEVO ARCHIVO Y NUEVA FOTOGRAFICA
 
-if($_FILES['foto']['name']!="" && $_FILES['file']['name']!="")
+if($_FILES['foto']['name']!="" && $_FILES['file']['name']!="" && $_FILES['icono']['name']!="")
+{
+	if (!((strpos($tipo_archivo1, "gif") || strpos($tipo_archivo1, "png") || strpos($tipo_archivo1,"jpeg") || strpos($tipo_archivo1,"jpg")  && ($tamano_archivo1 < 900000)))) 
+	{
+		echo "La extensión o el tamaño del archivo de IMAGEN no son correctos, se permiten archivos *.gif, *.png o *.jpg, se permiten archivos de 900 Kb como máximo.";
+	}
+	else
+	{
+		//realizamos el cambio
+		$modificar = mysql_query("UPDATE tsistemas SET nombre='$nombre',imagen='$nombre_archivo1', descripcion='$descripcion', file='$nombre_archivo2', tecnicas='$tecnicas',requisitos='$requisitos',icono='$nombre_archivo3' WHERE id=$cod",$link);
+
+		$my_error = mysql_error($link);
+		if(!empty($my_error))
+		{		
+			echo "Hubo un error al MODIFICAR los valores. $my_error";
+		}
+		else
+		{
+			$subio=0;//para validar si subio o no el archivo
+			//Aqui subimos la imagen 
+			if(is_uploaded_file($nombre_temporal1))
+			{
+				copy($nombre_temporal1, $path1.$nombre_archivo1);
+				//aqui eliminamos el existente
+				unlink($path1.$resultado[1]);
+				$subio++;
+			}
+			//Aqui subimos el archivo 
+			if(is_uploaded_file($nombre_temporal2))
+			{
+				copy($nombre_temporal2, $path1.$nombre_archivo2);
+				//aqui eliminamos el existente
+				unlink($path1.$resultado[3]);
+				$subio++;
+			}
+			if(is_uploaded_file($nombre_temporal3))
+			{
+				copy($nombre_temporal3, $path1.$nombre_archivo3);
+				//aqui eliminamos el existente
+				unlink($path1.$resultado[6]);
+				$subio++;
+			}
+
+
+			//VALIDAMOS TODO
+			if($subio<3)
+			{
+				echo "Hubo un error al subir la imagen, archvo o icono . $my_error";
+			}
+			if($subio==0)
+			{
+				echo "Hubo un error al subir la imagen y archvo. $my_error";
+			}
+
+			if($subio==3)
+			{
+				echo "<meta http-equiv ='refresh' content='0;url=index.php?q=".$q."&p=".$p."'>";
+			}
+
+		}
+
+
+	}
+}//fin de validadcion
+
+
+////------> s,s,N
+//validadcion N° 02 CARGANUEVA FOTOGRAFICA
+
+if($_FILES['foto']['name']!="" && $_FILES['file']['name']!="" && $_FILES['icono']['name']=="")
 {
 	if (!((strpos($tipo_archivo1, "gif") || strpos($tipo_archivo1, "png") || strpos($tipo_archivo1,"jpeg") || strpos($tipo_archivo1,"jpg")  && ($tamano_archivo1 < 900000)))) 
 	{
@@ -128,6 +233,7 @@ if($_FILES['foto']['name']!="" && $_FILES['file']['name']!="")
 				unlink($path1.$resultado[1]);
 				$subio++;
 			}
+
 			//Aqui subimos el archivo 
 			if(is_uploaded_file($nombre_temporal2))
 			{
@@ -136,15 +242,11 @@ if($_FILES['foto']['name']!="" && $_FILES['file']['name']!="")
 				unlink($path1.$resultado[3]);
 				$subio++;
 			}
-
+			
 			//VALIDAMOS TODO
-			if($subio==1)
+			if($subio<2)
 			{
-				echo "Hubo un error al subir la imagen o archvo. $my_error";
-			}
-			if($subio==0)
-			{
-				echo "Hubo un error al subir la imagen y archvo. $my_error";
+				echo "Hubo un error al subir la imagen o archivo. $my_error";
 			}
 
 			if($subio==2)
@@ -158,9 +260,9 @@ if($_FILES['foto']['name']!="" && $_FILES['file']['name']!="")
 	}
 }//fin de validadcion
 
-//validadcion N° 02 CARGANUEVA FOTOGRAFICA
+///------> s,N,s
 
-if($_FILES['foto']['name']!="")
+if($_FILES['foto']['name']!="" && $_FILES['file']['name']=="" && $_FILES['icono']['name']!="")
 {
 	if (!((strpos($tipo_archivo1, "gif") || strpos($tipo_archivo1, "png") || strpos($tipo_archivo1,"jpeg") || strpos($tipo_archivo1,"jpg")  && ($tamano_archivo1 < 900000)))) 
 	{
@@ -169,7 +271,7 @@ if($_FILES['foto']['name']!="")
 	else
 	{
 		//realizamos el cambio
-		$modificar = mysql_query("UPDATE tsistemas SET nombre='$nombre',imagen='$nombre_archivo1', descripcion='$descripcion', tecnicas='$tecnicas',requisitos='$requisitos' WHERE id=$cod",$link);
+		$modificar = mysql_query("UPDATE tsistemas SET nombre='$nombre',imagen='$nombre_archivo1', descripcion='$descripcion', tecnicas='$tecnicas',requisitos='$requisitos',icono='$nombre_archivo3'  WHERE id=$cod",$link);
 
 		$my_error = mysql_error($link);
 		if(!empty($my_error))
@@ -187,14 +289,23 @@ if($_FILES['foto']['name']!="")
 				unlink($path1.$resultado[1]);
 				$subio++;
 			}
+
+			//Aqui subimos el archivo 
+			if(is_uploaded_file($nombre_temporal3))
+			{
+				copy($nombre_temporal3, $path1.$nombre_archivo3);
+				//aqui eliminamos el existente
+				unlink($path1.$resultado[6]);
+				$subio++;
+			}
 			
 			//VALIDAMOS TODO
-			if($subio==0)
+			if($subio<2)
 			{
-				echo "Hubo un error al subir la imagen. $my_error";
+				echo "Hubo un error al subir la imagen o icono. $my_error";
 			}
 
-			if($subio==1)
+			if($subio==2)
 			{
 				echo "<meta http-equiv ='refresh' content='0;url=index.php?q=".$q."&p=".$p."'>";
 			}
@@ -205,9 +316,111 @@ if($_FILES['foto']['name']!="")
 	}
 }//fin de validadcion
 
+
+///------> N,s,s
+if($_FILES['foto']['name']=="" && $_FILES['file']['name']!="" && $_FILES['icono']['name']!="")
+{
+	if (!((strpos($tipo_archivo1, "gif") || strpos($tipo_archivo1, "png") || strpos($tipo_archivo1,"jpeg") || strpos($tipo_archivo1,"jpg")  && ($tamano_archivo1 < 900000)))) 
+	{
+		echo "La extensión o el tamaño del archivo de IMAGEN no son correctos, se permiten archivos *.gif, *.png o *.jpg, se permiten archivos de 900 Kb como máximo.";
+	}
+	else
+	{
+		//realizamos el cambio
+		$modificar = mysql_query("UPDATE tsistemas SET nombre='$nombre', descripcion='$descripcion', file='$nombre_archivo2',tecnicas='$tecnicas',requisitos='$requisitos',icono='$nombre_archivo3'  WHERE id=$cod",$link);
+
+		$my_error = mysql_error($link);
+		if(!empty($my_error))
+		{		
+			echo "Hubo un error al MODIFICAR los valores. $my_error";
+		}
+		else
+		{
+			$subio=0;//para validar si subio o no el archivo
+			//Aqui subimos la imagen 
+			if(is_uploaded_file($nombre_temporal2))
+			{
+				copy($nombre_temporal2, $path1.$nombre_archivo2);
+				//aqui eliminamos el existente
+				unlink($path1.$resultado[3]);
+				$subio++;
+			}
+
+			//Aqui subimos el archivo 
+			if(is_uploaded_file($nombre_temporal3))
+			{
+				copy($nombre_temporal3, $path1.$nombre_archivo3);
+				//aqui eliminamos el existente
+				unlink($path1.$resultado[6]);
+				$subio++;
+			}
+			
+			//VALIDAMOS TODO
+			if($subio<2)
+			{
+				echo "Hubo un error al subir la imagen o icono. $my_error";
+			}
+
+			if($subio==2)
+			{
+				echo "<meta http-equiv ='refresh' content='0;url=index.php?q=".$q."&p=".$p."'>";
+			}
+
+		}
+
+
+	}
+}//fin de validadcion
+
+
+
+
+
+// -----> S,N,N
 //validadcion N° 02 CARGANUEVA FOTOGRAFICA
 
-if($_FILES['file']['name']!="")
+if($_FILES['foto']['name']!="" && $_FILES['file']['name']=="" && $_FILES['icono']['name']=="")
+{
+	//realizamos el cambio
+	$modificar = mysql_query("UPDATE tsistemas SET nombre='$nombre',imagen='$nombre_archivo1',descripcion='$descripcion',  tecnicas='$tecnicas',requisitos='$requisitos' WHERE id=$cod",$link);
+	
+	$my_error = mysql_error($link);
+	if(!empty($my_error))
+	{		
+		echo "Hubo un error al MODIFICAR los valores. $my_error";
+	}
+	else
+	{
+		$subio=0;//para validar si subio o no el archivo
+		//Aqui subimos el archivo
+		if(is_uploaded_file($nombre_temporal1))
+		{
+			copy($nombre_temporal1, $path1.$nombre_archivo1);
+			//aqui eliminamos el existente
+			unlink($path1.$resultado[1]);
+			$subio++;
+		}
+		
+		//VALIDAMOS TODO
+		if($subio==0)
+		{
+			echo "Hubo un error al subir la imagen. $my_error";
+		}
+
+		if($subio==1)
+		{
+			echo "<meta http-equiv ='refresh' content='0;url=index.php?q=".$q."&p=".$p."'>";
+		}
+
+	}
+
+}//fin de validadcion
+
+
+// -----> N,S,N
+//validadcion N° 02 CARGANUEVA FOTOGRAFICA
+
+if($_FILES['foto']['name']=="" && $_FILES['file']['name']!="" && $_FILES['icono']['name']=="")
 {
 	//realizamos el cambio
 	$modificar = mysql_query("UPDATE tsistemas SET nombre='$nombre',descripcion='$descripcion', file='$nombre_archivo2', tecnicas='$tecnicas',requisitos='$requisitos' WHERE id=$cod",$link);
@@ -232,7 +445,7 @@ if($_FILES['file']['name']!="")
 		//VALIDAMOS TODO
 		if($subio==0)
 		{
-			echo "Hubo un error al subir El archivo. $my_error";
+			echo "Hubo un error al subir el Archivo. $my_error";
 		}
 
 		if($subio==1)
@@ -245,9 +458,55 @@ if($_FILES['file']['name']!="")
 }//fin de validadcion
 
 
+
+// -----> N,N,s
 //validadcion N° 02 CARGANUEVA FOTOGRAFICA
 
-if($_FILES['foto']['name']=="" && $_FILES['file']['name']=="")
+if($_FILES['foto']['name']=="" && $_FILES['file']['name']=="" && $_FILES['icono']['name']!="")
+{
+	//realizamos el cambio
+	$modificar = mysql_query("UPDATE tsistemas SET nombre='$nombre',descripcion='$descripcion', tecnicas='$tecnicas',requisitos='$requisitos',icono='$nombre_archivo3' WHERE id=$cod",$link);
+	
+	$my_error = mysql_error($link);
+	if(!empty($my_error))
+	{		
+		echo "Hubo un error al MODIFICAR los valores. $my_error";
+	}
+	else
+	{
+		$subio=0;//para validar si subio o no el archivo
+		//Aqui subimos el archivo
+		if(is_uploaded_file($nombre_temporal3))
+		{
+			copy($nombre_temporal3, $path1.$nombre_archivo3);
+			//aqui eliminamos el existente
+			unlink($path1.$resultado[6]);
+			$subio++;
+		}
+		
+		//VALIDAMOS TODO
+		if($subio==0)
+		{
+			echo "Hubo un error al subir el icono . $my_error";
+		}
+
+		if($subio==1)
+		{
+			echo "<meta http-equiv ='refresh' content='0;url=index.php?q=".$q."&p=".$p."'>";
+		}
+
+	}
+
+}//fin de validadcion
+
+
+
+
+
+// ---->  n,n,n
+//validadcion N° 02 CARGANUEVA FOTOGRAFICA
+
+if($_FILES['foto']['name']=="" && $_FILES['file']['name']=="" && $_FILES['icono']['name']=="")
 {
 	//realizamos el cambio
 		$modificar = mysql_query("UPDATE tsistemas SET nombre='$nombre', descripcion='$descripcion', tecnicas='$tecnicas',requisitos='$requisitos' WHERE id=$cod",$link);
