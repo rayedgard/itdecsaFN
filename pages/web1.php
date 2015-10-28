@@ -97,6 +97,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="col-md-9 sreen-gallery-cursual wow bounceInRight" data-wow-delay="0.4s">
 							
 						       <div id="owl-demo" class="owl-carousel">
+
+
 					                <div class="item">
 					                	<div class="item-grid">
 					                		<div class="item-pic">
@@ -104,6 +106,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					                		</div>
 					                	</div>
 					                </div>
+
+
 					                <div class="item">
 					                	<div class="item-grid">
 					                		<div class="item-pic">
@@ -153,7 +157,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                                </div>
 					                		</div>
 					                	</div>
-					                	 <div class="item">
+
+					                <div class="item">
 					                	<div class="item-grid">
 					                		<div class="item-pic">
 					                			<img src="../images/t4 (2).jpg" />
@@ -163,6 +168,30 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					                </div>
 				              </div>
 							  <div class="clearfix"></div>
+
+							  <!--/////////////// CODIGO PRA EL POPUP INICIAL ////////////////-->
+							<link rel="stylesheet" type="text/css" href="../css/popup.css">
+							<script src="../js/popup.min.js"></script>
+							<script src="../js/jquery.colorbox.js"></script>
+							<!--/////////////// FIN POPUP INICIAL ////////////////-->
+
+
+
+							<!--/////////////// CODIGO QUE LLAMA EL POPUP INICIAL ////////////////-->
+							    <script>
+							    $('.item').click(function(){
+
+							      function openColorBox(){
+							        $.colorbox({iframe:true, overlayClose: false, fixed: true ,width:"80%", height:"80%", href:"http://www.sitepoint.com"});
+							      }
+							      setTimeout(openColorBox, 1000);
+
+							      	
+							      });
+
+
+							    </script>
+							<!--/////////////// FIN EL POPUP INICIAL ////////////////-->
 						
 					</div>
 				</div>
@@ -171,7 +200,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				
 							<link href="../csssliderweb/owl.carousel.css" rel="stylesheet">
 							    <script src="../jssliderweb/owl.carousel.js"></script>
-							        <script>
+							    <script>
 							    $(document).ready(function() {
 							      $("#owl-demo").owlCarousel({
 							         items :3,
@@ -186,7 +215,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 
 		<style type="text/css">
-			
+
+
+			.item-grid:hover{
+				opacity: 0.8;
+				border: 2px solid #FF5000;
+
+			}
+
 			.trainee-section {
 			  padding: 5em 0;
 			  background-color: #eee;

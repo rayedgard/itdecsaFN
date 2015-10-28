@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>ITDECSA</title>
+<title>ITDECSA</title> 
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 
@@ -121,46 +121,26 @@ $(document).ready(function(){
 <script src="js/jquery.colorbox.js"></script>
 <!--/////////////// FIN POPUP INICIAL ////////////////-->
 
-
-
-
-
 </head>
-
-
-
-
-
 
 
 <body >
 
-
- 
-
 <!--/////////////// CODIGO QUE LLAMA EL POPUP INICIAL ////////////////-->
     <script>
       function openColorBox(){
+<<<<<<< HEAD
         $.colorbox({iframe:true, overlayClose: false, fixed: true ,width:"80%", height:"80%", href:"publicidad/"});
       }
       
+=======
+        $.colorbox({iframe:true, overlayClose: false, fixed: true ,width:"80%", height:"80%", href:"http://www.sitepoint.com"});
+      }      
+>>>>>>> 8a99fefc54a756ef06690ae4d7f1a4f51067d23d
       setTimeout(openColorBox, 1000);
  
     </script>
 <!--/////////////// FIN EL POPUP INICIAL ////////////////-->
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
