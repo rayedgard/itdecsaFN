@@ -577,14 +577,14 @@ $resultado = mysql_fetch_array($consulta);
 				
 
 
-					$consulta ="SELECT nombre,imagen,descripcion,file,tecnicas,requisitos,id FROM tsistemas where estado=0"; 
+					$consulta ="SELECT nombre,icono,descripcion,file,tecnicas,requisitos,id FROM tsistemas where estado=0"; 
 
 					$resultado = mysql_query($consulta,$link);
 
 						//nombre del titulo
 						
 						$nombre=array();
-						$imagen=array();
+						$icono=array();
 						$descripcion=array();
 						$file=array();
 						$tecnicas=array();
@@ -594,7 +594,7 @@ $resultado = mysql_fetch_array($consulta);
 					while($row2 = mysql_fetch_array($resultado))
 							{
 							array_push($nombre,$row2[0]);
-							array_push($imagen,$row2[1]);
+							array_push($icono,$row2[1]);
 							array_push($descripcion,$row2[2]);
 							array_push($file,$row2[3]);
 							array_push($tecnicas,$row2[4]);
@@ -616,7 +616,7 @@ $resultado = mysql_fetch_array($consulta);
 			  			<div class="up1" >
 							<div class="up-img">
 							
-								<img src="../administracion/imagenes/sistemas/<?php echo $imagen[$j]; ?>" >
+								<img src="../administracion/imagenes/sistemas/<?php echo $icono[$j]; ?>" >
 							</div>
 
 		   					<div class="up-text">

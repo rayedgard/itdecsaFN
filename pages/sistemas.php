@@ -118,18 +118,18 @@ $link = Conectarse();
 
 
 
-$consulta ="SELECT id,nombre,imagen FROM tsistemas where estado=0 ORDER BY id"; 
+$consulta ="SELECT id,nombre,icono FROM tsistemas where estado=0 ORDER BY id"; 
 $resultado = mysql_query($consulta,$link);
 
 	//nombre del titulo
 	$id=array();
 	$nombre=array();
-	$imagen = array();
+	$icono = array();
 while($row2 = mysql_fetch_array($resultado))
 		{
 		array_push($id,$row2[0]);
 		array_push($nombre,$row2[1]);
-		array_push($imagen,$row2[2]);
+		array_push($icono,$row2[2]);
 		}
 		
 
@@ -154,8 +154,8 @@ while($row2 = mysql_fetch_array($resultado))
 							?>
 
 							<div class="col-md-4 services-grid wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-								 <a href="../administracion/imagenes/sistemas/<?php echo $imagen[$j];?>" class="swipebox">
-								 <img src="../administracion/imagenes/sistemas/<?php echo $imagen[$j];?>" class="img-responsive" alt="" style="border-radius:50%;margin-left:18%;" /></a>
+								 <a href="../administracion/imagenes/sistemas/<?php echo $icono[$j];?>" class="swipebox">
+								 <img src="../administracion/imagenes/sistemas/<?php echo $icono[$j];?>" class="img-responsive" alt="" style="border-radius:50%;margin-left:18%;" /></a>
 								 <p><?php echo $nombre[$j];?></p>
 								
 								<a href="desarrollo.php?c=<?php echo encripta($id[$j],'rayedgard');?>" class="button1 hvr-shutter-in-vertical">leer más</a>
