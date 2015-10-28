@@ -27,7 +27,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="text/javascript" src="../js/easing.js"></script>
 
 
-   <link rel="stylesheet" href="../css1/bootstrap.min.css" type="text/css" media="all">
+   
    <link rel="stylesheet" href="../css1/font-awesome.css" type="text/css" media="all">
    <link rel="stylesheet" href="../css1/templatemo_style.css" type="text/css" media="all">
 
@@ -189,15 +189,15 @@ while($row2 = mysql_fetch_array($resultado))
 						</div>
 
 						<div class="aboutus2">
-							<h4>Testimonios</h4>
+							
 								<div class="ab1">
-									<p>suadaorcnec sit amet eroorem ipsum dol. Or sit amt consc tetuer aiing elit. Mauris fermentum tumagna. Sed laoreet aliquam leo. Ut te dolor dapibus eget elentu vel cursus eleifend elit. Aenean auctor wrna. Aliqua volutpat. Duis ac turpis. Integer rutrum ante eu lacuest um liberoisl porta vel sceleisque eget malesuada at neque. Vivam nibhus  metus</p>
-									<a href="#">JOHN ANDERSON</a>
+									<p>Somos una empresa dedicada al desarrollo de tecnologías informáticas de última generación, satisfaciendo las necesidades de nuestros clientes. Somos altamente efectivos, sofisticados y oportunos en nuestros servicios. Y nuestros productos son utilizados como herramientas de apoyo en la toma de decisiones y mejora de procesos..</p>
+									<a href="#">MISIÓN</a>
 							 	</div>
 
 							    <div class="ab2">
-							        <p> sit amet eroorem ipsum dol. Or sit amt consc tetuer aiing elit. Mauris fermentum tumagna. Sed laoreet aliquam leo. Ut te dolor dapibus eget elentu vel cursus eleifend elit. Aenean auctor wrna. Aliqua volutpat. Duis ac turpis. Integer rutrum ante eu lacuest um liberoisl porta vel sceleisque eget malesuada at neque. Vivam nibhus  metus</p>
-							 	    <a href="#">OLIVIA GROSH</a>
+							        <p>Somos una empresa altamente competitiva y rentable, que ofrece a sus clientes servicios informáticos de alta calidad, desarrollados por personal y proveedores líderes en el mercado, comprometidos con las necesidades más exigentes de nuestros clientes, trabajamos con integridad, compromiso, responsabilidad, honestidad, proactividad y seriedad, reconocidos por nuestros clientes y proveedores como una empresa líder en el mercado..</p>
+							 	    <a href="#">VISIÓN</a>
 							    </div>
 						</div>
 						<div class="clearfix"></div>
@@ -206,8 +206,10 @@ while($row2 = mysql_fetch_array($resultado))
  					<div class="col-md-7 right-grid wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 					    <div class="aboutus3">
 					      
-					       <p>ITDECSA es una empresa peruana que brinda servicios de desarrollo de sistemas de software, contamos con la tecnología de vanguardia y con el personal especializado en cada área para brindar propuestas innovadoras de acuerdo con cada una de las necesidades de nuestros clientes A lo largo de nuestra trayectoria ITDECSA se ha especializado en las siguientes aéreas.</p>
+					       <p>ITDECSA es una empresa que está orientada a realizar soluciones informáticas y tecnológicas,  consultoría, soporte informático y tecnológico; con el fin de suplir el mercado  empresarial y personal, innovando día a día  con productos y servicios de alta calidad, con precios competitivos y con un dinamismo comercial;  con  perspectiva a llegar a posicionarnos dentro del mercado como una empresa líder y versátil. ITDECSA tiene como objetivo innovador satisfacer a nuestros  clientes generando el  incremento del valor de su empresa, a través de las  soluciones informáticas con el uso de herramientas   y tecnologías adaptables a las   necesidades más exigentes, fomentando  desarrollo y crecimiento mediante un equipo de profesionales altamente competitivo..</p>
 					    </div>
+
+					    <!-- 
 
 					    <div class="aboutus3">
 					       <h5>MISIÓN</h5>
@@ -218,6 +220,7 @@ while($row2 = mysql_fetch_array($resultado))
 					       <h5>VISIÓN</h5>
 					       <p>Somos una empresa altamente competitiva y rentable, que ofrece a sus clientes servicios informáticos de alta calidad, desarrollados por personal y proveedores líderes en el mercado, comprometidos con las necesidades más exigentes de nuestros clientes, trabajamos con integridad, compromiso, responsabilidad, honestidad, proactividad y seriedad, reconocidos por nuestros clientes y proveedores como una empresa líder en el mercado..</p>
 					    </div>
+					    -->
      
 
 	  					<div class="aboutus4">
@@ -404,7 +407,7 @@ while($row2 = mysql_fetch_array($resultado))
 		 <div class="social-icons wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 		<a href="https://www.facebook.com/pages/Informatic-Technology-Development-Corporation-SA/157087624356221?fref=ts" target="_blank"><i class="icon1"></i></a>
 		<a href="#"><i class="icon2"></i></a>
-		<a href="https://plus.google.com/104763782397023638437/posts" target="_blank"><i class="icon3"></i></a>
+		<a href="https://plus.google.com/118149220689952591619/about" target="_blank"><i class="icon3"></i></a>
 		
 		</div>
 		</div>

@@ -23,20 +23,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="text/javascript" src="../js/easing.js"></script>
 
 
-
-
-  	<meta property="og:url"           content="http://www.itdecsa.com/muestras/itdecsaprueba/index.php" />
-    <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="Informatic Technology Development" />
-    <meta property="og:description"   content="Es una empresa Peruana que brinda servicios de desarrollo de sistemas de software contamos con la tecnologia de vanguardia y con el personal especializado en cada área para brindar propuestas innovadoras de acuerdo con cada una de la necesidades de nuestros clientes a lo largo de nuestra trayectoria." />
-    <meta property="og:image"         content="http://www.itdecsa.com/muestras/itdecsaprueba/banner6.jpg" />
-
-
-
-
-
-
-
 		 <!--para los videos-->
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>	
 		<!--fin videos-->
@@ -90,6 +76,13 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 
 
 
+ <!-- INICIO DE LA INFORMACION PARA OMPARTIR JUNTO A LOS BOTONES DE COMPARTIR -->
+    <meta property="og:url"           content="http://www.itdecsa.com/muestras/itdecsaprueba/index.php" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Informatic Technology Development" />
+    <meta property="og:description"   content="Es una empresa Peruana que brinda servicios de desarrollo de sistemas de software contamos con la tecnologia de vanguardia y con el personal especializado en cada área para brindar propuestas innovadoras de acuerdo con cada una de la necesidades de nuestros clientes a lo largo de nuestra trayectoria." />
+    <meta property="og:image"         content="http://www.itdecsa.com/muestras/itdecsaprueba/banner6.jpg" />
+<!-- FIN DE LA INFORMACION PARA COMPARTIR JUNTO A LOS BOTONES DE COMPARTIR -->
 
 
 
@@ -99,15 +92,19 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 
 </head>
 <body>
+
+	<!--/////////////// CODIGO PARA COMPARTIR FACEBOOK G+ Y TWITTER ////////////////-->
+
 	<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:10px; top:10px;">
 	    <a href="https://www.facebook.com/icpnac?fref=ts" class="a2a_button_facebook"></a>
 	    <a href="https://twitter.com/ICPNACultural" class="a2a_button_twitter"></a>
 	    <a href="https://www.google.com/maps/d/viewer?t=m&oe=UTF8&msa=0&ie=UTF8&mid=z2GfYE6MToNk.kwwE1r--3cL0" class="a2a_button_google_plus"></a>
 	    <a class="a2a_button_pinterest"></a>
-	    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-	</div>
+	    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>	</div>
 
 	<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+
+	<!--/////////////// FIN DEL CODIGO PARA COMPARTIR FACEBOOK G+ Y TWITTER ////////////////-->
 
 
 
@@ -122,22 +119,6 @@ $consulta = mysql_query("SELECT nombre,imagen,descripcion,file,tecnicas,requisit
 $resultado = mysql_fetch_array($consulta);
 
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
  	<div class="header2 head-top " id="home">
@@ -588,6 +569,72 @@ $resultado = mysql_fetch_array($consulta);
 
 
 					<h3 style="font-size:2.2em">Otro Software</h3>
+
+					<!-- Consulta lista de software -->
+					
+					<?php
+
+				
+
+
+					$consulta ="SELECT nombre,imagen,descripcion,file,tecnicas,requisitos,id FROM tsistemas where estado=0"; 
+
+					$resultado = mysql_query($consulta,$link);
+
+						//nombre del titulo
+						
+						$nombre=array();
+						$imagen=array();
+						$descripcion=array();
+						$file=array();
+						$tecnicas=array();
+						$requisitos=array();
+						$idee=array();					
+						
+					while($row2 = mysql_fetch_array($resultado))
+							{
+							array_push($nombre,$row2[0]);
+							array_push($imagen,$row2[1]);
+							array_push($descripcion,$row2[2]);
+							array_push($file,$row2[3]);
+							array_push($tecnicas,$row2[4]);
+							array_push($requisitos,$row2[5]);							
+							array_push($idee,$row2[6]);
+							}
+					?>
+
+					<div class="col-md-4 up wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;width:100%;">
+						
+
+						<?php
+						//bucle para generar las noticias automaticamente
+						for($j=0;$j<count($nombre);$j++)
+						{
+						?>
+
+
+			  			<div class="up1" >
+							<div class="up-img">
+							
+								<img src="../administracion/imagenes/sistemas/<?php echo $imagen[$j]; ?>" >
+							</div>
+
+		   					<div class="up-text">
+
+				 				<a href="desarrollo.php?c=<?php echo encripta($idee[$j],'rayedgard');?>" style="font-size:1.3em;font-weight:100;"><?php echo  substr(strip_tags($nombre[$j]),0,200)."..."; ?></a>								
+							</div>
+
+							<div class="clearfix"></div>
+		        		</div>
+
+						<?php
+						}
+						?>
+	 				</div>
+							
+
+					<!-- Fin de consulta de software-->
+
 						
 	
 					</div>
@@ -633,7 +680,7 @@ $resultado = mysql_fetch_array($consulta);
  				<div class="social-icons wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 					<a href="https://www.facebook.com/pages/Informatic-Technology-Development-Corporation-SA/157087624356221?fref=ts" target="_blank"><i class="icon1"></i></a>
 					<a href="#"><i class="icon2"></i></a>
-					<a href="https://plus.google.com/104763782397023638437/posts" target="_blank"><i class="icon3"></i></a>
+					<a href="https://plus.google.com/118149220689952591619/about" target="_blank"><i class="icon3"></i></a>
 					
 				</div>
 			</div>

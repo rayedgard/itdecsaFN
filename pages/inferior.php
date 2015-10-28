@@ -93,10 +93,10 @@ while($row2 = mysql_fetch_array($resultado))
 		 				<div class="col-md-4 cat wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 		  					<h3>Categorias</h3>
 		   					<ul>
-								<li>Biometria y Seguridad.</li>
-								<li>Productos y Software</li>
-								<li>Servicios de Mantenimiento</li>
-								<li>Mineria</li>	
+								<a href="productos.php"><li>Biometria y Seguridad.</li></a>
+								<a href="sistemas.php"><li>Productos y Software</li></a>
+								<a href="productos.php"><li>Servicios de Mantenimiento</li></a>
+								<a href="productos.php"><li>Mineria</li></a>
 							</ul>
 						</div>
 

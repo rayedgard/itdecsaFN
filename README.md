@@ -1,2 +1,0 @@
-# itdecsaFN
-pagina web

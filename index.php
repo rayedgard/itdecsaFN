@@ -19,7 +19,7 @@
 
 
 <script src="js/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="js/js1/jquery.min.js"></script>
+
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
 <script src="js/wow.min.js"></script>
@@ -128,12 +128,22 @@ $(document).ready(function(){
 
 <!--/////////////// CODIGO QUE LLAMA EL POPUP INICIAL ////////////////-->
     <script>
+<<<<<<< HEAD
       function openColorBox()
       {
 
         $.colorbox({iframe:true, overlayClose: false, fixed: true ,width:"80%", height:"80%", href:"publicidad/"});
       }
 
+=======
+      function openColorBox(){
+
+ 
+      
+
+        $.colorbox({iframe:true, overlayClose: false, fixed: true ,width:"80%", height:"80%", href:"publicidad/"});
+      }      
+>>>>>>> bc0211e2049742f3b65f889ac4b7218812ca8259
 
       setTimeout(openColorBox, 1000);
  
@@ -141,17 +151,18 @@ $(document).ready(function(){
 <!--/////////////// FIN EL POPUP INICIAL ////////////////-->
 
 
+<!--/////////////// CODIGO PARA COMPARTIR FACEBOOK G+ Y TWITTER ////////////////-->
 
-					<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:10px; top:10px;">
-					    <a href="https://www.facebook.com/icpnac?fref=ts" class="a2a_button_facebook"></a>
-					    <a href="https://twitter.com/ICPNACultural" class="a2a_button_twitter"></a>
-					    <a href="https://www.google.com/maps/d/viewer?t=m&oe=UTF8&msa=0&ie=UTF8&mid=z2GfYE6MToNk.kwwE1r--3cL0" class="a2a_button_google_plus"></a>
-					    <a class="a2a_button_pinterest"></a>
-					    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-					</div>
+	<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:10px; top:10px;">
+	    <a href="https://www.facebook.com/icpnac?fref=ts" class="a2a_button_facebook"></a>
+	    <a href="https://twitter.com/ICPNACultural" class="a2a_button_twitter"></a>
+	    <a href="https://www.google.com/maps/d/viewer?t=m&oe=UTF8&msa=0&ie=UTF8&mid=z2GfYE6MToNk.kwwE1r--3cL0" class="a2a_button_google_plus"></a>
+	    <a class="a2a_button_pinterest"></a>
+	    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>	</div>
 
-					<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+	<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
 
+<!--/////////////// FIN DEL CODIGO PARA COMPARTIR FACEBOOK G+ Y TWITTER ////////////////-->
 
 
 					<style type="text/css">
@@ -262,7 +273,7 @@ $(document).ready(function(){
 										<h4>Productos de Software</h4>
 										<p>- App de escritorio</br>
 								  		 - App Web</br>
-								  		 - App Moviles</br>
+								  		 - App M&oacute;viles</br>
 								  		 - App Otros</p>
 									</div>
 								</div>
@@ -276,7 +287,7 @@ $(document).ready(function(){
 										<h4>Servicios de mantenimiento</h4>
 										<p>- Mantenimiento de servidores</br>
 								 		  - Mant. de comp. y dips. mov.</br>
-								 		  - Instalación de redes
+								 		  - Instalaci&oacute;n de redes
 										</p>
 										
 									</div>
@@ -289,7 +300,7 @@ $(document).ready(function(){
 										</a>
 				
 										<h4>Proyectos Mineros</h4>
-										<p>Cras consequat iaculis lorem, id vehicula erat mattis quis. Vivamus laoreet velit justo, in ven e natis purus.</p>
+										<p>Pr&oacute;ximamente.</p>
 									</div>
 								</div>
 
@@ -313,14 +324,33 @@ $(document).ready(function(){
 								<img src="images/fotoindex.jpg" class="img-responsive" alt="/" style="border-radius:15px;margin-top:25px;">
 						    </div>
 							<div class="col-md-7 about-grid wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-									<p style="text-align:justify">ITDECSA es una empresa peruana que brinda servicios de desarrollo de sistemas de software, contamos con la tecnología de vanguardia y con el personal especializado en cada área para brindar propuestas innovadoras de acuerdo con cada una de las necesidades de nuestros clientes A lo largo de nuestra trayectoria ITDECSA se ha especializado en las siguientes aéreas</p>
-									<p>- Desarrollo de sistemas de software a medida  </br>                                           
-									- Optimización de metodologías de trabajo para mineria </br>
-									- Seguridad informática</br>		
-									- Sistemas de seguridad y videovigilancia</br>
-									- Sistemas de acceso (domótica)</br>
-									- Desarrollo de sistemas web </br>
-									- Sistemas de Seguridad CCTV, alarmas, barresas fotoelectricas </p>
+									<p style="text-align:justify">ITDECSA es una empresa peruana que brinda servicios de desarrollo de sistemas de software, contamos con la tecnolog&iacute;a de vanguardia y con el personal especializado en cada &aacute;rea para brindar propuestas innovadoras de acuerdo con cada una de las necesidades de nuestros clientes A lo largo de nuestra trayectoria ITDECSA se ha especializado en las siguientes &aacute;ereas</p>
+									<p>- Desarrollo de sistemas de software a medida  </br> 
+									<style type="text/css">
+									.cat1 ul li {
+										font-size: 1em;
+									  	line-height: 1.8em;
+										color: #999;
+									    list-style: none;
+									 	 padding: 6px 24px;
+										 background: url(images/list-arrow.png) no-repeat 0px 15px;
+										 cursor: pointer;
+										 list-style-type: none;
+										}
+									</style>
+
+									<div class="cat1 " data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+		  							  					
+					   					<ul>
+											<li>Optimizaci&oacute;n de metodolog&iacute;as de trabajo para miner&iacute;a.</li>
+											<li>Seguridad inform&aacute;tica</li>
+											<li>Sistemas de seguridad y videovigilancia</li>
+											<li>Sistemas de acceso (dom&oacute;tica)</li>
+											<li>Desarrollo de sistemas web</li>
+											<li>Sistemas de Seguridad CCTV, alarmas, barresas fotoelectricas</li>
+										</ul>
+									</div>
+									  
 							</div>
 						    <div class="clearfix"></div>
 						</div>
@@ -329,7 +359,7 @@ $(document).ready(function(){
 		   
 		  		<div class="work-section">
 				   <div class="container">
-					   <h3>Tecnologías y Metodologías</h3>
+					   <h3>Tecnolog&iacute;as y Metodolog&iacute;as</h3>
 					   <div class="latest-grids">
 						   <div class="latest-grid2">
 								
@@ -339,7 +369,7 @@ $(document).ready(function(){
 
 							     	<style type="text/css">
 									</style>
-								    <p style="text-align:center;" >Entorno de desarrollo de Microsoft Corp. que proporciona interoperabilidad a través de varias tecnologías y lenguajes de programación.</p>
+								    <p style="text-align:center;" >Entorno de desarrollo de Microsoft Corp. que proporciona interoperabilidad a trav&eacute;s de varias tecnolog&iacute;as y lenguajes de programaci&oacute;n.</p>
 
 						 		    <div class="textbox">		 		  
 						 		   		 
@@ -349,7 +379,7 @@ $(document).ready(function(){
 					 			<div class="col-md-3 latest-grid work wow fadeInDown Big animated animated" data-wow-delay="0.4s" >	
 					 			 	<img src="images/logos/vs.png" class="img-responsive"  alt="/" style="position:absolute; padding-top: 3.4em;padding-left: 12.6em;color: #fff; margin: 0 auto;"></br></br></br>
 								  	<h4 style="padding-bottom:1em;">Visual Studio</h4></br>
-									<p style="text-align:center;" >Visual Studio es una colección de herramientas y servicios para desarrolladores para la creación de aplicaciones.</p>
+									<p style="text-align:center;" >Visual Studio es una colecci&oacute;n de herramientas y servicios para desarrolladores para la creaci&oacute;n de aplicaciones.</p>
 
 							 		 <div class="textbox">
 												
@@ -361,7 +391,7 @@ $(document).ready(function(){
 								 <div class="col-md-3 latest-grid work wow fadeInDown Big animated animated" data-wow-delay="0.4s">		
 								 	<img src="images/logos/jv.png" class="img-responsive"  alt="/" style="position:absolute; padding-top: 3.4em;padding-left: 12.6em;color: #fff; margin: 0 auto;"></br></br></br>	
 								  	<h4 style="padding-bottom:1em;" >Java</h4></br>
-									<p style="text-align:center;" >Lenguaje de programación de propósito general orientado a objetos originalmente desarrollado por James Gosling de Sun Microsystems.</p>
+									<p style="text-align:center;" >Lenguaje de programaci&oacute;n de prop&oacute;sito general orientado a objetos originalmente desarrollado por James Gosling de Sun Microsystems.</p>
 
 							 		<div class="textbox">
 										
@@ -387,7 +417,7 @@ $(document).ready(function(){
 							  	  	<img src="images/logos/db.png" class="img-responsive"  alt="/" style="position:absolute; padding-top: 3.4em;padding-left: 12.6em;color: #fff; margin: 0 auto;"></br></br></br>		  
 							  		
 								  	<h4 style="padding-bottom:1em;">Base de Datos</h4></br>
-									<p style="text-align:center;" >Implementación y manejo de bases de datos Microsoft SQL Server, Oracle, MySQL, SQLite y MongoDB.</p>
+									<p style="text-align:center;" >Implementaci&oacute;n y manejo de bases de datos Microsoft SQL Server, Oracle, MySQL, SQLite y MongoDB.</p>
 						 			 <div class="textbox">
 										
 									 </div>				
@@ -397,7 +427,7 @@ $(document).ready(function(){
 							    <div class="col-md-3 latest-grid work wow fadeInDown Big animated animated" data-wow-delay="0.4s">	
 							     	<img src="images/logos/gdc.png" class="img-responsive"  alt="/" style="position:absolute; padding-top: 3.4em;padding-left: 12.6em;color: #fff; margin: 0 auto;"></br></br></br>
 								  	<h4 style="padding-bottom:1em;">CMS</h4></br>
-									<p style="text-align:center;">Gestión e implementación de plataformas autoadministrables como Drupal, Joomla! y Wordpress.</p>
+									<p style="text-align:center;">Gesti&oacute;n e implementaci&oacute;n de plataformas autoadministrables como Drupal, Joomla! y Wordpress.</p>
 
 							 		<div class="textbox">
 										
@@ -409,7 +439,7 @@ $(document).ready(function(){
 							 	<div class="col-md-3 latest-grid work wow fadeInDown Big animated animated" data-wow-delay="0.4s">
 								   	<img src="images/logos/5.png" class="img-responsive"  alt="/" style="position:absolute; padding-top: 3.4em;padding-left: 12.6em;color: #fff; margin: 0 auto;"></br></br></br>
 								  	<h4 style="padding-bottom:1em;">HTML5</h4></br>
-									<p style="text-align:center;">HyperText Markup Language versión 5 es la quinta revisión del lenguaje básico de la World Wide Web, HTML.</p>
+									<p style="text-align:center;">HyperText Markup Language versi&oacute;n 5 es la quinta revisi&oacute;n del lenguaje b&aacute;sico de la World Wide Web, HTML.</p>
 
 							 		 <div class="textbox">
 										
@@ -419,7 +449,7 @@ $(document).ready(function(){
 								<div class="col-md-3 latest-grid work wow fadeInDown Big animated animated" data-wow-delay="0.4s">
 								    <img src="images/logos/3.png" class="img-responsive"  alt="/" style="position:absolute; padding-top: 3.4em;padding-left: 12.6em;color: #fff; margin: 0 auto;"></br></br></br>
 								  	<h4 style="padding-bottom:1em;">CSS3</h4></br>
-									<p style="text-align:center;">Lenguaje de hojas de estilo usado para definir y crear la presentación de un documento HTML o XML2 (y por extensión en XHTML).</p>
+									<p style="text-align:center;">Lenguaje de hojas de estilo usado para definir y crear la presentaci&oacute;n de un documento HTML o XML2 (y por extensi&oacute;n en XHTML).</p>
 							 		 <div class="textbox">
 											
 									 </div>
@@ -435,7 +465,7 @@ $(document).ready(function(){
 								  	
 								  	<h4 style="padding-bottom:1em;">GITHUB</h4></br>
 
-									<p style="text-align:center;">Entorno de desarrollo de Microsoft Corp. que proporciona interoperabilidad a través de varias tecnologías y lenguajes de programación.</p>
+									<p style="text-align:center;">Entorno de desarrollo de Microsoft Corp. que proporciona interoperabilidad a trav&eacute;s de varias tecnolog&iacute;as y lenguajes de programaci&oacute;n.</p>
 							 		 <div class="textbox">
 											
 									 </div>
@@ -447,7 +477,7 @@ $(document).ready(function(){
 								  	</br></br></br>
 								  	<h4 style="padding-bottom:1em;">NHibernate</h4></br>
 
-									<p style="text-align:center;">Visual Studio es una colección de herramientas y servicios para desarrolladores para la creación de aplicaciones.</p>
+									<p style="text-align:center;">Visual Studio es una colecci&oacute;n de herramientas y servicios para desarrolladores para la creaci&oacute;n de aplicaciones.</p>
 							 		<div class="textbox">										
 									 </div>									
 								</div>
@@ -659,67 +689,5 @@ $(document).ready(function(){
 				</div>
 		   </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	</body>
 </html> 
-
-
-<!--
-						<div class="services-grids">
-
-							<div class="service1">
-
-							
-								<div class="col-md-4 services-grid wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">									
-									 <img src="images/clientes/ipcna.png" class="img-responsive" alt="" style="" />									
-								</div>
-
-								<div class="col-md-4 services-grid wow fadeInDown Big animated animated" data-wow-delay="0.4s">									
-									<img src="images/clientes/logogrc.png" class="img-responsive" alt="" style=""/>									
-								</div>
-
-								<div class="col-md-4 services-grid wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">									
-									<img src="images/clientes/logotipo.png" class="img-responsive" alt="" style=""/>									
-								</div>	
-
-								<div class="col-md-4 services-grid wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">									
-									<img src="images/clientes/logo-banco-nacion.png" class="img-responsive" alt="" style=""/>								
-								</div>	
-
-								<div class="col-md-4 services-grid wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">									
-									<img src="images/clientes/copesco.png" class="img-responsive" alt="" style=""/>									
-								</div>	
-
-								<div class="col-md-4 services-grid wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">									
-									<img src="images/clientes/dircetur.png" class="img-responsive" alt="" style=""/>									
-								</div>	-->

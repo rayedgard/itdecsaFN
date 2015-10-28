@@ -40,8 +40,31 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </script>
 <!---/End-Animation---->
 
+
+ <!-- INICIO DE LA INFORMACION PARA OMPARTIR JUNTO A LOS BOTONES DE COMPARTIR -->
+    <meta property="og:url"           content="http://www.itdecsa.com/muestras/itdecsaprueba/index.php" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Informatic Technology Development" />
+    <meta property="og:description"   content="Es una empresa Peruana que brinda servicios de desarrollo de sistemas de software contamos con la tecnologia de vanguardia y con el personal especializado en cada área para brindar propuestas innovadoras de acuerdo con cada una de la necesidades de nuestros clientes a lo largo de nuestra trayectoria." />
+    <meta property="og:image"         content="http://www.itdecsa.com/muestras/itdecsaprueba/banner6.jpg" />
+<!-- FIN DE LA INFORMACION PARA COMPARTIR JUNTO A LOS BOTONES DE COMPARTIR -->
+
+
 </head>
 <body>
+
+<!--/////////////// CODIGO PARA COMPARTIR FACEBOOK G+ Y TWITTER ////////////////-->
+
+	<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:10px; top:10px;">
+	    <a href="https://www.facebook.com/icpnac?fref=ts" class="a2a_button_facebook"></a>
+	    <a href="https://twitter.com/ICPNACultural" class="a2a_button_twitter"></a>
+	    <a href="https://www.google.com/maps/d/viewer?t=m&oe=UTF8&msa=0&ie=UTF8&mid=z2GfYE6MToNk.kwwE1r--3cL0" class="a2a_button_google_plus"></a>
+	    <a class="a2a_button_pinterest"></a>
+	    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>	</div>
+
+	<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+
+<!--/////////////// FIN DEL CODIGO PARA COMPARTIR FACEBOOK G+ Y TWITTER ////////////////-->
 
 
   <div class="header1 head-top " id="home">
@@ -182,7 +205,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							    $('.item').click(function(){
 
 							      function openColorBox(){
-							        $.colorbox({iframe:true, overlayClose: false, fixed: true ,width:"80%", height:"80%", href:"http://www.sitepoint.com"});
+							        $.colorbox({iframe:true, overlayClose: false, fixed: true ,width:"80%", height:"80%", href:"../publicidad"});
 							      }
 							      setTimeout(openColorBox, 1000);
 
@@ -198,7 +221,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 					
 				
-							<link href="../csssliderweb/owl.carousel.css" rel="stylesheet">
+							<link href="../css/owl.carousel.css" rel="stylesheet">
 							    <script src="../jssliderweb/owl.carousel.js"></script>
 							    <script>
 							    $(document).ready(function() {
@@ -519,7 +542,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		 <div class="social-icons wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 		<a href="https://www.facebook.com/pages/Informatic-Technology-Development-Corporation-SA/157087624356221?fref=ts" target="_blank"><i class="icon1"></i></a>
 		<a href="#"><i class="icon2"></i></a>
-		<a href="https://plus.google.com/104763782397023638437/posts" target="_blank"><i class="icon3"></i></a>
+		<a href="https://plus.google.com/118149220689952591619/about" target="_blank"><i class="icon3"></i></a>
 		
 		</div>
 		</div>
