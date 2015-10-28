@@ -6,15 +6,14 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE HTML> 
-<html>
+<html> 
 <head>
 <title>ITDECSA - Informatic Technology Development Corporation S.A. </title>
 <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Cultivation Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -57,8 +56,36 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 </script>
 <!--End of Zopim Live Chat Script-->
 
+ <!-- INICIO DE LA INFORMACION PARA OMPARTIR JUNTO A LOS BOTONES DE COMPARTIR -->
+    <meta property="og:url"           content="http://www.itdecsa.com/muestras/itdecsaprueba/index.php" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Informatic Technology Development" />
+    <meta property="og:description"   content="Es una empresa Peruana que brinda servicios de desarrollo de sistemas de software contamos con la tecnologia de vanguardia y con el personal especializado en cada área para brindar propuestas innovadoras de acuerdo con cada una de la necesidades de nuestros clientes a lo largo de nuestra trayectoria." />
+    <meta property="og:image"         content="http://www.itdecsa.com/muestras/itdecsaprueba/banner6.jpg" />
+<!-- FIN DE LA INFORMACION PARA COMPARTIR JUNTO A LOS BOTONES DE COMPARTIR -->
+
+
+
 </head>
 <body style="background-color:#000000;">
+
+<!--/////////////// CODIGO PARA COMPARTIR FACEBOOK G+ Y TWITTER ////////////////-->
+
+	<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:10px; top:10px;">
+	    <a href="https://www.facebook.com/icpnac?fref=ts" class="a2a_button_facebook"></a>
+	    <a href="https://twitter.com/ICPNACultural" class="a2a_button_twitter"></a>
+	    <a href="https://www.google.com/maps/d/viewer?t=m&oe=UTF8&msa=0&ie=UTF8&mid=z2GfYE6MToNk.kwwE1r--3cL0" class="a2a_button_google_plus"></a>
+	    <a class="a2a_button_pinterest"></a>
+	    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>	</div>
+
+	<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+
+<!--/////////////// FIN DEL CODIGO PARA COMPARTIR FACEBOOK G+ Y TWITTER ////////////////-->
+
+
+
+
+
   <div class="header1 head-top " id="home">
 		<div class="container">
 		<div class="header-top">
@@ -174,7 +201,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 		 <div class="social-icons wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 		<a href="https://www.facebook.com/pages/Informatic-Technology-Development-Corporation-SA/157087624356221?fref=ts" target="_blank"><i class="icon1"></i></a>
 		<a href="#"><i class="icon2"></i></a>
-		<a href="https://plus.google.com/104763782397023638437/posts" target="_blank"><i class="icon3"></i></a>
+		<a href="https://plus.google.com/118149220689952591619/about" target="_blank"><i class="icon3"></i></a>
 		
 		</div>
 		</div>

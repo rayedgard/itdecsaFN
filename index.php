@@ -19,7 +19,7 @@
 
 
 <script src="js/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="js/js1/jquery.min.js"></script>
+
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
 <script src="js/wow.min.js"></script>
@@ -129,31 +129,31 @@ $(document).ready(function(){
 <!--/////////////// CODIGO QUE LLAMA EL POPUP INICIAL ////////////////-->
     <script>
       function openColorBox(){
-<<<<<<< HEAD
-        $.colorbox({iframe:true, overlayClose: false, fixed: true ,width:"80%", height:"80%", href:"publicidad/"});
-      }
+
+ 
       
-=======
-        $.colorbox({iframe:true, overlayClose: false, fixed: true ,width:"80%", height:"80%", href:"http://www.sitepoint.com"});
+
+        $.colorbox({iframe:true, overlayClose: false, fixed: true ,width:"80%", height:"80%", href:"publicidad/"});
       }      
->>>>>>> 8a99fefc54a756ef06690ae4d7f1a4f51067d23d
+
       setTimeout(openColorBox, 1000);
  
     </script>
 <!--/////////////// FIN EL POPUP INICIAL ////////////////-->
 
 
+<!--/////////////// CODIGO PARA COMPARTIR FACEBOOK G+ Y TWITTER ////////////////-->
 
-					<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:10px; top:10px;">
-					    <a href="https://www.facebook.com/icpnac?fref=ts" class="a2a_button_facebook"></a>
-					    <a href="https://twitter.com/ICPNACultural" class="a2a_button_twitter"></a>
-					    <a href="https://www.google.com/maps/d/viewer?t=m&oe=UTF8&msa=0&ie=UTF8&mid=z2GfYE6MToNk.kwwE1r--3cL0" class="a2a_button_google_plus"></a>
-					    <a class="a2a_button_pinterest"></a>
-					    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-					</div>
+	<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:10px; top:10px;">
+	    <a href="https://www.facebook.com/icpnac?fref=ts" class="a2a_button_facebook"></a>
+	    <a href="https://twitter.com/ICPNACultural" class="a2a_button_twitter"></a>
+	    <a href="https://www.google.com/maps/d/viewer?t=m&oe=UTF8&msa=0&ie=UTF8&mid=z2GfYE6MToNk.kwwE1r--3cL0" class="a2a_button_google_plus"></a>
+	    <a class="a2a_button_pinterest"></a>
+	    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>	</div>
 
-					<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+	<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
 
+<!--/////////////// FIN DEL CODIGO PARA COMPARTIR FACEBOOK G+ Y TWITTER ////////////////-->
 
 
 					<style type="text/css">
@@ -661,67 +661,5 @@ $(document).ready(function(){
 				</div>
 		   </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	</body>
 </html> 
-
-
-<!--
-						<div class="services-grids">
-
-							<div class="service1">
-
-							
-								<div class="col-md-4 services-grid wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">									
-									 <img src="images/clientes/ipcna.png" class="img-responsive" alt="" style="" />									
-								</div>
-
-								<div class="col-md-4 services-grid wow fadeInDown Big animated animated" data-wow-delay="0.4s">									
-									<img src="images/clientes/logogrc.png" class="img-responsive" alt="" style=""/>									
-								</div>
-
-								<div class="col-md-4 services-grid wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">									
-									<img src="images/clientes/logotipo.png" class="img-responsive" alt="" style=""/>									
-								</div>	
-
-								<div class="col-md-4 services-grid wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">									
-									<img src="images/clientes/logo-banco-nacion.png" class="img-responsive" alt="" style=""/>								
-								</div>	
-
-								<div class="col-md-4 services-grid wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">									
-									<img src="images/clientes/copesco.png" class="img-responsive" alt="" style=""/>									
-								</div>	
-
-								<div class="col-md-4 services-grid wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">									
-									<img src="images/clientes/dircetur.png" class="img-responsive" alt="" style=""/>									
-								</div>	-->

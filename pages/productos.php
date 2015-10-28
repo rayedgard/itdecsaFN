@@ -140,7 +140,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 		 <div class="social-icons wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 		<a href="https://www.facebook.com/pages/Informatic-Technology-Development-Corporation-SA/157087624356221?fref=ts" target="_blank"><i class="icon1"></i></a>
 		<a href="#"><i class="icon2"></i></a>
-		<a href="https://plus.google.com/104763782397023638437/posts" target="_blank"><i class="icon3"></i></a>
+		<a href="https://plus.google.com/118149220689952591619/about" target="_blank"><i class="icon3"></i></a>
 		
 		</div>
 		</div>

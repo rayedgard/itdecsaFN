@@ -1,10 +1,20 @@
-<!--
-Au<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+<?php
+session_start();
+
+include("../conexion.php");
+$link = Conectarse();
+
+$Nombre = $_POST['first'];
+$Apellido = $_POST['last'];
+$Correo = $_POST['email'];
+
+$_SESSION['nombre'] =  $_POST['first'];
+$_SESSION['apellido'] = $_POST['last'];
+$_SESSION['correo'] = $_POST['email'];
+
+?>
+
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -13,7 +23,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             /* Set a size for our map container, the Google Map will take up 100% of this container */
             #map { 
                 width: 500px;
-                height: 300px;
+                height: 300px; 
             }
         </style>
 <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
@@ -192,29 +202,33 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 
 					<!----- contact-form ------>
 					<div class="contact-form wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-						<form>
+						<form action="contactos_envio.php" method="post">
 
 							<div class="contact-form-row">
 								<div>
 									<span>Nombre :</span>
-									<input type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+									<input name="nombre_c" type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
 								</div>
 								<div>
 									<span>Correo :</span>
-									<input type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+									<input name="correo_c" type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
 								</div>
 								<div>
 									<span>Asunto :</span>
-									<input type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+									<input name="asunto_c" type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
 								</div>								
 							</div>							
 
 							<div class="contact-form-row2 wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 								<span>Mensaje :</span>
-								<textarea> </textarea>
+								<textarea name="texto_c"> 
+
+								</textarea>
 							</div>
 
 							<input type="submit" value="Enviar">
+
+
 
 						</form>
 					</div>
@@ -291,7 +305,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 		 		<div class="social-icons wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 					<a href="https://www.facebook.com/pages/Informatic-Technology-Development-Corporation-SA/157087624356221?fref=ts" target="_blank"><i class="icon1"></i></a>
 					<a href="#"><i class="icon2"></i></a>
-					<a href="https://plus.google.com/104763782397023638437/posts" target="_blank"><i class="icon3"></i></a>		
+					<a href="https://plus.google.com/118149220689952591619/about" target="_blank"><i class="icon3"></i></a>		
 			    </div>
 			</div>
 
